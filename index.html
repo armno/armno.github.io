@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+description: A rookie web developer, interested in front-end development, living and working in Chiang Mai, Thailand. I am @armno on Twitter and Github.
+---
+
+<header class="site-header clearfix">
+  <div class="container">
+    <div class="aligncenter">
+      <h1 class="my-name">ArmNo</h1>
+      <nav class="clearfix aligncenter">
+        <ul class="main-navigation">
+          <li><a href="/" class="current">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+      <!-- <h2 class="manifesto">Writing is the best way to learn</h2> -->
+    </div>
+  </div>
+</header>
+
+<div class="container content">
+  <h3 class="lastest-post-heading">Latest blog posts</h3>
+
+  <ol class="blog-list">
+    {% for post in paginator.posts %}
+    <li>
+      <h3 class="post-title-list"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="post-date">
+        {{ post.date | date: "%d %B, %Y"}}
+      </div>
+      <p>{{ post.description }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+  <div class="link-full-blog">
+    <a href="/blog">Full blog</a>
+  </div>
+  <footer class="pure-u-1 site-footer">
+    <p>2013 - ArmNo, a web nerd.</p>
+  </footer>
+</div>

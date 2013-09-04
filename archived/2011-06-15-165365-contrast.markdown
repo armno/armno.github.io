@@ -1,0 +1,22 @@
+---
+comments: true
+date: 2011-06-15 21:53:21
+layout: blog
+slug: 165365-contrast
+title: 165/365 Contrast
+wordpress_id: 1720
+categories:
+- Photography
+tags:
+- 365Photo
+- Temple
+- Thailand
+---
+
+[![DSC_4350](http://files.armno.in.th/uploads/2011/06/DSC_4350_thumb.jpg)](http://files.armno.in.th/uploads/2011/06/DSC_4350.jpg)
+
+ถ่ายเป็น RAW file มาแล้วทำต่อด้วย Lightroom เช่นเคยครับ กดให้วัดจมมืดเป็นภาพเงาดำไปเลย ผลที่ได้คือ contrast เยอะขึ้นจมเลยครับ กะทำให้ดูขลังๆ
+
+จากวัดพระธาตุดอยคำครับผม
+
+18mm, F/5.6, 1/1000s, ISO-100, -1.3EV

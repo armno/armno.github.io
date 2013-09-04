@@ -1,0 +1,119 @@
+---
+title: ติดตั้ง Apache, PHP, MySQL บน OSX แบบไม่ง้อ MAMP
+description: MAMP (รวมถึง MAMP Pro) นั้นเป็นเครื่องมือที่ดีสำหรับติดตั้ง local web server บน OSX แต่ปัญหาที่ผมพบกับ MAMP คือกินแรมเยอะมาก ซึ่งจริงๆ แล้วเราไม่ต้องมี MAMP ก็รัน web server ในเครื่องได้ Homebrew คือพระเอกของเราครับ
+categeory: Web Development
+layout: blog
+---
+
+[MAMP](http://www.mamp.info/en/index.html) (รวมถึง MAMP Pro) นั้นเป็นเครื่องมือที่ดีสำหรับติดตั้ง local web server บน OSX แต่ปัญหาที่ผมพบกับ MAMP คือกินแรมเยอะ (และใช้งานยุ่งยากด้วย) ซึ่งจริงๆ แล้วเราไม่ต้องมี MAMP ก็รัน web server ในเครื่องได้ 
+
+จริงๆ แล้ว OSX มี Apache กับ PHP ติดมาด้วยอยู่แล้ว แต่สำหรับ PHP นั้นยังเป็นเวอร์ชั่นเก่าอยู่ ซึ่งเราสามารถลง PHP เวอร์ชั่นล่าสุดได้จาก Homebrew ครับ
+
+[Homebrew](http://mxcl.github.io/homebrew/) คือพระเอกของเราครับ ช่วยให้เราลง package สารพัดได้ใน OSX ได้อย่างไม่ยากเย็นนัก (สำหรับผมที่มาจากโลก Ubuntu Homebrew คือเปรียบเสมือนคำสั่ง `apt-get` นั่นเอง)
+
+- โพสต์นี้ทดสอบบน OSX 10.8+ นะครับ
+- เหมาะกับคนที่ชอบทำอะไรใน terminal 
+
+### ติดตั้ง Homebrew
+
+รัน command ใน terminal
+
+<pre><code class="language-bash">$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</code></pre>
+
+### ใช้งาน Apache
+
+ใน OSX 10.8 นั้นไม่มีตัวเลือก Web Sharing ให้เลือกใน System Preferences > Sharing แล้ว ซึ่งเราสามารถรัน Apache ได้จาก terminal ครับ
+
+<pre><code class="language-bash">$ sudo apachectl start</code></pre>
+
+### ติดตั้ง PHP 5.4
+
+ต่อไปก็ต้องลง PHP ผ่าน Homebrew ครับ สำหรับการลง package ด้วย homebrew นั้นใช้ command <code>brew install &lt;package name&gt;</code> แต่ถ้าไม่แน่ใจว่า <code>package name</code> นั้นมีอะไรบ้าง ใช้ command <code>brew search</code> หาดูก่อนได้ครับ
+
+![brew search](http://farm8.staticflickr.com/7337/9160240552_c55243a996_o.png)
+
+สำหรับ PHP 5.4 นั้นชื่อ package <code>php54</code> (ณ วันที่เขียนยังไม่มี PHP 5.5 ใน homebrew ครับ)
+
+<pre><code class="language-bash">$ brew install php54</code></pre>
+
+รอสักพักจนเสร็จ PHP 5.4 ก็จะถูกติดตั้งไว้ที่
+
+<pre><code class="language-bash">/usr/local/Cellar/php54/5.4.15</code></pre>
+
+![installed php 5.4](http://farm4.staticflickr.com/3708/9158088329_903636e415_z.jpg)
+
+> Package ที่ติดตั้งผ่าน Homebrew จะอยู่ที่ <code>/usr/local/Cellar</code> ครับ
+
+### ติดตั้ง MySQL
+
+ใช้คำสั่ง <code>brew install</code> เหมือนเดิม
+
+<pre><code class="language-bash">$ brew install mysql</code></pre>
+
+หลังจาก install เสร็จก็เซ็ต root password ด้วย command
+
+<pre><code class="language-bash">$ mysql_secure_installation</code></pre>
+
+ทำตามขั้นตอนไปเรื่อยๆ จนจบได้เลย
+
+### แก้ path ของ PHP สำหรับ Apache
+
+หลังจากลง PHP ด้วย homebrew แล้ว เราก็ต้องบอก Apache ให้โหลด module php5 จากที่ลงใหม่ ไม่ใช่จากของเดิมที่ติดมากับเครื่องครับ
+
+ซึ่งก็คือ เราต้องไปแก้ path ในไฟล์ <code>httpd.conf</code> ครับ
+
+<pre><code class="language-bash">$ sudo vim /etc/apache2/httpd.conf</code></pre>
+
+หาบรรทัดนี้
+
+<pre><code class="language-bash">LoadModule php5_module libexec/apache2/libphp5.so</code></pre>
+
+แล้วแก้เป็น
+
+<pre><code class="language-bash">LoadModule php5_module /usr/local/Cellar/php54/5.4.15/libexec/apache2/libphp5.so</code></pre>
+
+จากนั้น restart Apache
+
+<pre><code class="language-bash">$ sudo apachectl restart</code></pre>
+
+### เซ็ต DocumentRoot
+
+ปกติผมจะเซ็ตให้ directory <code>~/Sites</code> เป็น root directory ของ localhost ครับ (เปรียบเสมือน <code>/var/www/</code> ใน Ubuntu) ซึ่งก็ต้องไปแก้ path ในไฟล์ <code>httpd.conf</code> เหมือนเดิม
+
+<pre><code class="language-bash">$ sudo vim /etc/apache2/httpd.conf</code></pre>
+
+หา
+
+<pre><code class="language-bash">DocumentRoot "/Library/WebServer/Documents"</code></pre>
+
+เปลี่ยนเป็น
+
+<pre><code class="language-bash">DocumentRoot "/Users/armno/Sites" # อย่าลืมเปลี่ยน username เป็นของคุณ</code></pre>
+
+และตรง <code>&lt;Directory&gt;</code> ก็ต้องเปลี่ยนเป็น path เดียวกันด้วยครับ
+
+<pre><code class="language-bash">&lt;Directory "/Users/armno/Sites"&gt;</code></pre>
+
+สุดท้าย ค้นหา
+
+<pre><code class="language-bash">&lt;IfModule dir_module&gt;
+    DirectoryIndex index.html
+&lt;/IfModule&gt;</code></pre>
+
+เพิ่ม <code>index.php</code> เข้าไปก่อน <code>index.html</code>
+
+<pre><code class="language-bash">&lt;IfModule dir_module&gt;
+    DirectoryIndex index.php index.html
+&lt;/IfModule&gt;</code></pre>
+
+จากนั้น save file แล้วก็ restart Apache อีกครั้งครับ (command เดียวกับข้างบน)
+
+### ทดสอบ
+
+<pre><code class="language-bash">$ echo "&lt;?php phpinfo();" > ~/Sites/info.php</code></pre>
+
+แล้วเปิด <code>http://localhost/info.php</code> ใน browser ก็จะเจอข้อมูล <code>phpinfo</code> ครับ
+
+![phpinfo](http://farm6.staticflickr.com/5513/9158338115_1a9c7169eb_o.png)
+
+เสร็จแล้ว :D

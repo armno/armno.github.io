@@ -1,0 +1,20 @@
+---
+comments: true
+date: 2011-10-08 00:28:26
+layout: blog
+slug: 280365-japanese-food
+title: 280/365 Japanese Food
+wordpress_id: 1867
+categories:
+- Photography
+tags:
+- 365Photo
+- Japanese Food
+- Tsunami
+---
+
+[![](http://farm7.static.flickr.com/6118/6220225847_30c3e5036f_z.jpg)](http://www.flickr.com/photos/armno/6220225847/in/photostream)
+
+สารภาพว่าอยู่เชียงใหม่มาหลายปี เพิ่งเคยไปกินร้านนี้ครั้งแรก ร้านอาหารญี่ปุ่นชื่อดัง Tsunami หน้ามอชอ .. ทั้งๆ ที่ห่างจากที่ทำงานผมแค่ 200 เมตรเอง ขับผ่านที่คนต้องมีคนต่อคิวล้นออกมานอกร้านตลอด วันนี้ผ่านไปเห็นว่างอยู่ เลยแวะไปชิมดู .. อร่อยสมคำร่ำลือครับ ไม่แพงมากด้วย
+
+ถ่ายภาพนี้ใต้แสงไฟสีส้ม (ด้วย white balance แบบ daylight) ตอนแรกโฟกัสที่ตะเกียบแล้วกลายเป็นรูปที่ดูไม่รู้เรื่อง เลยไปโฟกัสตรงข้าวข้างล่างแทน .. แต่งภาพโดยการลด saturation ใน Lightroom ครับผม

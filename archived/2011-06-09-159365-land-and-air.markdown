@@ -1,0 +1,34 @@
+---
+comments: true
+date: 2011-06-09 21:17:34
+layout: blog
+slug: 159365-land-and-air
+title: 159/365 Land and Air
+wordpress_id: 1711
+categories:
+- Photography
+tags:
+- 365Photo
+- GND Filter
+- landscape
+---
+
+[![159](http://files.armno.in.th/uploads/2011/06/159_thumb.jpg)](http://files.armno.in.th/uploads/2011/06/159.jpg)
+
+เป็นครั้งแรกที่ผมได้ใช้ฟิลเตอร์ **[GND (Graduated Neutral Density)](http://en.wikipedia.org/wiki/Graduated_neutral_density_filter)** ลองถ่ายรูปครับ พอดียืมของพี่ชายมาใช้ (ไม่รู้ด้วยว่าฟิลเตอร์มันกี่ stop) .. เลิกงานแล้วรีบบึ่งรถกลับบ้าน หยิบกล้องพร้อมฟิลเตอร์ออกไปถ่ายรูปก่อนที่แสงจะหมด .. ภาพข้างบนนี้ดูเหมือนแสงใกล้หมดแล้ว แต่จริงๆไม่ใช่นะครับ พอดีเมฆไปบังดวงอาทิตย์ไว้เยอะเลยมืด
+
+ฟิลเตอร์ GND สำหรับผมยังเป็นเรื่องใหม่มากๆ คราวหลังคงต้องไปฝึกใช้จริงๆจังๆกว่านี้แล้วล่ะ .. ฟิลเตอร์นี้เหมาะกับภาพ landscape จริงๆนะ
+
+18mm, F/6.3, 1/60s, ISO-100 ครับ
+
+
+
+แถมรูปเปรียบเทียบ ระหว่างใช้กับไม่ใช้ฟิลเตอร์ GND นะครับ
+
+[![compare_gnd](http://files.armno.in.th/uploads/2011/06/compare_gnd_thumb.jpg)](http://files.armno.in.th/uploads/2011/06/compare_gnd.jpg)
+
+ผมเปิดค่ารับแสงเท่ากันทุกอย่าง แต่ดูรูปบนมืดกว่าเล็กน้อย คงเป็นเพราะดึงฟิลเตอร์ลงมาต่ำไปหน่อย
+
+แถมอีกรูปอ่ะ เห็นชัดดี ![Smile](http://files.armno.in.th/uploads/2011/06/wlEmoticon-smile2.png)
+
+[![DSC_4271](http://files.armno.in.th/uploads/2011/06/DSC_4271_thumb.jpg)](http://files.armno.in.th/uploads/2011/06/DSC_4271.jpg)

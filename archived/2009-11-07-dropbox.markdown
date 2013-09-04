@@ -1,0 +1,30 @@
+---
+comments: true
+date: 2009-11-07 21:44:33
+layout: blog
+slug: dropbox
+title: Dropbox .. ผิดที่เราเจอกันช้าไป
+wordpress_id: 897
+categories:
+- Life
+tags:
+- Dropbox
+- Gin Project
+- Online Storage
+- Web Application
+---
+
+ช่วงก่อนอ่าน feed เรื่อง webdesign จากบล็อกดังๆ เห็นเอ่ยถึง [**Dropbox**](https://www.dropbox.com/) บ่อยๆ ก็เลยลองเข้าไปหาข้อมูลดู .. และก็พบว่า **นี่แหละ สิ่งที่เราหามานาน!**
+
+[![dropbox_logo](http://www.armno.in.th/wp-content/uploads/2009/11/dropbox_logo.png)](https://www.dropbox.com/)
+
+มีเว็บรีวิว Dropbox เต็มไปหมด ของไทยก็มี
+  
+* [Dropbox : พื้นที่ Online ฟรีๆขนาด 2Gb](http://www.freeware.in.th/utilities/404/) (Freeware.in.th) 
+* [ลองมี USB Drive บนโลกอินเตอร์เน็ตด้วย Dropbox กันมั๊ย](http://cstproject.exteen.com/20090505/usb-drive-dropbox) (cstproject.exteen.com) 
+
+งั้นผมก็คงไม่ต้องเขียนรีวิวแล้วล่ะครับ สรุปง่ายๆว่า **Dropbox** คือบริการที่เก็บไฟล์ออนไลน์ ที่สามารถ sync กับโฟลเดอร์ **Dropbox** ในคอมพิวเตอร์ที่เราใช้ได้แบบอัตโนมัติ (ไม่ต้องมานั่งกด upload/download ไฟล์), แชร์โฟลเดอร์กับเพื่อนๆก็ได้, กู้คืนไฟล์ที่ลบไปแล้วคืนมาก็ได้ (เฉพาะใน Dropbox นะ)
+
+ผมได้ใช้ประโยชน์จากมันแน่ๆ เนื่องจากต้องรับ-ส่งไฟล์กับนน (พาร์ทเนอร์โปรเจ็ค) กันอยู่บ่อยๆ เมื่อก่อนต้องใช้ Thumbdrive รึไม่ก็ต้องส่ง email .. แต่พอมีเจ้านี่ แค่ลากใส่โฟลเดอร์ Dropbox (ที่เปิดแชร์กันไว้) .. จบ!
+
+ผมว่า Dropbox นอกจากใช้เป็นที่เก็บไฟล์แล้ว เหมาะไว้แชร์ไฟล์ในโปรเจ็คเหมือนกันนะ ในกรณีที่ไม่ได้ต้องการความสามารถระดับ SVN มีเจ้า Dropbox ใช้ก็ถือว่า OK แล้วล่ะ ;)

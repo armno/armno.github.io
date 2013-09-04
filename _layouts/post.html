@@ -1,0 +1,31 @@
+{% include head.html %}
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12 site-logo aligncenter">
+                <a href="/" class="site-logo-post"></a>
+                <span class="site-logo-helper">back to home page</span>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span8 offset2">
+                <article class="blog-post">
+                    <header class="aligncenter">
+                        <h1>{{ page.title }}</h1>
+                        <small class="post-date post-date-posts">
+                            {{ page.date | date: "%d %B, %Y"}}
+                        </small>
+                    </header>
+
+                    {{ content }}
+
+                    <footer>
+                        {% include share.html %}
+                    </footer>
+                </article>
+
+                {% include comments.html %}
+            </div><!-- .span8 -->
+        </div>
+    </div><!-- .container -->
+    {% include foot.html %}

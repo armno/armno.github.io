@@ -1,0 +1,462 @@
+@import "prism";
+@import "syntax";
+/* genereated from GridLover.net */
+@font-face {
+  font-family: 'Aleo Bold';
+  src: url('../fonts/aleo-bold-webfont.eot');
+  src: url('../fonts/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/aleo-bold-webfont.woff') format('woff'),
+  url('../fonts/aleo-bold-webfont.ttf') format('truetype'),
+  url('../fonts/aleo-bold-webfont.svg#aleobold') format('svg');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'batchicons';
+  src: url('../fonts/batch-icons-webfont.eot');
+  src: url('../fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/batch-icons-webfont.woff') format('woff'),
+  url('../fonts/batch-icons-webfont.ttf') format('truetype'),
+  url('../fonts/batch-icons-webfont.svg#batchicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 18px;
+  line-height: 27px;
+  color: #666;
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 110px;
+  line-height: 130px;
+  margin-top: 26px;
+  margin-bottom: 52px;
+}
+h2 {
+  font-size: 42px;
+  line-height: 52px;
+  margin-top: 52px;
+  margin-bottom: 26px;
+}
+h3 {
+  font-size: 26px;
+  line-height: 52px;
+  margin-top: 26px;
+  margin-bottom: 0px;
+}
+p, ul {
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+small, aside {
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  @media (max-width: 767px) {
+    padding: 1%;
+  }
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px dotted #666;
+}
+
+a:hover {
+  color: #999;
+}
+
+a:visited {
+  color: #999;
+}
+
+/* helpers */
+.aligncenter {
+  text-align: center;
+}
+.alignright {
+  text-align: right;
+}
+
+  /* clearfix from h5bp */
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .clearfix {
+    *zoom: 1;
+  }
+
+  .left,
+  .right {
+    display: block;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+/* custom styles */
+.hero {
+    // letter-spacing: 0;
+  }
+.my-name {
+  color: rgba(255,255,255,0.7);
+  margin: 52px 0 26px;
+  text-transform: uppercase;
+  font-family: 'Aleo Bold';
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      font-size: 52px;
+      margin-bottom: 0;
+  }
+}
+
+.manifesto {
+  font-family: 'PT Serif', serif;
+  // font-style: italic;
+  font-size: 26px;
+  // margin-bottom: 78px;
+  margin: 0 0 78px;
+  color: #222;
+  font-weight: normal;
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      font-size: 16px;
+      margin: 0;
+  }
+}
+
+.manifesto::before,
+.manifesto::after {
+  content: '\2013'; /* &ndash; */
+  margin: 6px;
+}
+
+// .columns {
+//   width: 480px;
+//   margin-right: 20px;
+// }
+
+// .columns.right {
+//   margin-right: 0;
+//   margin-left: 20px;
+// }
+
+// .columns h3 {
+//   margin-top: 0;
+//   margin-bottom: 1em;
+//   font-family: 'Aleo Bold';
+// }
+
+.site-header {
+  // padding: 26px 0;
+  background: url(/img/header-bg.jpg) left top no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  a {
+    // text-shadow: 0 1px 0 #333;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 0;
+    padding: 0.5em 1em;
+    -webkit-transition: 0.3s background-color ease-out;
+       -moz-transition: 0.3s background-color ease-out;
+        -ms-transition: 0.3s background-color ease-out;
+         -o-transition: 0.3s background-color ease-out;
+            transition: 0.3s background-color ease-out;
+
+    &:visited {
+      color: #f2f2f2;
+    }
+
+    &.current {
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    &:hover {
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
+
+  &.blog-header {
+    opacity: 0.4;
+    -webkit-transition: 0.3s opacity ease-out;
+       -moz-transition: 0.3s opacity ease-out;
+        -ms-transition: 0.3s opacity ease-out;
+         -o-transition: 0.3s opacity ease-out;
+            transition: 0.3s opacity ease-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// .main-nav a {
+//   /*display: inline-block;*/
+//   margin-left: 30px;
+// }
+
+// .main-nav .current {
+//   font-weight: bold;
+// }
+
+.main-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    // float: left;
+    display: inline;
+    margin-right: 26px;
+  }
+}
+
+.content {
+  margin-top: 52px;
+}
+
+.site-footer {
+  margin-top: 110px;
+  color: #ccc;
+
+  & > p {
+    padding: 20px;
+  }
+}
+
+.logo {
+  border: 0;
+  font-size: 28px;
+}
+
+.logo::before {
+  content: '\F161';
+  font-family: 'batchicons';
+}
+
+.contact-methods {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-methods li::before {
+  font-family: 'batchicons';
+  margin-right: 10px;
+  color: #acacac;
+}
+
+li.tweet::before {
+  content: '\F0B2';
+}
+
+li.email::before {
+  content: '\F150';
+}
+
+li.issue::before {
+  content: '\F15A';
+}
+
+li.ig::before {
+  content: '\F07A';
+}
+
+// home page
+.lastest-post-heading {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #999;
+}
+.blog-list {
+  list-style: none;
+  padding:0;
+  margin: 0;
+
+}
+
+.post-date {
+  font-size: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  line-height: 13px;
+  // margin-right: 20px;
+  color: #dedede;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.post-title-list {
+  margin-top: 39px;
+  line-height: 26px;
+  a {
+    border: 0;
+  }
+}
+
+.link-full-blog {
+  margin-top: 52px;
+}
+
+.pure-menu li a {
+  padding: 0 20px;
+}
+
+.about-content {
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-family: 'Aleo Bold';
+  }
+
+  & > div {
+    padding: 20px;
+  }
+}
+
+.about-gravatar {
+  margin-left: 10px;
+}
+
+// resume page
+.resume-title {
+  font-size: 39px;
+  font-family: 'Aleo Bold', serif;
+}
+.resume-section-title {
+  margin: 0 20px 0 0;
+  text-align: right;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #dedede;
+  text-transform: uppercase;
+  line-height: 42px;
+
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+}
+
+.resume-gravatar {
+  text-align: right;
+  @media (max-width: 767px) {
+    text-align: left;
+  }
+}
+
+.resume-gravatar img {
+  margin-right: 20px;
+  margin-top: 26px;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+
+  overflow:hidden;
+
+  &:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+
+// single post page
+.post-title {
+  font-size: 42px;
+  line-height: 52px;
+  margin: 52px 0 26px;
+  color: #333;
+}
+
+.post-date-blog {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ccc;
+  margin-bottom: 52px;
+  font-size: 1em;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.fb-like-box {
+  margin-top: 52px;
+}
+
+.sharing {
+  margin-top: 52px;
+}
+
+pre {
+  padding: 0.1em 0.3em;
+}
+code {
+  font-family: 'Droid Sans Mono', monospace;
+  background-color: #f5f2f0;
+  // text-shadow: 0 1px 0 #fff;
+
+  pre & {
+    background: transparent;
+  }
+}
+
+// to make <pre> elements not too far from previous paragraph
+p + pre {
+    margin-top: -16px !important; // ಠ_ಠ
+  }
+
+// http://www.bentino.me/main/node/8
+/* Facebook comment responsive */
+#fb-root {
+  display: none;
+}
+
+/* To fill the container and nothing else */
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
+// like buttons shouldn't be full-width
+.fb_iframe_widget.fb-like {
+  width: 100px !important;
+}

@@ -1,0 +1,23 @@
+---
+comments: true
+date: 2011-06-11 20:12:57
+layout: blog
+slug: 161365-erdi
+title: 161/365 ERDI
+wordpress_id: 1714
+categories:
+- Photography
+tags:
+- 365Photo
+- CMU
+- ERDI
+- GND Filter
+---
+
+[![161](http://files.armno.in.th/uploads/2011/06/161_thumb.jpg)](http://files.armno.in.th/uploads/2011/06/161.jpg)
+
+ยังอยู่ในช่วงเห่อ **GND Filter** อยู่ครับ ภาพนี้ไปลองถ่ายที่[สถานีวิจัยและพัฒนาพลังงานนครพิงค์ (ERDI)](http://erdi.cmu.ac.th/index.php) ตอนเย็นๆแสงแถวนั้นสวยดี มีสระน้ำใหญ่โบ้ถึง 2 สระ เห็นพระอาทิตย์ตกดินด้วย (ถ้าไม่มีเมฆนะ)
+
+มี GND ใช้เนี่ย ประหยัดเวลาแต่งรูปได้พอสมควรเลยล่ะ
+
+22mm, F/6.3, 1/60s, ISO-200 ครับ

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+description: My name is Armno. I am a web developer living in beautiful Chiang Mai, Thailand. I started my career as a web developer since 2010. I work on HTML/JS/CSS/PHP and some Ruby for fun.
+---
+
+<header class="site-header clearfix">
+  <div class="container">
+    <div class="aligncenter">
+      <h1 class="my-name">ArmNo</h1>
+      <nav class="clearfix aligncenter">
+        <ul class="main-navigation">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog" class="current">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="container content">
+  <h2>Blog</h2>
+  <ol class="blog-list">
+    {% for post in site.posts %}
+    <li>
+        <h3 class="pure-u-3-5 post-title-list">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+
+        <div class="post-date">
+            {{ post.date | date: "%d %B, %Y"}}
+          </div>
+          <p>{{ post.description }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <footer class="pure-u-1 site-footer">
+    <p>Writing is the best way to learn. This is why I love to write.</p>
+  </footer>
+
+</div>

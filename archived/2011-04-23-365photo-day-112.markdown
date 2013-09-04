@@ -1,0 +1,31 @@
+---
+comments: true
+date: 2011-04-23 08:24:21
+layout: blog
+slug: 365photo-day-112
+title: 365Photo Day 112
+wordpress_id: 1556
+categories:
+- Photography
+tags:
+- 365Photo
+- Sepia
+- บ้าน
+- ผักกาด
+---
+
+[![112](http://files.armno.in.th/uploads/2011/04/112_thumb.jpg)](http://files.armno.in.th/uploads/2011/04/112.jpg)
+
+เป็นภาพที่ถ่ายตอนกลับบ้านเมื่อประมาณต้นปี 2010 ครับ ตอนนั้นหลังบ้านมีแปลงผักเล็กๆที่แม่ปลูกไว้ ผมไปถ่ายรูปต้นผักกาดเล็กๆมาครับ .. ต้นเล็กมากผมก็เลยวางกล้องลงเกือบถึงพื้น และถ่ายโดยไม่มอง viewfinder ได้รูปนี้มาแบบเอียงๆ ค่อยมา crop เอาในคอมครับ
+
+เทคนิคถ่ายให้มีแสงแฟลร์คือ ให้ดวงอาทิตย์อยู่ประมาณขอบๆเลนส์ ที่ผมมักจะทำก็คือ เล็งไปที่ดวงอาทิตย์ก่อน แล้วค่อยกดกล้องลงมานิดนึงครับ (ไม่ต้องเล็งนานนะ) .. แฟลร์มันจะขึ้นมาเอง .. ส่วนรูปนี้ เรียกว่าฟลุคมากกว่า
+
+
+> Device:    Nikon D60
+Lens:    VR 18-55mm F/3.5-5.6G
+Focal Length:    18mm
+Aperture:    F/8
+Shutter Speed:    1/250s
+Exposure Mode:    Programmed Auto
+Exposure Comp.:    0EV
+ISO Sensitivity:    ISO 200

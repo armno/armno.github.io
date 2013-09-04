@@ -1,0 +1,18 @@
+---
+comments: true
+date: 2011-10-24 22:12:30
+layout: blog
+slug: 296365-in-the-evening
+title: 296/365 In the evening
+wordpress_id: 1883
+categories:
+- Photography
+tags:
+- 365Photo
+- landscape
+- ดอยปุย
+---
+
+[![](http://farm7.static.flickr.com/6099/6275503867_bba130123f_z.jpg)](http://www.flickr.com/photos/armno/6275503867/in/photostream/)
+
+สองวันก่อนขึ้นไปเที่ยวบนดอยปุยมาครับ ภาพนี้ถ่ายจากจุดชมวิวพระอาทิตย์ตกบนดอย ก่อนที่พระอาทิตย์จะมุดเข้าเมฆไปในช่วงเย็นๆ (อดเก็บไข่แดง) .. ผมถ่ายเป็นไฟล์ raw มาแล้วทำต่อใน Lightroom ครับ ดึง white balance ไปเกือบๆ ขวาสุด แล้วใช้ gradient filter จำลอง ND ครึ่งซีกให้กับท้องฟ้าด้านบน .. พอดูตอนนี้ผมคิดว่ารูปนี้มืดไปหน่อย ไม่ค่อยมีรายละเอียดเท่าไหร่ครับ

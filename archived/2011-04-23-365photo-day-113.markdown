@@ -1,0 +1,30 @@
+---
+comments: true
+date: 2011-04-23 19:37:16
+layout: blog
+slug: 365photo-day-113
+title: 365Photo Day 113
+wordpress_id: 1560
+categories:
+- Photography
+tags:
+- 365Photo
+- Snapshot
+- ร้านพี่เจี๊ยบ
+---
+
+[![113](http://files.armno.in.th/uploads/2011/04/113_thumb.jpg)](http://files.armno.in.th/uploads/2011/04/113.jpg)
+
+วันนี้มาแนว 1:1 บ้าง เพิ่งถ่ายรูปนี้เมื่อตอนเช้านี้เอง (04/23/2011) ไปกินกาแฟที่ร้านพี่เจี๊ยบแล้วเห็นบนเค้าเตอร์มีเจ้าต้นไม้นี้เสียบอยู่ ต้นเล็กๆน่ารักดี จับถ่ายรูปซะเลยถ่ายรูปตอนเช้าประมาณ 9 โมงกว่า แต่ผมตั้ง white balance เป็น shade เพราะอยากได้รูปโทนสีอุ่นๆ ไม่รู้อุ่นไปหน่อยรึเปล่า ส้มซะขนาดนั้น .. ใช้ F กว้างๆเหมือนเดิมครับ (ชมรมคนเปิดกว้าง) .. ส่วนตัวแล้วคิดว่าพื้นที่สีข้าวด้านซ้ายมือ กวนตาไปนิด แต่ก็โอเคแล้วล่ะ ![Smile](http://files.armno.in.th/uploads/2011/04/wlEmoticon-smile1.png)
+
+
+> Image Quality:    Jpeg Fine (8-bit)
+Device:    Nikon D60
+Lens:    35mm F/1.8G
+Focal Length:    35mm
+Aperture:    F/1.8
+Shutter Speed:    1/40s
+Exposure Mode:    Manual
+Exposure Comp.:    -1.3EV
+ISO Sensitivity:    ISO 200
+White Balance:    Shade, 0, 0

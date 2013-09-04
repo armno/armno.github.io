@@ -1,0 +1,23 @@
+---
+comments: true
+date: 2011-07-05 22:05:14
+layout: blog
+slug: 185365-under-the-hood
+title: 185/365 Under the Hood
+wordpress_id: 1760
+categories:
+- Photography
+tags:
+- 365Photo
+- Evening
+- Nature
+- Shade
+---
+
+[![185/365 Under the Hood](http://files.armno.in.th/uploads/2011/07/185-600x401.jpg)](http://files.armno.in.th/uploads/2011/07/185.jpg)
+
+เย็นวันนี้แดดแรง และแสงก็สวยมากครับ หลังเลิกงานแล้วผมออกไปปั่นจักรยานที่เดิม (จริงๆแล้วไปถ่ายรูปซะมากกว่า) .. ต้นไม้ต้นนี้จำชื่อไม่ได้แล้วครับว่าต้นอะไร (มีดอกสีม่วง) .. ผมปั่นจักรยานผ่านไป เห็นแสงช่วงเย็นส่องกระทบต้นไม้ เกิดเป็นมิติ เป็นเงาขึ้นมา (โห้!) จัดไป!
+
+ติด [CPL Filter](http://armno.in.th/content/c-pl/) ไว้ด้วย ใช้ White Balance โทนอุ่นๆหน่อย ยังได้ท้องฟ้าสีเข้มๆอยู่บ้าง
+
+18mm, F/3.5, 1/100s, ISO-100, -0.7EV

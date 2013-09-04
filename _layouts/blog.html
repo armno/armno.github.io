@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% if paginator.page > 1 %}Page {{ paginator.page }}{% else %}{{ page.title }}{% endif %} - {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description }}">
+
+  <!-- open graph meta tags -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}/">
+  <meta property="og:site_name" content="ArmNo.in.th">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="fb:admins" content="1007588651">
+
+  <!-- twitter card meta tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@armno">
+  <meta name="twitter:domain" content="{{ site.url }}">
+  <meta name="twitter:creator" content="@armno">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}/">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+
+  {% if paginator.previous_page %}
+  <link rel="prev" href="{{ site.url }}/page{{paginator.previous_page}}">
+  {% endif %}
+  {% if paginator.next_page %}
+  <link rel="next" href="{{ site.url }}/page{{paginator.next_page}}">
+  {% endif %}
+
+  <!-- Authorship Information for Google -->
+  <link rel="author" href="https://plus.google.com/108097642192056062290">
+
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:300italic|PT+Serif' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+  <header class="site-header blog-header clearfix">
+    <div class="container">
+      <div class="aligncenter">
+        <nav class="clearfix aligncenter">
+          <ul class="main-navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog" class="current">Blog</a></li>
+          </ul>
+        </nav>
+        <!-- <h2 class="manifesto">Writing is the best way to learn</h2> -->
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-date-blog">{{ page.date | date: "%d %B, %Y"}}</div>
+    {{ content }}
+    {% include share.html %}
+    {% include comments.html %}
+    {% include likebox.html %}
+    <footer class="site-footer aligncenter">
+      <p>Made with ❤ by ArmNo.</p>
+    </footer>
+  </div><!-- .container -->
+  <script src="/js/prism.js"></script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2721521-7']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>

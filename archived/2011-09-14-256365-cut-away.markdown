@@ -1,0 +1,19 @@
+---
+comments: true
+date: 2011-09-14 21:24:07
+layout: blog
+slug: 256365-cut-away
+title: 256/365 Cut Away
+wordpress_id: 1833
+categories:
+- Photography
+---
+
+[![256/365 Cut Away by armno](http://farm7.static.flickr.com/6155/6147297986_5d70a42ff2.jpg)](http://www.flickr.com/photos/armno/6147297986/)  
+[256/365 Cut Away](http://www.flickr.com/photos/armno/6147297986/), a photo by [armno](http://www.flickr.com/photos/armno/) on Flickr.
+
+กีต้าร์ที่ผมเล่นเกือบทุกวันเนี่ย เคยเขียนแนะนำทึนึง[ตอนนู้น](http://armno.in.th/2010/09/09/my-guitar-i/) ยี่ห้อ Future ไม่ทราบรุ่น ทรง cut away ก็เลยถ่ายตรงที่มัน cut away แหว่งไปเนี่ยแหละ ดู abstract นิดๆ แต่ก็ยังพอให้เห็นว่าเป็นกีต้าร์  
+
+  
+
+ตั้งกล้องสีจัดเกิน เอาไปลดสีใน Lightroom (ลด Saturation) แล้วก็เพิ่ม Grain ให้หยาบๆ ผลที่ได้ ไม่รู้ว่าหยาบ หรือวุ้นกันแน่ :)

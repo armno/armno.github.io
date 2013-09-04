@@ -1,0 +1,99 @@
+@import 'normalize';
+@import 'common';
+@import 'gridlover';
+
+$bg: #FAFAF6;
+$copy: #555;
+$link: #E46964;
+
+$nunito: 'Nunito', sans-serif;
+$batch: 'batchicons';
+
+@font-face {
+    font-family: 'batchicons';
+    src: url('../fonts/batch-icons-webfont.eot');
+    src: url('../fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/batch-icons-webfont.woff') format('woff'),
+         url('../fonts/batch-icons-webfont.ttf') format('truetype'),
+         url('../fonts/batch-icons-webfont.svg#batchicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    color: $copy;
+    background: $bg;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+        color: lighten($link, 10);
+    }
+
+    &:visited {
+        color: darken($link, 10);
+    }
+}
+
+header,
+footer {
+    background: $link;
+    color: $bg;
+    padding: 20px 0;
+}
+
+footer {
+    margin-top: 40px;
+    font-family: $nunito;
+}
+
+.page-title,
+h3 {
+    font-family: $nunito;
+}
+
+.page-title {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.site-logo-post {
+    font-family: $nunito;
+    font-size: 25px;
+    background-color: $link;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff !important;
+    text-shadow: none;
+
+    &:hover {
+        border-radius: 20px;
+        background-color: lighten($link, 10);
+    }
+
+    &:before {
+        content: '\F163';
+        font-family: $batch;
+        color: #fff;
+    }
+}
+
+.post-date {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #aaa;
+    margin-bottom: 40px;
+    font-size: 0.8em;
+}

@@ -1,0 +1,21 @@
+---
+comments: true
+date: 2011-04-24 22:01:21
+layout: blog
+slug: 365photo-day-114
+title: 365Photo Day 114
+wordpress_id: 1566
+categories:
+- Photography
+tags:
+- 365Photo
+- Black&amp;White
+---
+
+[![114](http://files.armno.in.th/uploads/2011/04/114_thumb.jpg)](http://files.armno.in.th/uploads/2011/04/114.jpg)
+
+ภาพนี้ถ่ายเมื่อตอนเที่ยวดอยอินทนนท์ปีที่แล้วครับ จากทางขึ้นพระธาตุนภเมทนีดลและพระธาตุนภพลภูมิสิริ .. มองสายฝนโปรยๆอยู่ ก็บังเอิญเห็นก้อนหินกลมๆวางอยู่หลายๆก้อน นี่ถ้าเป็นคนยืนเป็นจุดๆแบบนี้ คงพวกบอยแบนด์ล่ะมั้ง
+
+ทำเป็นภาพขาว-ดำด้วย Lightroom ครับ เพิ่ม contrast, vignette กับ grain อีกนิดหน่อย เพื่อความคลาสสิค (คิดไปเอง)
+
+35mm, f/2, 1/500s, iso-100 ครับ .. สั้นๆพอละเนาะ

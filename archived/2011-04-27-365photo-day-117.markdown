@@ -1,0 +1,22 @@
+---
+comments: true
+date: 2011-04-27 23:38:00
+layout: blog
+slug: 365photo-day-117
+title: 365Photo Day 117
+wordpress_id: 1600
+categories:
+- Photography
+tags:
+- 365Photo
+- Nature
+- Simple
+---
+
+[![117](http://files.armno.in.th/uploads/2011/04/117_thumb.jpg)](http://files.armno.in.th/uploads/2011/04/117.jpg)
+
+รูปนี้เพิ่งถ่ายมาเมื่อวันอาทิตย์นี้เอง เคยโพสต์ลงในเฟซบุ๊กไปแล้วด้วย ส่วนข้างบนนี้เอามาทำสีใหม่ เป็น preset นึงใน Lightroom ครับ จำไม่ได้แล้วว่าเลือกอันไหน .. รูปถ่ายหน้าตรงธรรมดาๆ crop มาเป็น 1:1 เน้นความเรียบง่าย ย้อนแสงนิดๆ ฉากหลังส่วนสว่างเยอะไปหน่อยอยู่ดี
+
+ไว้คราวหน้าจะถ่ายมาให้ simple กว่านี้ครับ
+
+35mm, f/1.8, 1/2000s, –0.7EV, iso-200 ![Smile](http://files.armno.in.th/uploads/2011/04/wlEmoticon-smile4.png)

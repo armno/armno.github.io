@@ -1,0 +1,23 @@
+---
+comments: true
+date: 2011-05-18 22:40:19
+layout: blog
+slug: 137365-draft
+title: 137/365 Draft
+wordpress_id: 1675
+categories:
+- Photography
+tags:
+- 365Photo
+- notebook
+- Snapshot
+- Wireframe
+---
+
+[![137](http://files.armno.in.th/uploads/2011/05/137_thumb.jpg)](http://files.armno.in.th/uploads/2011/05/137.jpg)
+
+ในสมุดผมจะมี wireframe ค่อนข้างเยอะครับ วาดๆไปแต่ไม่ค่อยได้ใช้ ไม่มีอะไรทำก็ขีดๆเขียนๆเล่น .. ภาพนี้เป็น wireframe ของ WordPress theme ที่อยากทำ (แต่ไม่ทำ) เพราะว่ายังไม่พอใจกับมันซักเท่าไหร่ครับ
+
+ถ่ายง่ายๆบนโต๊ะทำงาน ด้วยไฟจากโคมไฟส่องมาจากด้านบนครับ หาจุดโฟกัสซักจุด ที่เหลือก็ปล่อยให้จินตนาการได้ทำงานบ้าง .. (ลอกคำเค้ามานะ)
+
+35mm, F/1.8, 1/80s, ISO-100 ครับ

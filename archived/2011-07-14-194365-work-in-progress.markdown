@@ -1,0 +1,23 @@
+---
+comments: true
+date: 2011-07-14 23:30:45
+layout: blog
+slug: 194365-work-in-progress
+title: 194/365 Work in Progress
+wordpress_id: 1770
+categories:
+- Photography
+tags:
+- 365Photo
+- Laptop
+- Snapshot
+- Vaio
+---
+
+[![](http://files.armno.in.th/uploads/2011/07/194-600x401.jpg)](http://files.armno.in.th/uploads/2011/07/194.jpg)
+
+บนโต๊ะคอมในห้องผมครับ รกใช้ได้เลยนะเนี่ย .. เป็นภาพแอบถ่าย (?) ขณะซุ่มทำการใหญ่ นั่นก็คือทำ theme ใหม่อยู่เด้อพี่น้อง คิดว่าคงอีกนานเลยแหละกว่าจะเสร็จเป็นชิ้นเป็นอัน .. จอเล็กนั้นไว้ดูแบบใน iMockups ที่ทำ wireframe ไว้ ส่วนเครื่อง laptop ก็โค้ดๆๆๆ อย่างเดียวเลย
+
+ย้ำอีกครั้งเน้อ "อีก นาน เลย" :)
+
+35mm, F/1.8, 1/20s, ISO-100, -0.3EV

@@ -1,0 +1,6 @@
+title: 'ArmNo, a rookie web developer in Chiang Mai, Thailand'
+permalink: /:year/:month/:day/:title
+paginate: 7
+url: http://armno.in.th
+exclude: ["scss", "archived"]
+markdown: rdiscount
