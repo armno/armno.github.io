@@ -35,7 +35,7 @@ Ubuntu
 
 สำหรับไฟล์ `.vimrc` ของผม ก็หน้าตาประมาณนี้ครับ ส่วนมากก็ลอกมาจากหลายๆ ที่ครับ ส่วนที่สองนั้นเป็น color scheme ชื่อว่า railscasts ซึ่งผมไม่ได้หรอกครับ (อ้าว?) เอาเก็บไว้ด้วยกัน กันหาย ส่วน colorscheme ที่ผมใช้จริงๆ ชื่อว่า [Tomorrow Night](https://github.com/chriskempson/tomorrow-theme) ครับ
 
-[gist 2908559]
+<script src="https://gist.github.com/armno/2908559.js"></script>
 
 ### Plugins
 
@@ -75,6 +75,8 @@ $ git clone http://github.com/mattn/emmet-vim.git</code></pre>
 $ wget --no-check-certificate https://raw.github.com/Townk/vim-autoclose/master/doc/AutoClose.txt -O ~/.vim/doc/AutoClose.txt</code></pre>
 
 #### [neocomplcache](https://github.com/Shougo/neocomplcache.vim)
+
+![neocomplcache](http://farm4.staticflickr.com/3689/9679852438_c0db1272a3_o.png)
 
 เป็น auto complete ของ Vim ที่ผมใช้อยู่ครับ ทำงานได้ค่อนข้างดีเลยทีเดียว การติดตั้งนั้นทำได้โดยดาวน์โหลดไฟล์เป็น .zip จาก Github repo แล้ว extract ไฟล์ทั้งหมดไปที่โฟลเดอร์ `~/.vim` ครับ
 
