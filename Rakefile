@@ -2,8 +2,8 @@
 # rake new_post title="" slug=""
 desc "create new post"
 task :new_post do
-    
-    layout = "milk_blog"
+
+    layout = "blog"
     title = ENV["title"] || "New blog post"
     slug = ENV["slug"] || title.gsub(' ', '-').downcase
 
@@ -17,12 +17,12 @@ task :new_post do
 ---
 layout: LAYOUT
 title: "TITLE"
-description: 
+description:
 published: false
 ---
 
 HTML
-    
+
     # map variables to post's content
     post.gsub!("TITLE", title).gsub!("LAYOUT", layout)
 
