@@ -5,7 +5,7 @@ description: ปกติผมใช้ Sublime Text 3 เป็น code editor
 published: true
 ---
 
-ปกติผมใช้ Sublime Text 3 เป็น code editor ตัวหลัก แต่บางครั้งต้องการแก้ไขไฟล์ง่ายๆ เร็วๆ จาก terminal หรือทำโปรเจ็คเล็กๆ (เขียนโค้ดตาม tutorial ในเว็บต่างๆ) ผมก็จะเลือกใช้ Vim แทน เพราะเร็วกว่าเปิดใน Sublime Text ครับ
+ปกติผมใช้ [Sublime Text 3](http://armno.in.th/2013/07/08/setting-up-sublime-text-3/) เป็น code editor ตัวหลัก แต่บางครั้งต้องการแก้ไขไฟล์ง่ายๆ เร็วๆ จาก terminal หรือทำโปรเจ็คเล็กๆ (เขียนโค้ดตาม tutorial ในเว็บต่างๆ) ผมก็จะเลือกใช้ Vim แทน เพราะเร็วกว่าเปิดใน Sublime Text ครับ
 
 [Vim](http://www.vim.org/) นั้นเป็น editor ที่เราสามารถปรับแต่งได้ค่อนข้างหลากหลายไปตามความชอบและความถนัดของแต่ละคน โพสต์นี้ผมก็ขอแชร์วิธี set up Vim ของผมเองบ้างครับ
 
