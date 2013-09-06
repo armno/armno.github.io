@@ -146,6 +146,7 @@ blockquote > p::before {
     and (max-device-width : 480px) {
       font-size: 52px;
       margin-bottom: 0;
+      margin-top: 13px;
   }
 }
 
@@ -194,6 +195,11 @@ blockquote > p::before {
   background-attachment: fixed;
   font-family: sans-serif;
   text-transform: uppercase;
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      background-size: auto 100%;
+  }
   a {
     // text-shadow: 0 1px 0 #333;
     display: inline-block;
@@ -250,6 +256,12 @@ blockquote > p::before {
     // float: left;
     display: inline;
     margin-right: 26px;
+
+    @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 480px) {
+        margin-right: 0;
+    }
   }
 }
 
