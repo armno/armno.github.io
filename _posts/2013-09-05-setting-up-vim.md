@@ -54,7 +54,7 @@ https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim</code></p
 NERDTree เป็น file explorer ของ Vim ครับ ใช้เป็น sidebar คล้ายๆ ของ Sublime Text ได้ ติดตั้ง plugin ตัวนี้ได้ผ่าน Pathogen ครับ
 
 <pre class="language-bash"><code>$ cd ~/.vim/bundle
-git clone https://github.com/scrooloose/nerdtree.git</code></pre>
+$ git clone https://github.com/scrooloose/nerdtree.git</code></pre>
 
 #### [Emmet](http://mattn.github.io/emmet-vim/)
 
@@ -63,7 +63,7 @@ Emmet (ชื่อเดิมคือ [Zen Coding](http://armno.in.th/2012/11
 <pre class="language-bash"><code>$ cd ~/.vim/bundle
 $ git clone http://github.com/mattn/emmet-vim.git</code></pre>
 
-ปกติคีย์สำหรับใช้งาน Emmet คือ `Ctrl+Y+,` ผมว่าสูตรนี้มันกดติดยากไปหน่อย เซ็ต key mapping ใน `.vimrc` ให้เป็น `,t` แทน (ผม map ตัว `,` แทน `esc`)
+ปกติคีย์สำหรับใช้งาน Emmet คือ `Ctrl+Y+,` ผมว่าสูตรนี้มันกดติดยากไปหน่อย เซ็ต key mapping ใน `.vimrc` ให้เป็น `,t` แทน (ผม map ตัว `,` แทน `<leader>`)
 
 <pre class="language-bash"><code>map &lt;leader&gt;t &lt;C-y&gt;,</code></pre>
 
