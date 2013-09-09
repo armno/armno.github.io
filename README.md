@@ -6,6 +6,20 @@
 $ gem install jekyll rdiscount guard guard-sass
 ```
 
+## Running
+
+```
+$ jekyll serve -w
+```
+
+(another tab)
+
+```
+$ guard
+```
+
+(still working to combine these 2 into 1 command)
+
 ## Todo
 
 - <del>install plugin to create sitemap.xml</del>
