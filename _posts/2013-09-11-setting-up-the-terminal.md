@@ -67,4 +67,6 @@ theme ของ iTerm2 นั้นยังไม่ถูกใจเท่า
 
 รายชื่อ status ทั้งหมดที่สามารถเปลี่ยนสีได้ ดูได้จาก [how to colorize output of git](http://unix.stackexchange.com/questions/44266/how-to-colorize-output-of-git) ได้เลยครับ
 
+ส่วนฟอนต์ที่ใช้คือ [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) ครับม
+
 หมดแล้ว ใครมีของเล่นเอามาแนะนำกันมั่งนะครับ
