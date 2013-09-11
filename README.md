@@ -3,22 +3,16 @@
 ## Installing required gems
 
 ```
-$ gem install jekyll rdiscount guard guard-sass
+$ gem install jekyll rdiscount guard guard-sass guard-jekyll-plus
 ```
 
 ## Running
 
-```
-$ jekyll serve -w
-```
-
-(another tab)
+This project uses [guard-jekyll-plus](https://github.com/imathis/guard-jekyll-plus) to start built-in Jekyll server with Guard. Running `guard` will start Jekyll server with `-w` option, as well as Sass watcher for compiling `.scss` files.
 
 ```
 $ guard
 ```
-
-(still working to combine these 2 into 1 command)
 
 ## Todo
 
