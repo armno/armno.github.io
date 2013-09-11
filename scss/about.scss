@@ -463,11 +463,19 @@ pre {
 }
 code {
   font-family: 'Droid Sans Mono', monospace;
-  background-color: #f5f2f0;
+  background-color: #E5F3FF;
+	padding: 0 3px;
+	margin: 0 3px;
+	border: 1px solid #CEE5EE;
+	border-radius: 3px;
   // text-shadow: 0 1px 0 #fff;
 
   pre & {
     background: transparent;
+		padding: 0;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
   }
 }
 
