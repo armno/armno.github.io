@@ -26,7 +26,7 @@ description: A rookie web developer, interested in front-end development, living
     {% for post in paginator.posts %}
     <li class="post-item">
       <h3 class="post-title-list"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="post-date">
+      <div class="post-date icon-time">
         {{ post.date | date: "%d %B, %Y"}}
       </div>
       <p>{{ post.description }}</p>

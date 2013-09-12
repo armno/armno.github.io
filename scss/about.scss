@@ -153,6 +153,14 @@ blockquote > p::before {
       margin-bottom: 0;
       margin-top: 13px;
   }
+
+  &:before {
+    position: relative;
+    left: -3px;
+    content: '\F13C';
+    font-family: 'batchicons';
+    font-size: 0.9em;
+  }
 }
 
 .manifesto {
@@ -342,6 +350,7 @@ li.ig::before {
   text-transform: uppercase;
   font-weight: normal;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 .post-title-list {
@@ -443,8 +452,12 @@ li.ig::before {
   letter-spacing: 2px;
   color: #ccc;
   margin-bottom: 52px;
-  font-size: 1em;
+  font-size: 14px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  &.icon-time:before {
+    margin-right: 5px;
+  }
 }
 
 .fb-like-box {
@@ -506,4 +519,10 @@ p + pre {
 .post-item {
 	padding-bottom: 18px;
 	border-bottom: 1px solid #eee;
+}
+
+.icon-time:before {
+  content: '\F090';
+  position: relative;
+  font-family: 'batchicons';
 }

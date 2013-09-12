@@ -24,14 +24,14 @@ description: My name is Armno. I am a web developer living in beautiful Chiang M
   <ol class="blog-list">
     {% for post in site.posts %}
     <li class="post-item">
-        <h3 class="pure-u-3-5 post-title-list">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
+      <h3 class="pure-u-3-5 post-title-list">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
 
-        <div class="post-date">
-            {{ post.date | date: "%d %B, %Y"}}
-          </div>
-          <p>{{ post.description }}</p>
+      <div class="post-date icon-time">
+        {{ post.date | date: "%d %B, %Y"}}
+      </div>
+      <p>{{ post.description }}</p>
     </li>
     {% endfor %}
   </ol>
