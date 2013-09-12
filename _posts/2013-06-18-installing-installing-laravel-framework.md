@@ -12,7 +12,7 @@ command ที่ใช้สร้างโปรเจ็คจาก <code>co
 
 <pre><code class="language-bash">$ composer create-project laravel/laravel lava</code></pre>
 
-ในที่นี้ผมสร้างโปรเจ็คใหม่ชื่อ <code>lava</code> ใน <code>~/Sites/</code> ซึ่งเป็น root directory ของเครื่องผมนะครับ
+ในที่นี้ผมสร้างโปรเจ็คใหม่ชื่อ <code>lava</code> ใน <code>~/Sites/</code> ซึ่งเป็น webroot directory ของเครื่องผมนะครับ
 
 รอสักพักให้ <code>composer</code> download Laravel พร้อมทั้ง dependency ทั้งหลาย
 
