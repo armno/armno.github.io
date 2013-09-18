@@ -40,6 +40,8 @@ indent_size = 4
 indent_style = tab
 indent_size = 2</code></pre>
 
+ส่วนในไฟล์ `.editorconfig` นั้นสามารถตั้งค่าอะไรได้บ้าง ดูได้จาก [EditorConfig Properties](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties) ได้เลยจ้า
+
 ### ติดตั้ง plugin
 
 ไฟล์ `.editorconfig` นั้นทำหน้าที่แค่เก็บค่า config ของ coding style ไว้ แต่ไม่ได้เข้าไปตั้งค่าให้แต่ละ editor/IDE โดยตรง ซึ่งเราก็ต้องลง plugin ให้กับ editor/IDE ของเราอ่าน config จากไฟล์นี้ด้วยครับ ถึง ณ ตอนนี้ก็มีเกินกว่า 10 ตัวแล้วที่มี plugin รองรับ ไม่ว่าจะ Sublime Text, Vim, Textmate, Emacs ก็มาครบๆ ครับ
