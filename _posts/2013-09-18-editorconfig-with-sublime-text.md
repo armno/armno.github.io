@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "EditorConfig with Sublime Text"
+title: "ใช้งาน EditorConfig"
 description: EditorConfig นั้นเป็นไฟล์ config ที่ทำให้ editor/IDE ต่างๆ นั้นใช้ coding style แบบเดียวกันได้ (เช่นการใช้ tab หรือ space) ถ้าทั้งทีมใช้ coding style แบบเดียวกันก็ช่วยให้ code เป็นระเบียบดีและลด conflict ได้ครับ
 ---
 
