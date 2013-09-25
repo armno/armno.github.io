@@ -82,7 +82,7 @@ a:hover {
 }
 
 a:visited {
-  color: #999;
+  color: #454545;
 }
 
 blockquote > p {
@@ -135,12 +135,7 @@ blockquote > p::before {
   }
 
 /* custom styles */
-.hero {
-    // letter-spacing: 0;
-  }
 .my-name {
-	color: white;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 	letter-spacing: 10px;
 	font-size: 45px;
   margin: 52px 0 26px;
@@ -165,9 +160,7 @@ blockquote > p::before {
 
 .manifesto {
   font-family: 'PT Serif', serif;
-  // font-style: italic;
   font-size: 26px;
-  // margin-bottom: 78px;
   margin: 0 0 78px;
   color: #222;
   font-weight: normal;
@@ -185,27 +178,7 @@ blockquote > p::before {
   margin: 6px;
 }
 
-// .columns {
-//   width: 480px;
-//   margin-right: 20px;
-// }
-
-// .columns.right {
-//   margin-right: 0;
-//   margin-left: 20px;
-// }
-
-// .columns h3 {
-//   margin-top: 0;
-//   margin-bottom: 1em;
-//   font-family: 'Aleo Bold';
-// }
-
 .site-header {
-  // padding: 26px 0;
-  background: url(/img/header-bg.jpg) left top no-repeat;
-  background-size: 100% auto;
-  background-attachment: fixed;
   font-family: sans-serif;
   text-transform: uppercase;
   @media only screen
@@ -213,33 +186,9 @@ blockquote > p::before {
     and (max-device-width : 480px) {
       background-size: auto 100%;
   }
-  a {
-    // text-shadow: 0 1px 0 #333;
-    display: inline-block;
-    color: white;
-    background-color: rgba(0,0,0,0.1);
-    border-bottom: 0;
-    padding: 0.5em 1em;
-    -webkit-transition: 0.3s background-color ease-out;
-       -moz-transition: 0.3s background-color ease-out;
-        -ms-transition: 0.3s background-color ease-out;
-         -o-transition: 0.3s background-color ease-out;
-            transition: 0.3s background-color ease-out;
-
-    &:visited {
-      color: #f2f2f2;
-    }
-
-    &.current {
-      background-color: rgba(0,0,0,0.3);
-    }
-
-    &:hover {
-      background-color: rgba(0,0,0,0.5);
-    }
-  }
 
   &.blog-header {
+    padding-top: 26px;
     opacity: 0.4;
     -webkit-transition: 0.3s opacity ease-out;
        -moz-transition: 0.3s opacity ease-out;
@@ -252,19 +201,10 @@ blockquote > p::before {
   }
 }
 
-// .main-nav a {
-//   /*display: inline-block;*/
-//   margin-left: 30px;
-// }
-
-// .main-nav .current {
-//   font-weight: bold;
-// }
-
 .main-navigation {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 26px;
   li {
     // float: left;
     display: inline;
@@ -274,6 +214,18 @@ blockquote > p::before {
       and (min-device-width : 320px)
       and (max-device-width : 480px) {
         margin-right: 0;
+    }
+  }
+  a {
+    display: inline-block;
+    border-bottom: 0;
+
+    &.current {
+      border-bottom: 4px solid;
+    }
+
+    &:hover {
+      border-bottom: 4px solid #454545;
     }
   }
 }
@@ -345,7 +297,6 @@ li.ig::before {
   margin-top: 13px;
   margin-bottom: 13px;
   line-height: 13px;
-  // margin-right: 20px;
   color: #dedede;
   text-transform: uppercase;
   font-weight: normal;

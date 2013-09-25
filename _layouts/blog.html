@@ -37,20 +37,7 @@
   <link rel="stylesheet" href="/css/about.css">
 </head>
 <body>
-  <header class="site-header blog-header clearfix">
-    <div class="container">
-      <div class="aligncenter">
-        <nav class="clearfix aligncenter">
-          <ul class="main-navigation">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blog" class="current">Blog</a></li>
-          </ul>
-        </nav>
-        <!-- <h2 class="manifesto">Writing is the best way to learn</h2> -->
-      </div>
-    </div>
-  </header>
+  {% include header.html current="blog" %}
   <div class="container">
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-date-blog icon-time">{{ page.date | date: "%d %B, %Y"}}</div>

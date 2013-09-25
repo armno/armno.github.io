@@ -4,23 +4,9 @@ title: Home
 description: A rookie web developer, interested in front-end development, living and working in Chiang Mai, Thailand. I am @armno on Twitter and Github.
 ---
 
-<header class="site-header clearfix">
-  <div class="container">
-    <div class="aligncenter">
-      <h1 class="my-name">ArmNo</h1>
-      <nav class="clearfix aligncenter">
-        <ul class="main-navigation">
-          <li><a href="/" class="current">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+{% include header.html current="home" %}
 
 <div class="container content">
-  <h3 class="lastest-post-heading">Latest blog posts</h3>
 
   <ol class="blog-list">
     {% for post in paginator.posts %}
