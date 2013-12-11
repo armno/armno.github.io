@@ -1,28 +1,8 @@
 <section class="sharing">
 
-  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="armno" data-related="armno">Tweet</a>
-  <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+  <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&via=armno&text={{ page.title }}" target="_blank" class="btn-share btn-share-twitter">Share on Twitter</a>
 
-  <g:plusone size="medium"></g:plusone>
+  <a href="http://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" class="btn-share btn-share-google-plus">Share on Google+</a>
 
-  <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-send="false" data-width="70" data-show-faces="false"></div>
-
-  <script>
-    (function() {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script"," -wjs");</script>
-
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=127330613993014";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" class="btn-share btn-share-facebook">Share on Facebook</a>
 </section>
