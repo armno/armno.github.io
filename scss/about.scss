@@ -1,6 +1,17 @@
 @import "prism";
 @import "syntax";
 
+@font-face {
+    font-family: 'pt_serifregular';
+    src: url('../fonts/PTF55F-webfont.eot');
+    src: url('../fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTF55F-webfont.woff') format('woff'),
+         url('../fonts/PTF55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTF55F-webfont.svg#pt_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* genereated from GridLover.net */
 @font-face {
   font-family: 'Aleo Bold';
