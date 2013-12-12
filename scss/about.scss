@@ -236,11 +236,20 @@ blockquote > p::before {
 
 .site-footer {
   margin-top: 110px;
-  color: #ccc;
+  color: rgba(255,255,255,0.7);
+  background: url(/img/map-bg.jpg) left top no-repeat;
+  background-size: cover;
 
-  & > p {
+  & p {
     padding: 20px;
+    margin-bottom: 0;
   }
+}
+
+.site-footer-inner {
+  padding-top: 200px;
+  padding-bottom: 40px;
+  background: rgba(0,0,0,0.5);
 }
 
 .logo {
