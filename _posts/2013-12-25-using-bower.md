@@ -2,7 +2,7 @@
 layout: blog
 title: "ใช้งาน Bower"
 description: Bower เป็น client-side package manager จากทาง Twitter ใช้สำหรับติดตั้ง / ค้นหา / อัพเดท 3rd-party package ได้สะดวกมาก ทำได้ผ่าน Terminal ครับ
-published: false
+published: true
 ---
 
 ปกติแล้วเวลาเราจะติดตั้ง package หรือ plugin สักตัว สิ่งที่ต้องทำก็คือ (สมมุติ jQuery)
@@ -56,20 +56,43 @@ published: false
 
 ![bower search](http://farm6.staticflickr.com/5478/11558436455_4e0ae6b582_o.png)
 
-search มีประโยชน์เวลาติดตั้ง package ครับ เนื่องจากเราต้องใส่ชื่อ package ให้ตรงกับชื่อ package ของ Bower (ในรูปบนคือตัวสีฟ้า) ไม่งั้น Bower จะหา package ไม่เจอ และติดตั้งไม่ได้ครับ
+search มีประโยชน์เวลาติดตั้ง package ครับ เนื่องจากเราต้องใส่ชื่อ package ให้ตรงกับชื่อ package ของ Bower (ในรูปบนคือตัวสีฟ้า) ไม่งั้น Bower จะหา package ไม่เจอ
 
 ### ดูรายชื่อ package ที่ติดตั้งไว้แล้ว
 
 <pre class="language-bash"><code>$ bower list</code></pre>
 
-command นี้จะแสดงรายชื่อ package กับเวอร์ชั่นที่ติดตั้งไว้แล้ว และก็มีบอกด้วยว่า package ไหนมีเวอร์ชั่นใหม่ออกมาหรือยัง
+command นี้จะแสดงรายชื่อ package กับเวอร์ชั่นที่ติดตั้งไว้แล้ว และก็มีบอกด้วยว่า package ไหนมีเวอร์ชั่นใหม่ออกมาหรือยัง ส่วนที่ซ้อนกันเป็นขั้นๆ ก็บอกถึงลำดับ dependency ของแต่ละ package ครับ
 
 ![bower list](http://farm6.staticflickr.com/5498/11568157035_1494095bc2_o.png)
 
 ### `bower.json` / `.bowerrc`
 
-### `bower init`
+ไฟล์สำคัญสำหรับ Bower มีอยู่สองไฟล์คือ `.bowerrc` (dotfile) เป็นไฟล์ที่เก็บ config ของตัว Bower เอง เช่นหากต้องการให้ Bower ติดตั้ง package ใน directory อื่นที่ไม่ใช่ `bower_components` ก็ตั้งค่าได้ในไฟล์ `.bowerrc` นี้
 
-### sublime-bower
+<pre class="language-javascript"><code>{
+  "directory": "lib"
+}</code></pre>
 
-#### resources
+ส่วนอีกไฟล์คือ `bower.json` สำหรับไว้เก็บข้อมูลรายละเอียด package ที่เราทำอยู่ ในกรณีที่เราอยากให้ package ของเรา ทำงานร่วมกับ Bower ได้ เช่น ชื่อ, เวอร์ชั่น และที่สำคัญ dependency ที่จำเป็นต้องใช้ (ไฟล์นี้ก็เหมือนไฟล์ `package.json` ของ Node นั่นแหละครับ)
+
+<pre class="language-javascript"><code>{
+  "name": "bowertest",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.0",
+    "bootstrap": "~3.0"
+  }
+}</code></pre>
+
+ตัวอย่างไฟล์ `bower.json` ข้างบนก็จะบอกว่า package ของเราต้องมี jQuery 2.0 ขึ้นไป และ Bootstrap 3.0 ขึ้นไป เมื่อใช้ command `bower install` Bower ก็จะจัดการ dependency พวกนี้ให้ครับ
+
+นอกจากนี้ยังมี command `bower init` สำหรับช่วยสร้างไฟล์ `bower.json` แบบ interactive ด้วย เราแค่ใส่ข้อมูลลงไปไม่กี่อย่าง Bower ก็จะช่วยสร้างไฟล์ `bower.json` ให้
+
+ช่วงแรกที่ใช้งาน Bower ผมเองก็ยังมึนๆ เหมือนกัน ต้องลองใช้บ่อยๆ พอจับทางได้ก็น่าจะชอบกันนะครับ สามารถลดขั้นตอนการทำงานซ้ำๆ ลงไปได้พอสมควร
+
+#### เพิ่มเติม
+
+- [Introduction to Bower](https://egghead.io/lessons/bower-introduction-and-setup) (video) แนะนำวิธีใช้ Bower สั้นๆ
+- [Package Managers: An Introductory Guide For The Uninitiated Front-End Developer](http://tech.pro/tutorial/1190/package-managers-an-introductory-guide-for-the-uninitiated-front-end-developer) รวมถึง npm ด้วย
+- [sublime-bower](https://github.com/benschwarz/sublime-bower) ใช้งาน Bower ผ่าน Sublime Text ได้เลย (ผมไม่ได้ใช้เองนะครับ แต่มีคนแนะนำมา)
