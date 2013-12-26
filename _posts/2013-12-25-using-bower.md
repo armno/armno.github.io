@@ -38,9 +38,39 @@ published: false
 
 ในไฟล์ html เราก็โหลดไฟล์เข้ามาตามปกติ
 
-### `bower search`
+![include bower packages](http://farm3.staticflickr.com/2829/11558637724_eb298ff7b3_o.png)
 
-### `bower list` / `bower update`
+ปกติแล้ว `bower install` จะติดตั้ง package เวอร์ชั่นล่าสุดให้เราเสมอ แต่เราก็สามารถระบุเวอร์ชั่นของ package ที่จะติดตั้งได้ โดยเพิ่ม `#<version>` ต่อท้ายเข้าไปหลังชื่อ package ครับ (ของผมต้องใส่ `"` ครอบเพราะเวลาพิมพ์เครื่องหมาย `#` แล้ว zsh มันบ่นครับ)
+
+<pre class="language-bash"><code>$ bower install "jquery#1.9"</code></pre>
+
+### ค้นหา package
+
+ทำได้ผ่าน command `bower search <package name>` ครับ เช่นผมต้องการหา normalize ก็
+
+<pre class="language-bash"><code>$ bower search normalize</code></pre>
+
+สามารถใช้ `grep` ในการฟิลเตอร์ผลการค้นหาได้ครับ เช่น
+
+<pre class="language-bash"><code>$ bower search normalize | grep bootstrap</code></pre>
+
+![bower search](http://farm6.staticflickr.com/5478/11558436455_4e0ae6b582_o.png)
+
+search มีประโยชน์เวลาติดตั้ง package ครับ เนื่องจากเราต้องใส่ชื่อ package ให้ตรงกับชื่อ package ของ Bower (ในรูปบนคือตัวสีฟ้า) ไม่งั้น Bower จะหา package ไม่เจอ และติดตั้งไม่ได้ครับ
+
+### ดูรายชื่อ package ที่ติดตั้งไว้แล้ว
+
+<pre class="language-bash"><code>$ bower list</code></pre>
+
+command นี้จะแสดงรายชื่อ package กับเวอร์ชั่นที่ติดตั้งไว้แล้ว และก็มีบอกด้วยว่า package ไหนมีเวอร์ชั่นใหม่ออกมาหรือยัง
+
+[pic - bower list command]
+
+หากต้องการอัพเดท package ก็ใช้ command `bower update` package ที่อัพเดทก็จะเป็นเวอร์ชั่นล่าสุดครับ
+
+<pre class="language-bash"><code>$ bower update jquery</code></pre>
+
+[pic - bower update command]
 
 ### `bower init`
 
