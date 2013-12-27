@@ -3,6 +3,7 @@ layout: blog
 title: "ใช้งาน Bower"
 description: Bower เป็น client-side package manager จากทาง Twitter ใช้สำหรับติดตั้ง / ค้นหา / อัพเดท 3rd-party package ได้สะดวกมาก ทำได้ผ่าน Terminal ครับ
 published: true
+thumbnail: http://farm4.staticflickr.com/3796/11576530464_6dd5174254_o.png
 ---
 
 ปกติแล้วเวลาเราจะติดตั้ง package หรือ plugin สักตัว สิ่งที่ต้องทำก็คือ (สมมุติ jQuery)
@@ -13,6 +14,8 @@ published: true
 4. เพิ่ม path ในไฟล์ html
 
 หรือสะดวกขึ้นมาหน่อยก็จะใช้ plugin ของ editor อย่าง [Nettuts+ Fetch](http://armno.in.th/2012/09/09/sublime-text-2-nettuts-fetch/) แต่ก็ยังไม่สะดวกสำหรับการหา package ใหม่ หรือการอัพเกรดเวอร์ชั่นของ package เดิม Bower ช่วยแก้ปัญหาเหล่านี้ได้ครับ
+
+![bower logo](http://farm4.staticflickr.com/3796/11576530464_6dd5174254_o.png)
 
 [Bower](http://bower.io) เป็น client-side package manager จากทาง Twitter ใช้สำหรับติดตั้ง / ค้นหา / อัพเดท 3rd-party package ได้สะดวกมากขึ้น ทำได้ผ่าน Terminal ที่เดียวเลย
 
