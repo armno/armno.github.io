@@ -37,7 +37,14 @@ theme ของ iTerm2 นั้นยังไม่ถูกใจเท่า
 
 ### 3. Zsh & Oh-my-Zsh!
 
-ปกติ Mac หรือ Linux ก็จะมี `bash` เป็น default [shell](http://en.wikipedia.org/wiki/Unix_shell) ติดมาให้ ผมก็ใช้ตามที่มีเรื่อยมา จนวันนึงผมเห็นฝรั่งสักคนนี่แหละ เขาใช้ [Zsh](http://www.zsh.org/) (z shell) ผมก็เลยลองเล่นดู .. จนถึงทุกวันนี้ก็ไม่กลับไปใช้ bash อีกเลย
+ปกติ Mac หรือ Linux ก็จะมี `bash` เป็น default [shell](http://en.wikipedia.org/wiki/Unix_shell) ติดมาให้ ผมก็ใช้ตามที่มีเรื่อยมา จนวันนึงผมเห็นฝรั่งสักคนนี่แหละ เขาใช้ [Zsh](http://www.zsh.org/) (z shell) ผมก็เลยลองเล่นดู .. จนถึงทุกวันนี้ก็ไม่กลับไปใช้ bash อีกเลย ไม่รู้เหมือนกันว่าทำไม
+
+#### วิธีติดตั้ง zsh (OSX)
+
+ทำผ่าน Homebrew น่าจะง่ายที่สุด หลังจากติดตั้งแล้ว ก็ต้องเซ็ต default shell เป็น zsh ด้วยครับ
+
+<pre class="language-bash"><code>$ brew install zsh
+$ chsh -s /usr/local/bin/zsh</code></pre>
 
 ส่วน Oh-my-zsh นั้น เป็น open source project ที่เพิ่มความสามารถให้กับ zsh ได้อีกมากมาย ทั้ง theme ทั้ง plugin
 
@@ -53,7 +60,11 @@ theme ของ iTerm2 นั้นยังไม่ถูกใจเท่า
 
 ![pure.zsh execution time](http://farm8.staticflickr.com/7301/9719528696_f847205d08_o.png)
 
-วีธีตัดตั้งก็คือ clone [Pure Github repo](https://github.com/sindresorhus/pure) มาไว้ตรงไหนก็ได้ แล้วก็เพิ่ม path ของไฟล์ `pure.zsh` เข้าไปในไฟล์ `~/.zshrc` (ไฟล์เก็บค่า config ของ zsh)
+<del>วีธีติดตั้งก็คือ clone [Pure Github repo](https://github.com/sindresorhus/pure) มาไว้ตรงไหนก็ได้ แล้วก็เพิ่ม path ของไฟล์ `pure.zsh` เข้าไปในไฟล์ `~/.zshrc` (ไฟล์เก็บค่า config ของ zsh)</del>
+
+<em>update 2014/01/03</em> &ndash; ตอนนี้ theme Pure นั้นถูกรวมเข้าไปอยู่ใน repository ของ oh-my-zsh แล้ว (อยู่ใน `~/.oh-my-zsh/themes/pure.zsh-theme`) ซึ่งทำให้สามารถใช้ theme Pure ได้การจากการตั้งค่าในไฟล์ `.zshrc` ได้เลยครับ
+
+![activate pure theme from .zshrc file](http://farm8.staticflickr.com/7457/11728257223_fcf9bac89f_o.png)
 
 #### Bonus
 
