@@ -47,6 +47,12 @@ thumbnail: http://farm4.staticflickr.com/3796/11576530464_6dd5174254_o.png
 
 <pre class="language-bash"><code>$ bower install "jquery#1.9"</code></pre>
 
+นอกจากเลขเวอร์ชั่นแล้ว ยังสามารถบอก branch หรือ commit ที่จะเลือกใช้ได้ด้วย เช่น
+
+<pre class="language-bash"><code>$ bower install "angular#unstable"</code></pre>
+
+<pre class="language-bash"><code>$ bower install "angular#68b09bbf2b439a567d80798c4f74e715d2a5833f"></code></pre>
+
 ### ค้นหา package
 
 ทำได้ผ่าน command `bower search <package name>` ครับ เช่นผมต้องการหา normalize ก็
