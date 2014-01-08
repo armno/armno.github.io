@@ -52,7 +52,7 @@ $ chsh -s /usr/local/bin/zsh</code></pre>
 
 ![zsh](http://farm8.staticflickr.com/7408/9719380336_b6b4bd6049_c.jpg)
 
-วิธีการติดตั้ง zsh กับ oh-my-zsh ดูได้จาก [Github repo](https://github.com/robbyrussell/oh-my-zsh) เลยครับผม
+วิธีการติดตั้ง oh-my-zsh ดูได้จาก [Github repo](https://github.com/robbyrussell/oh-my-zsh) เลยครับผม
 
 ### 4. Pure
 
@@ -66,18 +66,46 @@ $ chsh -s /usr/local/bin/zsh</code></pre>
 
 ![activate pure theme from .zshrc file](http://farm8.staticflickr.com/7457/11728257223_fcf9bac89f_o.png)
 
+### z
+
+`cd` เป็น unix command ที่ผมใช้บ่อยมากๆ [z](https://github.com/rupa/z) นั้นทำให้การ `cd` สะดวกและสนุกขึ้นเยอะเลยครับ โดยที่ z จะจำ directory ที่เรา `cd` ไปบ่อยๆ และทำให้ "กระโดด" ไปหามันได้ง่ายขึ้น
+
+ปกติจะ cd เข้ามาใน repo ของบล็อกนี้ ก็ต้อง
+
+<pre class="language-bash"><code>$ cd ~/Sites/armno.github.io</code></pre>
+
+หากใช้ z สามารถพิมพ์แค่บางส่วนของชื่อได้ เช่น
+
+<pre class="language-bash"><code>$ z armno # กระโดดไป ~/Sites/armno.github.io
+$ z des # กระโดดไป ~/Desktop</code></pre>
+
+z จะเรียง ranking ของแต่ละ directory ที่เราเคย `cd` เข้าไปตาม "frecency" (น่าจะเป็น frequency + recent) ถ้าไปที่ไหนบ่อย ranking ก็จะเยอะ เวลาต้องเลือก (ในกรณีที่ keyword นั้นตรงกับหลายๆ directory) z ก็จะเลือกตาม ranking ครับ
+
+#### ติดตั้ง z
+
+clone [https://github.com/rupa/z](https://github.com/rupa/z) มาไว้ที่ไหนก็ได้ในเครื่อง แล้วก็เพิ่ม z เข้าไปใน `.zshrc` ครับ เช่น
+
+<pre class="language-bash"><code># ~/.zshrc
+. /User/armno/code/z/z.sh</code></pre>
+
+ในตอนแรก z จะยังไม่รู้จัก directory ที่เราไปบ่อยๆ เราก็ `cd` ธรรมดาไปก่อนครับ z จะค่อยๆ จดจำและคำนวณ ranking ไปเรื่อยๆ
+
+![z](http://farm8.staticflickr.com/7433/11832355484_d8d46e42a4.jpg)
+
+สนุกตรงที่ สอนให้มันจำก่อน แล้วหลังจากนั้นก็ให้มันทำงานให้เรา จนพบว่า z นั้นเก่งกว่า cd ของเราเยอะเลยครับ
+
 #### Bonus
 
 ทำให้ unstaged file ของคำสั่ง `git status` เป็นสีเหลือง จะได้มาครบทั้ง เขียว เหลือง แดง (ความจริงให้มันดูไม่เหมือนกับ staged file แค่นั้นเอง)
 
 ![multicolor git](http://farm6.staticflickr.com/5472/9716342435_e5441038d4_c.jpg)
 
-ตั้งค่าโดยการรัน command นี้ใน terminal ครับ (เปลี่ยนเป็นสือื่นก็ได้นะ)
+ตั้งค่าโดยการรัน command นี้ใน terminal ครับ (เปลี่ยนเป็นสีอื่นก็ได้นะ)
 
 <pre class="language-bash"><code>$ git config --global color.status.changed "yellow"</code></pre>
 
 รายชื่อ status ทั้งหมดที่สามารถเปลี่ยนสีได้ ดูได้จาก [how to colorize output of git](http://unix.stackexchange.com/questions/44266/how-to-colorize-output-of-git) ได้เลยครับ
 
-ส่วนฟอนต์ที่ใช้คือ [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) ครับม
+ส่วนฟอนต์ที่ใช้คือ [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) ครับผม
 
 หมดแล้ว ใครมีของเล่นเอามาแนะนำกันมั่งนะครับ
