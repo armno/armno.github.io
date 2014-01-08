@@ -1,5 +1,5 @@
 <script>
-    var _gaq = _gaq || [];
+  var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-2721521-7']);
   _gaq.push(['_trackPageview']);
   _gaq.push(['_trackPageLoadTime']);
@@ -9,4 +9,24 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  // just for fun
+  if (window.console) {
+    var welcomeText = ['$$\\   $$\\           $$\\ $$\\                                                         $$\\',
+'$$ |  $$ |          $$ |$$ |                                                        $$ |',
+'$$ |  $$ | $$$$$$\\  $$ |$$ | $$$$$$\\            $$$$$$$\\   $$$$$$\\   $$$$$$\\   $$$$$$$ | $$$$$$$\\',
+'$$$$$$$$ |$$  __$$\\ $$ |$$ |$$  __$$\\           $$  __$$\\ $$  __$$\\ $$  __$$\\ $$  __$$ |$$  _____|',
+'$$  __$$ |$$$$$$$$ |$$ |$$ |$$ /  $$ |          $$ |  $$ |$$$$$$$$ |$$ |  \\__|$$ /  $$ |\\$$$$$$\\',
+'$$ |  $$ |$$   ____|$$ |$$ |$$ |  $$ |          $$ |  $$ |$$   ____|$$ |      $$ |  $$ | \\____$$\\',
+'$$ |  $$ |\\$$$$$$$\\ $$ |$$ |\\$$$$$$  |$$\\       $$ |  $$ |\\$$$$$$$\\ $$ |      \\$$$$$$$ |$$$$$$$  |',
+'\\__|  \\__| \\_______|\\__|\\__| \\______/ $  |      \\__|  \\__| \\_______|\\__|       \\_______|\\_______/',
+'                                      \\_/',
+'',
+'hi, this is armno. welcome to my blog, website, or whatever you think it is.',
+'found a bug? or just hacking around? feel free to say hi at https://github.com/armno/armno.github.io/issues',
+'',
+'i\'m @armno on twitter and github (and maybe anywhere else).'];
+
+    console.log(welcomeText.join('\n'));
+  }
 </script>
