@@ -9,7 +9,7 @@ layout: blog
 
 จริงๆ แล้ว OSX มี Apache กับ PHP ติดมาด้วยอยู่แล้ว แต่สำหรับ PHP นั้นยังเป็นเวอร์ชั่นเก่าอยู่ ซึ่งเราสามารถลง PHP เวอร์ชั่นล่าสุดได้จาก Homebrew ครับ
 
-[Homebrew](http://mxcl.github.io/homebrew/) คือพระเอกของเราครับ ช่วยให้เราลง package สารพัดได้ใน OSX ได้อย่างไม่ยากเย็นนัก (สำหรับผมที่มาจากโลก Ubuntu Homebrew คือเปรียบเสมือนคำสั่ง `apt-get` นั่นเอง)
+[Homebrew](http://brew.sh) คือพระเอกของเราครับ ช่วยให้เราลง package สารพัดได้ใน OSX ได้อย่างไม่ยากเย็นนัก (สำหรับผมที่มาจากโลก Ubuntu Homebrew คือเปรียบเสมือนคำสั่ง `apt-get` นั่นเอง)
 
 - โพสต์นี้ทดสอบบน OSX 10.8+ นะครับ
 - เหมาะกับคนที่ชอบทำอะไรใน terminal 
@@ -18,7 +18,7 @@ layout: blog
 
 รัน command ใน terminal
 
-<pre><code class="language-bash">$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</code></pre>
+<pre><code class="language-bash">$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</code></pre>
 
 ### ใช้งาน Apache
 
