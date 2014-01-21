@@ -1,4 +1,5 @@
-title: 'ArmNo, a rookie web developer in Chiang Mai, Thailand'
+title: 'ArmNo'
+tagline: 'a web nerd. cnx.'
 permalink: /:year/:month/:day/:title
 paginate: 7
 url: http://armno.in.th
