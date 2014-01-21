@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-11-07 22:52:48
-layout: blog
+layout: post
 slug: chae-son-lampang
 title: เที่ยวอุทยานแห่งชาติแจ้ซ้อน ลำปาง
 wordpress_id: 1901

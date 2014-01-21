@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "ซื้อของจาก Apple Store #3: MacBook Air 2013"
 description: ครั้งนี้เป็นครั้งที่ 3 ของผมกับการซื้อของจาก Apple Store ของที่สั่งคราวนี้เป็น MacBook Air 2013 จาก Education Store ทำให้ได้ราคานักศึกษาซึ่งถูกลงมาหน่อย คราวนี้ DHL มาส่งถึงบ้านครับ
 category: Life

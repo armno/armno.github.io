@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: จาก WordPress สู่ Jekyll
 categories:
 - Web Development

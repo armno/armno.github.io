@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-04-19 21:50:26
-layout: blog
+layout: post
 slug: wp-enqueue-script-wordpress
 title: การใช้ฟังก์ชั่น wp_enqueue_script แทรก JavaScript ใน WordPress
 categories:

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-07-14 16:42:29
-layout: blog
+layout: post
 slug: free-astronomy-wallpapers
 title: ดาวน์โหลด wallpaper ภาพอวกาศและดวงดาวฟรี
 wordpress_id: 69

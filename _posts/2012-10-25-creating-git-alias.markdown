@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-10-25 14:29:26
-layout: blog
+layout: post
 slug: creating-git-alias
 title: สร้าง Git Alias สำหรับคำสั่งที่ใช้งานบ่อย
 categories:

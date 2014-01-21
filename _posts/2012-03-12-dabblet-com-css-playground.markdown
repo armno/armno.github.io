@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-03-12 23:05:39
-layout: blog
+layout: post
 slug: dabblet-com-css-playground
 title: ทดลองเล่น CSS บน dabblet.com
 categories:

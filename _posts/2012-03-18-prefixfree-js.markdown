@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-03-18 18:00:50
-layout: blog
+layout: post
 slug: prefixfree-js
 title: จัดการ CSS3 Vendor Prefixes ด้วย prefixfree.js
 categories:

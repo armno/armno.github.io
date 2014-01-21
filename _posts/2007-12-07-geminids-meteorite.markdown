@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-07 17:09:16
-layout: blog
+layout: post
 slug: geminids-meteorite
 title: ฝนดาวตกเจมินิดส์ (อีกซักที)
 wordpress_id: 20
@@ -25,13 +25,13 @@ tags:
 
 
 
-	
+
   * [วิดิโอจากหอดูดาวในประเทศอิสราเอล](http://www.bareket-astro.com/live/meteor/gemenids.html)
 
-	
+
   * [แอนิเมชั่นจำลองในดาวตกเจมินิดส์](http://www.shadowandsubstance.com/)
 
-	
+
   * [ข้อมูลฝนดาวตกเจมินิดส์จาก NASA](http://science.nasa.gov/headlines/y2007/03dec_asteroidshower.htm)
 
 

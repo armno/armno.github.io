@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-20 20:54:59
-layout: blog
+layout: post
 slug: review-stellarium-astronomy-app
 title: รีวิว Stellarium, โปรแกรมดูดาว
 wordpress_id: 25

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-09-29 23:38:43
-layout: blog
+layout: post
 slug: google-devfest-chiang-mai-2011-part-2
 title: บันทึก Google DevFest Chiang Mai 2011 ตอนที่ 2
 wordpress_id: 1856

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-01-02 22:59:00
-layout: blog
+layout: post
 slug: khun-change-kean-2011
 title: ขุนช่างเคี่ยน ต้นปี 2554
 wordpress_id: 1462

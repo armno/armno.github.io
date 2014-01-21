@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-09-26 23:32:08
-layout: blog
+layout: post
 slug: google-devfest-chiang-mai-2011-2
 title: บันทึก Google DevFest Chiang Mai 2011 ตอนที่ 1
 categories:

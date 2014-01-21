@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-10-20 00:05:30
-layout: blog
+layout: post
 slug: zen-coding-netbeans
 title: เขียน HTML ให้เร็วปรี๊ดด้วย Zen Coding สำหรับ NetBeans IDE
 wordpress_id: 1397
@@ -17,13 +17,13 @@ tags:
 
 
 
-	
+
   * [Zen Coding Project Homepage](http://code.google.com/p/zen-coding/)
 
-	
+
   * [Zen Coding: A Speedy Way to Write HTML/CSS Code](http://www.smashingmagazine.com/2009/11/21/zen-coding-a-new-way-to-write-html-code/)(Smashingmagazine)
 
-	
+
   * [Learn how to write lightnigh-fast code in 4 minutes](http://net.tutsplus.com/tutorials/tools-and-tips/learn-how-to-write-lightning-fast-code-in-4-minutes-screencast/) (วิดีโอ, Nettuts)
 
 
@@ -64,7 +64,7 @@ tags:
 
 
 
-	
+
   * [วิดีโอการใช้ Zen Coding กับ Nebeans v6.8](http://vimeo.com/9117346) ครับผม
 
 

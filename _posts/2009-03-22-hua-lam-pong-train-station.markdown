@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-03-22 19:40:57
-layout: blog
+layout: post
 slug: hua-lam-pong-train-station
 title: ครั้งแรกของหัวใจ “สถานีรถไฟหัวลำโพง”
 wordpress_id: 673

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-02-26 12:49:24
-layout: blog
+layout: post
 slug: git-vs-svn
 title: ความแตกต่างระหว่าง Git กับ SVN
 categories:

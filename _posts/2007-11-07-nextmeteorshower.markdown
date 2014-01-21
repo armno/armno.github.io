@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-07 19:45:52
-layout: blog
+layout: post
 slug: nextmeteorshower
 title: มาดูฝนดาวตกกันเถอะ
 wordpress_id: 10

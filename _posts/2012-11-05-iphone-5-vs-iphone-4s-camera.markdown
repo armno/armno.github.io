@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-11-05 18:32:51
-layout: blog
+layout: post
 slug: iphone-5-vs-iphone-4s-camera
 title: เปรียบเทียบกล้อง iPhone 5 vs. iPhone 4S
 categories:

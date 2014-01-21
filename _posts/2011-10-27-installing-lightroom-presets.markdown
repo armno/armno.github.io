@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-10-27 21:37:53
-layout: blog
+layout: post
 slug: installing-lightroom-presets
 title: 'วิธีใช้ Lightroom Presets ตอน 2: ติดตั้ง Presets'
 wordpress_id: 1892

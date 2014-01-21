@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-03-24 01:25:30
-layout: blog
+layout: post
 slug: dont-make-me-think-web-usability-book
 title: Don't Make Me Think - หนังสือดีๆเกี่ยวกับ Web Usability
 wordpress_id: 1142

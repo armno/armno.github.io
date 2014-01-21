@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-11-25 17:02:11
-layout: blog
+layout: post
 slug: nikon-d60-optimize-image
 title: เปรียบเทียบ Optimize Image แบบต่างๆใน Nikon D60
 wordpress_id: 946
@@ -25,43 +25,43 @@ tags:
 
 
 
-	
+
   * **File Format: JPEG Fine**
 
-	
+
   * Image Size: L (3872 x 2592)
 
-	
+
   * Camera Model: Nikon D60
 
-	
+
   * **Lens: [Nikon AF-S VR 55-200mm](http://www.armno.in.th/content/nikon-af-s-55-200-vr)**
 
-	
+
   * Focal Length: 100mm
 
-	
+
   * **Aperture: F/6.3**
 
-	
+
   * **Shutter Speed: 1/800s**
 
-	
+
   * Exposure Mode: Manual (M)
 
-	
+
   * Metering: Matrix
 
-	
+
   * **ISO: 200**
 
-	
+
   * Flash: off
 
-	
+
   * **White Balance: Direct Sunlight**
 
-	
+
   * Color Mode: sRGB
 
 

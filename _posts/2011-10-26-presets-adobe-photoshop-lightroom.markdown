@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-10-26 08:07:16
-layout: blog
+layout: post
 slug: presets-adobe-photoshop-lightroom
 title: วิธีใช้ Presets ใน Adobe Photoshop Lightroom
 categories:

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-10-22 16:24:25
-layout: blog
+layout: post
 slug: quick-retouch-nikon-d60
 title: ฟ้าสวยแบบไม่ต้องพึ่ง C-PL ด้วย Quick Retouch
 categories:

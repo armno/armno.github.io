@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-09-20 23:01:09
-layout: blog
+layout: post
 slug: sublime-text-2-editor-v12-engine
 title: Sublime Text 2 - Editor เครื่องยนต์ V12
 categories:
@@ -34,7 +34,7 @@ description: ก่อนหน้านี้ใช้ NetBeans กับ Aptan
 [![](http://files.armno.in.th/uploads/2011/09/sublime_interface_overview-600x333.png)](http://files.armno.in.th/uploads/2011/09/sublime_interface_overview.png)
 
 ### ข้อดีของ Sublime Text 2
-	
+
 * เร็วมาก เร็วกว่า IDE อยู่แล้ว เพราะว่าเป็น Text Editor แต่ก็ไม่เฉพาะในแง่ของการพิมพ์ code เท่านั้น แต่ยังรวมไปถึงการอ่าน file, search อะไรต่างๆ ก็เร็วไปซะหมด
 * syntax highlighting มาครบทั้ง HTML, JavaScript, CSS, PHP และ[ภาษาอื่นๆ อีกกว่า 20+](http://www.sublimetext.com/features)
 * full screen mode ตัดทุกอย่างออกหมด เหลือแต่หน้าจอ code (คล้ายของ WordPress แต่เหลือน้อยกว่า) ผมชอบนะ ดูไม่รกรุงรังดี แต่บางคนอาจจะงง เพราะว่าหายไปหมดเลย
@@ -47,7 +47,7 @@ description: ก่อนหน้านี้ใช้ NetBeans กับ Aptan
 ### ข้อสังเกต
 
 ขอไม่เรียกว่า ข้อเสีย ละกันครับ เพราะบางอย่าง ผมเองยังหาไม่เจอว่ามันทำไง ซึ่งจริงๆ แล้วอาจจะมี feature นั้นให้ใช้ หรืออาจต้องลง plugin เพิ่ม ก็ว่ากันไป
-	
+
 * ถ้าติด IDE มาก่อน อาจจะมึนเมื่อเปิดตอนแรก ไม่มี project explorer ไม่มี function outline ให้ .. พอใช้ไปสักพักก็จะชินเอง
 * ปรับตั้งค่าผ่าน <del>text</del> JSON file .. ต้องเปิด document เอาเองว่ามันมี option อะไรยังไงบ้าง
 * code linter (เช็ค syntax code) ไม่ทำงานแบบ real time สู้พวก IDE ไม่ได้
@@ -55,13 +55,13 @@ description: ก่อนหน้านี้ใช้ NetBeans กับ Aptan
 * แล้วก็ ยังหาวิธีกระโดดไปยัง function ต้นตอไม่ได้ .. นึกถึงเวลาเรากด Ctrl + click ใน IDE ทั่วไป มันจะกระโดดไปยังส่วนที่เราประกาศตัวแปรหรือ function นั้นให้เลย แต่ Sublime Text 2 นี้ยังทำไม่ได้ครับผม
 
 ### สรุป Sublime Text 2 เหมาะกับใคร
-	
+
 * เน้น code คือโฟกัสเฉพาะเรื่องการ coding เป็นหลัก
 * เน้นความเร็ว ความคล่องตัว และความสามารถในการปรับแต่ง editor ตามใจชอบ แต่ไม่มีเวลาศึกษา terminal-based อย่าง Vim หรือ Emacs
 * ค่อนข้างคุ้นเคยกับ code ที่ทำงานด้วยพอสมควร รู้ว่า file/class/function อยู่ที่ไหนบ้าง เพราะ Sublime Text เน้นให้เรา "กระโดดไปหา code เอง" มากกว่าที่ตัว editor จะคอยหามาเสิร์ฟเรา .. ข้อนี้กำกวม ไม่เห็นภาพ ขอติดไว้ก่อนละกัน
 
 ### ทิ้งท้าย การใช้งาน Sublime Text 2 เบื้องต้น
-	
+
 * เปิด Sublime Text 2 ขึ้นมา
 * ลาก folder ที่ทำงานอยู่ ไปใส่ที่ sidebar
 * กด `Ctrl + p` พิมพ์ชื่อไฟล์ เพื่อเปิดไฟล์

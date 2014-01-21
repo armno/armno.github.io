@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-03 21:12:23
-layout: blog
+layout: post
 slug: stellanplanet
 title: ดาวฤกษ์ - ดาวเคราะห์
 wordpress_id: 8

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-09-03 11:04:32
-layout: blog
+layout: post
 slug: google-launches-chrome-web-browser
 title: Google Chrome บราวเซอร์ตัวใหม่จากกูเกิ้ล
 wordpress_id: 152
@@ -61,10 +61,10 @@ tags:
 
 
 
-	
+
   * [อ่านรีวิว Google Chrome ที่ blognone.com](http://www.blognone.com/node/8832)
 
-	
+
   * [อ่านรีวิว Google Chrome ที่ champ.exteen.com](http://champ.exteen.com/20080903/chrome-chrome-chrome-1)
 
 

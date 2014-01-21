@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-09-23 15:37:09
-layout: blog
+layout: post
 slug: what-is-lhc
 title: LHC คืออะไร? ทำไมต้องกลัวกัน?
 wordpress_id: 200

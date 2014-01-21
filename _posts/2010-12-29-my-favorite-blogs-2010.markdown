@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-12-29 22:41:06
-layout: blog
+layout: post
 slug: my-favorite-blogs-2010
 title: 5 บล็อกในดวงใจ ประจำปี 2010
 wordpress_id: 1454

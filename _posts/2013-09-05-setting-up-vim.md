@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Setting up Vim"
 description: ปกติผมใช้ Sublime Text 3 เป็น code editor ตัวหลัก แต่บางครั้งต้องการแก้ไขไฟล์ง่ายๆ เร็วๆ จาก terminal หรือทำโปรเจ็คเล็กๆ (เขียนโค้ดตาม tutorial ในเว็บต่างๆ) ผมก็จะเลือกใช้ Vim แทน เพราะเร็วกว่าเปิดใน Sublime Text ครับ
 published: true

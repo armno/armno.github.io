@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-07-10 09:30:47
-layout: blog
+layout: post
 slug: netbeans-tips1-create-new-project
 title: 'NetBeans Tips#1: เริ่มสร้างโปรเจ็ค'
 wordpress_id: 1240
@@ -20,16 +20,16 @@ tags:
 
 
 
-	
+
   * หาไฟล์ยาก .. แต่เมื่อสร้างโปรเจ็คใน NetBeans IDE แล้ว มี File Explorer ให้ใข้เลย
 
-	
+
   * กดหาฟังก์ชั่นไม่ได้
 
-	
+
   * Code Auto-complete ออกเฉพาะโค้ดมาตรฐาน (PHP, HTML, CSS, JavaScript) .. อาจไม่เป็นปัญหา แต่หากทำกับ Framework ที่มีฟังก์ชั่นเยอะๆ แล้วไม่ทำให้ตัว NetBeans IDE รู้จักเนี่ย เหนื่อยนะ
 
-	
+
   * ก็ยังคิดออกแค่นี้ครับ - -“
 
 
@@ -49,13 +49,13 @@ tags:
 
 
 
-	
+
   * **PHP Application** - เริ่มต้นสร้างโปรเจ็ค PHP ใหม่จาก 0
 
-	
+
   * **PHP Application with Existing Sources** - สร้างโปรเจ็คใน NetBeans โดยที่เรามี source code folder อยู่แล้ว (ส่วนมากผมใช้แบบนี้)
 
-	
+
   * **PHP Application with Remote Server** - สร้างโปรเจ็ค PHP จากไฟล์บนเซิฟเวอร์เลย .. ผมขอลองแบบนี้ละกัน เพราะยังไม่เคยทำเลย
 
 
@@ -70,36 +70,36 @@ tags:
 
 
 
-	
-  * 
+
+  *
 
 
 **Project Name** - ชื่อโปรเจ็ค ส่วนนี้เก็บไว้เป็น Metadata ของ NetBeans เฉยๆครับ ไม่เกี่ยวกับโค้ดหรือที่เก็บไฟล์
 
 
-	
-  * 
+
+  *
 
 
 **Sources Folder** - โฟลเดอร์ในเครื่องเราที่จะเก็บ source code ไว้ .. ในที่นี้ผมเลือกเก็บใน www directory ของ wamp เลยละกัน
 
 
-	
-  * 
+
+  *
 
 
 **PHP Version** - ตามที่เห็นในรูป คือสำหรับ code hints ครับ .. ผมเลือกเป็น PHP 5.2 ตามเวอร์ชั่นบนโฮสต์ที่ผมใช้นะครับ
 
 
-	
-  * 
+
+  *
 
 
 **Default Encoding** - รหัสอักขระของโค้ด เลือกเป็น UTF-8 นะดีแล้ว
 
 
-	
-  * 
+
+  *
 
 
 **Put NetBeans metadata into a separate directory** - สำหรับแต่ละโปรเจ็คที่สร้างขึ้นมาใน NetBeans จะมีโฟลเดอร์ที่ชื่อว่า **.nbproject** ไว้สำหรับเก็บข้อมูลต่างๆเกี่ยวกับโปรเจ็ค **ควรเลือกเก็บไว้ในโฟลเดอร์เดียวกับโปรเจ็ค** (ไม่ติ๊กเครื่องหมายถูก) เพราะเวลาย้ายโปรเจ็คไปทำเครื่องอื่น metadata จะได้ไม่หายครับ
@@ -117,13 +117,13 @@ tags:
 
 
 
-	
+
   * **Project URL** – ใน URL ของเว็บเราเข้าไป
 
-	
+
   * **Remote Connection** – ตั้งค่าเกี่ยวกับ FTP Access ของเซิฟเวอร์เราครับ ใครยังไม่มี ก็กดปุ่ม Manage แล้วเข้าไปมั่วในนั้นได้ตามสบาย
 
-	
+
   * **Upload Directory** – path ของโฟลเดอร์บนเซิฟเวอร์ครับ เช่นของผมจะเป็น /armno_in_th/htdocs
 
 

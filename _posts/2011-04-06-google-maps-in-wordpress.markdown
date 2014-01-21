@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-04-06 19:21:32
-layout: blog
+layout: post
 slug: google-maps-in-wordpress
 title: แทรก Google Maps ใน WordPress
 categories:

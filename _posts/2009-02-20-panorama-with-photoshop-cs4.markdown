@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-02-20 19:27:47
-layout: blog
+layout: post
 slug: panorama-with-photoshop-cs4
 title: ทำภาพพาโนรามาง่ายๆด้วย Adobe Photoshop CS4
 wordpress_id: 593
@@ -27,10 +27,10 @@ tags:
 
 
 
-	
+
   1. ภาพภ่ายที่จะนำมาทำภาพพาโนรามา
 
-	
+
   2. Adobe Photoshop CS4 หรือ CS3 (สำหรับเวอร์ชั่นต่ำกว่านี้ผมไม่แน่ใจว่ามี Photomerge หรือเปล่านะครับ ไม่เคยใช้)
 
 

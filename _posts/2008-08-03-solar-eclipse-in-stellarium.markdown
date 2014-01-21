@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-08-03 01:32:50
-layout: blog
+layout: post
 slug: solar-eclipse-in-stellarium
 title: ดูสุริยุปราคาเต็มดวงด้วยโปรแกรม Stellarium
 wordpress_id: 104
@@ -54,5 +54,5 @@ tags:
 
 นี่เป็นเพียงความสามารถหนึ่งของโปรแกรมนี้ ลองไปเล่นกันดูได้นะครับ
 
-**![](http://www.armno.in.th/wp-content/uploads/2008/07/ava120-thumb.gif)  
+**![](http://www.armno.in.th/wp-content/uploads/2008/07/ava120-thumb.gif)
 อามโน**

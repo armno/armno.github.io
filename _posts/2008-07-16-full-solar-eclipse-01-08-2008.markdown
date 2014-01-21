@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-07-16 17:57:52
-layout: blog
+layout: post
 slug: full-solar-eclipse-01-08-2008
 title: สุริยุปราคาเต็มดวง วันที่ 1 สิงหาคม 2551
 wordpress_id: 70
@@ -22,16 +22,16 @@ tags:
 
 
 
-	
+
   1. **สุริยุปราคาเต็มดวง (Total Eclipse)** ดวงจันทร์บังดวงอาทิตย์ได้เต็มดวงพอดี
 
-	
+
   2. **สุริยุปราคาบางส่วน (Partial Eclipse)** ดวงจันทร์บังดวงอาทิตย์ได้เพียงบางส่วนเท่านั้น
 
-	
+
   3. **สุริยุปราคาวงแหวน (Annular Eclipse)** ดวงจันทร์อยู่ไกลจากโลกเกินไป ทำให้เห็นดวงอาทิตย์เป็นลักษณะวงแหวน
 
-	
+
   4. **สุริยุปราคาผสม (Hybrid Eclipse)** สุริยุปราคาแบบเต็มดวงกับแบบวงแหวนเกิดขึ้นผสมกันในครั้งเดียว โดยที่บางแห่งเห็นเป็นแบบเต็มดวง แต่บางแห่งจะเห็นเป็นแบบวงแหวน  แบบนี้พบได้ยากครับ
 
 
@@ -73,22 +73,22 @@ tags:
 
 
 
-	
+
   * [สุริยุปราคาเต็มดวง 1 สิงหาคม 2551](http://thaiastro.nectec.or.th/skyevnt/eclipses/2008eclipses.html) (สมาคมดาราศาสตร์ไทย)
 
-	
+
   * [สุริยุปราคาเต็มดวง 1 สิงหาคม 2551 (2)](http://thaiastro.nectec.or.th/skyevnt/eclipses/200808tse.html) (สมาคมดาราศาสตร์ไทย)
 
-	
+
   * [เวลาการเกิดสุริยุปราคา 1 สิงหาคม 2551 ในประเทศไทย เรียงตามจังหวัด](http://thaiastro.nectec.or.th/skyevnt/eclipses/200808tse-table.html) (สมาคมดาราศาสตร์ไทย)
 
-	
+
   * [Wikipedia.org (English)](http://en.wikipedia.org/wiki/Solar_eclipse)
 
-	
+
   * [Wikipedia.org (Thai)](http://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B8%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B8%B8%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2)
 
-	
+
   * ฟิสิกส์ราชมงคล
 
 

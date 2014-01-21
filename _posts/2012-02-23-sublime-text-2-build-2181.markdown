@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-02-23 16:56:05
-layout: blog
+layout: post
 slug: sublime-text-2-build-2181
 title: Sublime Text 2 อัพเดทเวอร์ชั่นใหม่ 2181
 categories:

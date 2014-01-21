@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-11-06 12:07:33
-layout: blog
+layout: post
 slug: emmet-zen-coding-replacement
 title: Emmet - ตัวแทน Zen Coding
 wordpress_id: 2105

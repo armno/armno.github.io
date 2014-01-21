@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-02-08 21:12:41
-layout: blog
+layout: post
 slug: iphone-4s-from-apple-online-store
 title: สั่งซื้อ iPhone 4S จาก Apple Online Store
 categories:

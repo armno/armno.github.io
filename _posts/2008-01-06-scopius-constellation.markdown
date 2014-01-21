@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-01-06 11:52:17
-layout: blog
+layout: post
 slug: scopius-constellation
 title: กลุ่มดาวแมงป่อง
 wordpress_id: 30

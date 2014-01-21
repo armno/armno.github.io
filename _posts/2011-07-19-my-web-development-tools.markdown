@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-07-19 23:24:15
-layout: blog
+layout: post
 slug: my-web-development-tools
 title: เครื่องมือทำมาหากิน ฉบับ Web Developer
 wordpress_id: 1775

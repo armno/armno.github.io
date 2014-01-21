@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-03 15:25:13
-layout: blog
+layout: post
 slug: bookpreview1
 title: 'แนะนำหนังสือ #1'
 wordpress_id: 16

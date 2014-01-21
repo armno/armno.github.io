@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "ใช้งาน Bower"
 description: Bower เป็น client-side package manager จากทาง Twitter ใช้สำหรับติดตั้ง / ค้นหา / อัพเดท 3rd-party package ได้สะดวกมาก ทำได้ผ่าน Terminal ครับ
 published: true

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: ใช้งาน Source Maps กับ Sass project
 description: การเปิดใช้งาน Source maps กับ Google Chrome ทำให้ debug Sass file ได้ง่ายขึ้น เราสามารถดู source ของไฟล์ .scss ได้จาก browser เลย
 categories:
@@ -66,7 +66,7 @@ categories:
 
 ![รูป file system path ใน scss](http://farm9.staticflickr.com/8521/8673467195_04d5a595b4_z.jpg)
 
-การเปิด source maps ตอนเขียน sass ก็จะทำให้ช่วยแก้งานจาก browser ได้ง่ายขึ้นครับ ก่อน push ขึ้น production server อย่าลืม compile scss อีกครั้งแบบไม่ต้องเปิด `--debug-info` นะครับ 
+การเปิด source maps ตอนเขียน sass ก็จะทำให้ช่วยแก้งานจาก browser ได้ง่ายขึ้นครับ ก่อน push ขึ้น production server อย่าลืม compile scss อีกครั้งแบบไม่ต้องเปิด `--debug-info` นะครับ
 
 ### ดูเพิ่ม
 

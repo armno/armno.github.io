@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-12-13 23:07:00
-layout: blog
+layout: post
 slug: ipad-3g
 title: สวัสดี iPad 3G
 wordpress_id: 1447

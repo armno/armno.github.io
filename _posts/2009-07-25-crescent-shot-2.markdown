@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-07-25 00:11:40
-layout: blog
+layout: post
 slug: crescent-shot-2
 title: '[Gallery] ภาพถ่ายพระจันทร์เสี้ยว #2'
 wordpress_id: 860

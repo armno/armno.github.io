@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-05 10:19:00
-layout: blog
+layout: post
 slug: what-is-lightyears
 title: '"พี่ฮะๆ ปีแสงนี่มีกี่วัน???"'
 wordpress_id: 18

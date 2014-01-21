@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-03-26 23:09:42
-layout: blog
+layout: post
 slug: queryselector-queryselectorall-selectors-api
 title: querySelector() และ querySelectorAll() Selectors API
 categories:

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-04-03 16:16:20
-layout: blog
+layout: post
 slug: gemini-constellation
 title: กลุ่มดาวคนคู่
 wordpress_id: 40

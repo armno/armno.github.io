@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-06-01 15:46:50
-layout: blog
+layout: post
 slug: gallery-my-first-sunset
 title: '[Gallery] My First Sunset'
 wordpress_id: 826

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-05-25 17:14:09
-layout: blog
+layout: post
 slug: nasas-astronomy-picture-of-the-day
 title: NASA's Astronomy picture of the day
 wordpress_id: 44
@@ -23,7 +23,7 @@ tags:
 
 [![calendar](http://www.armno.in.th/wp-content/uploads/2008/05/calendar-thumb.jpg)](http://www.armno.in.th/wp-content/uploads/2008/05/calendar.jpg)
 
-เราสามารถเลือกชมวันที่ต้องการได้ทุกวันครับ สามารถดูย้อนหลังไปได้ถึงปี 1995 นู่นแน่ะ 
+เราสามารถเลือกชมวันที่ต้องการได้ทุกวันครับ สามารถดูย้อนหลังไปได้ถึงปี 1995 นู่นแน่ะ
 
 [![mthview](http://www.armno.in.th/wp-content/uploads/2008/05/mthview-thumb.jpg)](http://www.armno.in.th/wp-content/uploads/2008/05/mthview.jpg)
 

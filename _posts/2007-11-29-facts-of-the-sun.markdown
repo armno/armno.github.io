@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-29 01:09:38
-layout: blog
+layout: post
 slug: facts-of-the-sun
 title: เรื่องน่ารู้เกี่ยวกับดวงอาทิตย์ของเรา
 categories:

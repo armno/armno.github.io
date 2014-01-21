@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-11-12 18:21:29
-layout: blog
+layout: post
 slug: apparai-review-mobile-apps
 title: แนะนำบล็อกใหม่ AppArai "รีวิวแอพ ตามใจฉัน"
 wordpress_id: 1907

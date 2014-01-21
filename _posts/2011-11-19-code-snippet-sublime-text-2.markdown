@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-11-19 23:31:27
-layout: blog
+layout: post
 slug: code-snippet-sublime-text-2
 title: เพิ่ม Code Snippet ให้ Sublime Text 2
 wordpress_id: 1911

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-04-25 22:27:10
-layout: blog
+layout: post
 slug: netbeans-tips-code-templates
 title: 'Netbeans Tips: สร้าง Code Template ไว้ใช้เอง'
 categories:
