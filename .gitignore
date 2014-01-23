@@ -12,3 +12,4 @@ Thumbs.db
 .sass-cache/*
 scss/.sass-cache/*
 
+node_modules/*
