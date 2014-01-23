@@ -5,6 +5,33 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <!-- open graph meta tags -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="ArmNo.in.th">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="fb:admins" content="1007588651">
+
+  <!-- twitter card meta tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@armno">
+  <meta name="twitter:domain" content="{{ site.url }}">
+  <meta name="twitter:creator" content="@armno">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+
+  {% if paginator.previous_page %}
+  <link rel="prev" href="{{ site.url }}/page{{paginator.previous_page}}">
+  {% endif %}
+  {% if paginator.next_page %}
+  <link rel="next" href="{{ site.url }}/page{{paginator.next_page}}">
+  {% endif %}
+
+  <!-- Authorship Information for Google -->
+  <link rel="author" href="https://plus.google.com/108097642192056062290">
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
