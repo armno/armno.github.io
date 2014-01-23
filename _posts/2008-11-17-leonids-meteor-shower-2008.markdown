@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-11-17 17:23:15
-layout: blog
+layout: post
 slug: leonids-meteor-shower-2008
 title: ฝนดาวตกลีโอนิดส์ ประจำปีนี้
 categories:

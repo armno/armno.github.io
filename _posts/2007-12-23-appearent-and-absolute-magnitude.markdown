@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-23 13:21:24
-layout: blog
+layout: post
 slug: appearent-and-absolute-magnitude
 title: ความสว่างปรากฏ และความสว่างสัมบูรณ์
 wordpress_id: 27

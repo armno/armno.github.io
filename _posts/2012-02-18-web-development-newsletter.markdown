@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-02-18 17:35:07
-layout: blog
+layout: post
 slug: web-development-newsletter
 title: ติดตามข่าว Web Development รายสัปดาห์
 categories:

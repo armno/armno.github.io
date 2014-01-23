@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-10-10 14:07:30
-layout: blog
+layout: post
 slug: stylebot-custom-css
 title: 'Stylebot: Custom CSS'
 categories:

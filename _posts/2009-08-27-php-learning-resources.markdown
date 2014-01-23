@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-08-27 21:28:01
-layout: blog
+layout: post
 slug: php-learning-resources
 title: รวมแหล่งความรู้ PHP สำหรับมือใหม่และมือเก่า
 wordpress_id: 871

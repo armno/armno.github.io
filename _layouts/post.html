@@ -1,31 +1,31 @@
-{% include head.html %}
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span12 site-logo aligncenter">
-                <a href="/" class="site-logo-post"></a>
-                <span class="site-logo-helper">back to home page</span>
-            </div>
-        </div>
+---
+layout: default
+---
 
-        <div class="row-fluid">
-            <div class="span8 offset2">
-                <article class="blog-post">
-                    <header class="aligncenter">
-                        <h1>{{ page.title }}</h1>
-                        <small class="post-date post-date-posts">
-                            {{ page.date | date: "%d %B, %Y"}}
-                        </small>
-                    </header>
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
 
-                    {{ content }}
+</div>
+{% include share.html %}
 
-                    <footer>
-                        {% include share.html %}
-                    </footer>
-                </article>
+{% include comments.html %}
 
-                {% include comments.html %}
-            </div><!-- .span8 -->
-        </div>
-    </div><!-- .container -->
-    {% include foot.html %}
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script src="/js/prism.js"></script>

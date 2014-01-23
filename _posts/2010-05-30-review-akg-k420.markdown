@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-05-30 20:16:59
-layout: blog
+layout: post
 slug: review-akg-k420
 title: หูฟัง AKG K420 "เขาบอกว่าผมเสียงดี"
 categories:

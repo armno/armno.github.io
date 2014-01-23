@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-07-11 08:55:23
-layout: blog
+layout: post
 slug: netbeans-tips2-code-auto-complete
 title: NetBeans Tips#2 ใช้งาน Code Auto-complete
 wordpress_id: 1258
@@ -19,10 +19,10 @@ tags:
 
 
 
-	
+
   * [รู้จัก NetBeans IDE](http://armno.in.th/20100710/%e0%b9%81%e0%b8%99%e0%b8%b0%e0%b8%99%e0%b8%b3-netbeans-ide-%e0%b8%aa%e0%b8%b3%e0%b8%ab%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%82%e0%b8%b5%e0%b8%a2%e0%b8%99%e0%b9%82%e0%b8%84%e0%b9%89%e0%b8%94-php)
 
-	
+
   * [NetBeans Tips#1 เริ่มสร้างโปรเจ็ค](http://armno.in.th/20100710/netbeans-tips1-%e0%b9%80%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%a1%e0%b8%aa%e0%b8%a3%e0%b9%89%e0%b8%b2%e0%b8%87%e0%b9%82%e0%b8%9b%e0%b8%a3%e0%b9%80%e0%b8%88%e0%b9%87%e0%b8%84)
 
 
@@ -67,13 +67,13 @@ NetBeans IDE มันฉลาดพอที่จะเติมโค้ด�
 
 
 
-	
+
   * Basic HTML, PHP, CSS, JavaScript
 
-	
+
   * ฟังก์ชั่นต่างๆใน Framework (ทั้ง PHP และ JavaScript Framework) พร้อม Argument
 
-	
+
   * Property, Method ของ class และ parent class
 
 

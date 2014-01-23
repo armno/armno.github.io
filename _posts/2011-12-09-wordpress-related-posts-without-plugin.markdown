@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-12-09 22:08:49
-layout: blog
+layout: post
 slug: wordpress-related-posts-without-plugin
 title: 'WordPress : แสดง Post ที่เกี่ยวข้องโดยไม่ใช้ Plugin'
 wordpress_id: 1924

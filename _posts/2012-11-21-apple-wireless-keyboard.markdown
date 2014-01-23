@@ -1,6 +1,6 @@
 ---
 date: 2012-11-21 18:41:18
-layout: blog
+layout: post
 slug: apple-wireless-keyboard
 title: 'สั่งซื้อของจาก Apple Store #2 : Apple Wireless Keyboard'
 categories:

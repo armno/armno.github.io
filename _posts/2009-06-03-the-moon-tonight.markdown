@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-06-03 22:05:39
-layout: blog
+layout: post
 slug: the-moon-tonight
 title: พระจันทร์คืนนี้
 wordpress_id: 832

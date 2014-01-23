@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-06-26 23:14:57
-layout: blog
+layout: post
 slug: sublime-text-2-distraction-free-mode
 title: 'Sublime Text 2: แสดงเลขบรรทัดใน Distraction Free Mode'
 categories:

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-09-09 16:42:35
-layout: blog
+layout: post
 slug: sublime-text-2-nettuts-fetch
 title: 'Sublime Text 2: ใช้งานปลั๊กอิน Nettuts+ Fetch'
 categories:

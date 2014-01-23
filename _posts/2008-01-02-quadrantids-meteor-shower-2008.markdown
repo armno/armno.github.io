@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-01-02 12:18:01
-layout: blog
+layout: post
 slug: quadrantids-meteor-shower-2008
 title: ฝนดาวตกควอดแรนต์ 3-4 มกราคม นี้
 wordpress_id: 29

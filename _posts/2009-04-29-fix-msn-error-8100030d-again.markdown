@@ -1,7 +1,7 @@
 ---
 comments: false
 date: 2009-04-29 20:57:09
-layout: blog
+layout: post
 slug: fix-msn-error-8100030d-again
 title: วิธีแก้ MSN Error 8100030d ฉบับเอาจริง!
 wordpress_id: 772

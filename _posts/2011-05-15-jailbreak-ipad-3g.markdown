@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-05-15 12:44:19
-layout: blog
+layout: post
 slug: jailbreak-ipad-3g
 title: Jailbreak iPad 3G
 wordpress_id: 1667

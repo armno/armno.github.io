@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-26 23:36:01
-layout: blog
+layout: post
 slug: why-the-sun-so-big
 title: ทำไมดวงอาทิตย์ตอนเช้ากับเย็น "โต๊โต"
 wordpress_id: 14

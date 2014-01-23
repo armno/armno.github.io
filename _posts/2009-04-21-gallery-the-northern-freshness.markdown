@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-04-21 16:03:33
-layout: blog
+layout: post
 slug: gallery-the-northern-freshness
 title: '[Gallery] The Northern Freshness'
 wordpress_id: 693

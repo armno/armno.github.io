@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-08-19 22:49:27
-layout: blog
+layout: post
 slug: aptana-studio
 title: Aptana Studio อีกหนึ่ง IDE สำหรับ Web Developer
 categories:

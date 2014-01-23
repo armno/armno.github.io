@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-07-12 14:43:41
-layout: blog
+layout: post
 slug: gallery-suan-dok-temple-chiang-mai
 title: '[Gallery] วัดสวนดอก จ.เชียงใหม่'
 wordpress_id: 853

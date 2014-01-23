@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-21 19:25:08
-layout: blog
+layout: post
 slug: oriontales2
 title: 'ตำนานกลุ่มดาวนายพราน #2'
 wordpress_id: 13

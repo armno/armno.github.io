@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-10-21 23:23:29
-layout: blog
+layout: post
 slug: sample-photos-from-nikon-d60
 title: รูปถ่ายจากกล้อง Nikon D60
 wordpress_id: 260

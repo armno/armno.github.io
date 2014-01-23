@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-02 08:36:22
-layout: blog
+layout: post
 slug: do-you-like-astronomy
 title: ชอบดูดาวกันไหม??
 wordpress_id: 7

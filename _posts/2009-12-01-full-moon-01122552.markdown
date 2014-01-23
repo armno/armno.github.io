@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-12-01 23:52:18
-layout: blog
+layout: post
 slug: full-moon-01122552
 title: พระจันทร์เต็มดวง 01/12/2552
 wordpress_id: 953

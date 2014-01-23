@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-15 16:52:44
-layout: blog
+layout: post
 slug: geminids-lastnight
 title: 'ไปดูมาแล้ว : ฝนดาวตกเจมินิดส์'
 wordpress_id: 23

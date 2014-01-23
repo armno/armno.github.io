@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-03-20 20:37:56
-layout: blog
+layout: post
 slug: super-moon-shot-2011
 title: ภาพถ่ายพระจันทร์เต็มดวง Super Moon 2011
 wordpress_id: 1509

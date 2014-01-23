@@ -1,7 +1,53 @@
-{% include meta.html %}
-    <link href="http://fonts.googleapis.com/css?family=Nunito|Droid+Sans+Mono|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="/css/github.css" media="all">
-    <link rel="stylesheet" href="/css/style.css" media="all">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- open graph meta tags -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="ArmNo.in.th">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="fb:admins" content="1007588651">
+
+  <!-- twitter card meta tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@armno">
+  <meta name="twitter:domain" content="{{ site.url }}">
+  <meta name="twitter:creator" content="@armno">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+
+  {% if paginator.previous_page %}
+  <link rel="prev" href="{{ site.url }}/page{{paginator.previous_page}}">
+  {% endif %}
+  {% if paginator.next_page %}
+  <link rel="next" href="{{ site.url }}/page{{paginator.next_page}}">
+  {% endif %}
+
+  <!-- Authorship Information for Google -->
+  <link rel="author" href="https://plus.google.com/108097642192056062290">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 </head>
-<body>
-    <div class="page-border page-border-top"></div>

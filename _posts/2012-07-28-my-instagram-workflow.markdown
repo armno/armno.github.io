@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-07-28 14:33:09
-layout: blog
+layout: post
 slug: my-instagram-workflow
 title: My Instagram Workflow
 categories:

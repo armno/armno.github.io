@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-12-11 19:45:25
-layout: blog
+layout: post
 slug: sublime-text-2-config
 title: แก้ไขการตั้งค่าต่างๆ ใน Sublime Text 2
 categories:

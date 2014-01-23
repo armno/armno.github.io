@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-11-05 16:33:31
-layout: blog
+layout: post
 slug: born-of-stellar
 title: มหัศจรรย์กับการกำเนิดดาวฤกษ์
 wordpress_id: 9

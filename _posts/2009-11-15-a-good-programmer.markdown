@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-11-15 10:59:10
-layout: blog
+layout: post
 slug: a-good-programmer
 title: A Good Programmer
 wordpress_id: 921
@@ -27,4 +27,4 @@ From a discussion with [Snapplabs](http://www.snapplabs.com/) in [IT Finishing S
   * Love to solve problems
   * Ask your code: Ex. _“What does this function do?”, “What if I input this, that value”, “What if …”_
   * Write Comments (in your code)
- 
+

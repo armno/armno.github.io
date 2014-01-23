@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "ใช้งาน Bower"
 description: Bower เป็น client-side package manager จากทาง Twitter ใช้สำหรับติดตั้ง / ค้นหา / อัพเดท 3rd-party package ได้สะดวกมาก ทำได้ผ่าน Terminal ครับ
 published: true
@@ -51,7 +51,7 @@ thumbnail: http://farm4.staticflickr.com/3796/11576530464_6dd5174254_o.png
 
 <pre class="language-bash"><code>$ bower install "angular#unstable"</code></pre>
 
-<pre class="language-bash"><code>$ bower install "angular#68b09bbf2b439a567d80798c4f74e715d2a5833f"></code></pre>
+<pre class="language-bash"><code>$ bower install "angular#68b09bbf2b439a567d80798c4f74e715d2a5833f"</code></pre>
 
 ### ค้นหา package
 

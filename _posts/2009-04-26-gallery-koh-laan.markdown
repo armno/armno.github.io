@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-04-26 23:55:44
-layout: blog
+layout: post
 slug: gallery-koh-laan
 title: '[Gallery] ทะเล เกาะล้าน'
 wordpress_id: 767

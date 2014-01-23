@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2010-07-26 22:11:41
-layout: blog
+layout: post
 slug: netbeans-tips5-editor-appearance
 title: NetBeans Tips#5 เปลี่ยนลักษณะ Editor ได้ดั่งใจ
 wordpress_id: 1311
@@ -17,19 +17,19 @@ NetBeans Tips มาอีกแล้ววว
 
 
 
-	
+
   * [รู้จัก NetBeans IDE](http://armno.in.th/20100710/%e0%b9%81%e0%b8%99%e0%b8%b0%e0%b8%99%e0%b8%b3-netbeans-ide-%e0%b8%aa%e0%b8%b3%e0%b8%ab%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%82%e0%b8%b5%e0%b8%a2%e0%b8%99%e0%b9%82%e0%b8%84%e0%b9%89%e0%b8%94-php)
 
-	
+
   * [NetBeans Tips#1 เริ่มสร้างโปรเจ็ค](http://armno.in.th/20100710/netbeans-tips1-%e0%b9%80%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%a1%e0%b8%aa%e0%b8%a3%e0%b9%89%e0%b8%b2%e0%b8%87%e0%b9%82%e0%b8%9b%e0%b8%a3%e0%b9%80%e0%b8%88%e0%b9%87%e0%b8%84)
 
-	
+
   * [NetBeans Tips#2 ใช้งาน Code-Autocomplete](http://armno.in.th/20100711/netbeans-tips2-%e0%b9%83%e0%b8%8a%e0%b9%89%e0%b8%87%e0%b8%b2%e0%b8%99-code-auto-complete)
 
-	
+
   * [NetBeans Tips#3 จัดระเบียบโค้ดด้วยเมนู Format](http://armno.in.th/20100713/netbeans-tips-3-%e0%b8%88%e0%b8%b1%e0%b8%94%e0%b8%a3%e0%b8%b0%e0%b9%80%e0%b8%9a%e0%b8%b5%e0%b8%a2%e0%b8%9a%e0%b9%82%e0%b8%84%e0%b9%89%e0%b8%94%e0%b8%94%e0%b9%89%e0%b8%a7%e0%b8%a2%e0%b9%80%e0%b8%a1)
 
-	
+
   * [NetBeans Tips#4 หาคลาส ตัวแปร ยังไงก็เจอ](http://armno.in.th/20100717/netbeans-tips-4-%e0%b8%ab%e0%b8%b2%e0%b8%84%e0%b8%a5%e0%b8%b2%e0%b8%aa-%e0%b8%95%e0%b8%b1%e0%b8%a7%e0%b9%81%e0%b8%9b%e0%b8%a3-%e0%b8%a2%e0%b8%b1%e0%b8%87%e0%b9%84%e0%b8%87%e0%b8%81%e0%b9%87%e0%b9%80)
 
 

@@ -1,6 +1,6 @@
 ---
 date: 2013-01-25 18:58:05
-layout: blog
+layout: post
 slug: sublime-text-color-schemes
 title: Sublime Text color schemes
 categories:

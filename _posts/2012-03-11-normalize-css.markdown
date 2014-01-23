@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-03-11 22:39:31
-layout: blog
+layout: post
 slug: normalize-css
 title: ทำความรู้จักกับ Normalize.css
 wordpress_id: 1993

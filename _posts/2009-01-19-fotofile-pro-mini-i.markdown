@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2009-01-19 22:15:47
-layout: blog
+layout: post
 slug: fotofile-pro-mini-i
 title: 'กระเป๋ากล้องใบใหม่: Fotofile PRO-mini I'
 wordpress_id: 493

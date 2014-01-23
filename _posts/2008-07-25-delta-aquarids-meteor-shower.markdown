@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2008-07-25 23:23:35
-layout: blog
+layout: post
 slug: delta-aquarids-meteor-shower
 title: ฝนดาวตก เดลต้าคนแบกหม้อน้ำ 27 กรกฏาคมนี้
 wordpress_id: 76
@@ -26,10 +26,10 @@ tags:
 
 ขอให้ทุกคนมีความสุขกับการดูดาวนะครับ
 
-**อามโน  
+**อามโน
 ;)**
 
 **แหล่งข้อมูลเพิ่มเติม**
 
-  * [ฝนดาวตกในปี ๒๕๕๑ - สมาคมดาราศาสตร์ไทย](http://thaiastro.nectec.or.th/skyevnt/meteors/2008meteors.html)  
+  * [ฝนดาวตกในปี ๒๕๕๑ - สมาคมดาราศาสตร์ไทย](http://thaiastro.nectec.or.th/skyevnt/meteors/2008meteors.html)
   * [Southern δ-Aquariids (SDA) - International Meteor Organization (IMO)](http://www.imo.net/calendar/2008#sda)

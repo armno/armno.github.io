@@ -1,45 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 {% include nerd.html %}
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{% if paginator.page > 1 %}Page {{ paginator.page }}{% else %}{{ page.title }}{% endif %} - {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ page.description }}">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-  <!-- open graph meta tags -->
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:site_name" content="ArmNo.in.th">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="fb:admins" content="1007588651">
+  {% include head.html %}
 
-  <!-- twitter card meta tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@armno">
-  <meta name="twitter:domain" content="{{ site.url }}">
-  <meta name="twitter:creator" content="@armno">
-  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.description }}">
+  <body class="theme-base-0d layout-reverse">
 
-  {% if paginator.previous_page %}
-  <link rel="prev" href="{{ site.url }}/page{{paginator.previous_page}}">
-  {% endif %}
-  {% if paginator.next_page %}
-  <link rel="next" href="{{ site.url }}/page{{paginator.next_page}}">
-  {% endif %}
+    {% include sidebar.html %}
 
-  <!-- Authorship Information for Google -->
-  <link rel="author" href="https://plus.google.com/108097642192056062290">
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-  <link rel="stylesheet" href="/css/about.css">
-</head>
-<body>
-  {{ content }}
+          <h3 class="masthead-title">
+            <a href="/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
 
-  {% include bottom-script.html %}
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
 
-</body>
+    {% include bottom-script.html %}
+  </body>
 </html>

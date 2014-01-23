@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: ติดตั้ง Composer บน OSX 
+layout: post
+title: ติดตั้ง Composer บน OSX
 description: Composer นั้นเป็น dependency management tool สำหรับ PHP บ่อยครั้งที่เราจำเป็นต้องใช้ library อื่นๆ ในโปรเจ็คของเรา Composer นั้นช่วย install library ที่จำเป็นเหล่านั้นในโปรเจ็คให้ครับ Composer นั้นกำลังได้รับความนิยมเพิ่มขึ้นเรื่อยๆ สำหรับ PHP developer สมัยใหม่ครับผม
 permalink: installing-composer-osx-lion
 category: Web Development

@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-06 12:54:37
-layout: blog
+layout: post
 slug: age-of-stars
 title: อายุของดาวฤกษ์
 wordpress_id: 19

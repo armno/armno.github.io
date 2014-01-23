@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-02-01 22:35:10
-layout: blog
+layout: post
 slug: web-application-considerations
 title: สิ่งที่(เคย)มองข้าม เมื่อทำ Web Application
 categories:

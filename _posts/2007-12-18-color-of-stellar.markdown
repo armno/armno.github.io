@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-18 02:20:52
-layout: blog
+layout: post
 slug: color-of-stellar
 title: สีของดาวฤกษ์
 wordpress_id: 24
@@ -21,10 +21,10 @@ tags:
 
 
 
-	
+
   * [thaigoodview.com](http://www.thaigoodview.com/library/teachershow/phayao/oraphin_s/darasat/section1_p04.html)
 
-	
+
   * [ฟิสิกส์ราชมงคล](http://www.rmutphysics.com/charud/scibook/big-bang/index/indexpic9.htm)
 
 

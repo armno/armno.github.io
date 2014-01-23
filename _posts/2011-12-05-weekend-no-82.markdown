@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2011-12-05 23:02:57
-layout: blog
+layout: post
 slug: weekend-no-82
 title: Weekend No. 82
 wordpress_id: 1922

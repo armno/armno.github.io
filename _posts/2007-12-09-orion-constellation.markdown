@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2007-12-09 18:44:48
-layout: blog
+layout: post
 slug: orion-constellation
 title: กลุ่มดาวนายพราน
 wordpress_id: 21

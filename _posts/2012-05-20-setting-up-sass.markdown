@@ -1,7 +1,7 @@
 ---
 comments: true
 date: 2012-05-20 22:58:44
-layout: blog
+layout: post
 slug: setting-up-sass
 title: เริ่มต้นใช้งาน Sass
 categories:

@@ -1,30 +1,38 @@
 ---
 layout: default
-title:
-description: A rookie web developer, interested in front-end development, living and working in Chiang Mai, Thailand. I am @armno on Twitter and Github.
+title: Home
 ---
 
-{% include header.html current="home" %}
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<div class="container content">
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-  <ol class="blog-list">
-    {% for post in paginator.posts %}
-    <li class="post-item">
-      <h3 class="post-title-list"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="post-date icon-time">
-        {{ post.date | date: "%d %B, %Y"}}
-      </div>
-      <p>{{ post.description }}</p>
-    </li>
-    {% endfor %}
-  </ol>
-  <div class="link-full-blog">
-    <a href="/blog">Full blog</a>
+    {{ post.description }}
   </div>
+  {% endfor %}
 </div>
-<footer class="site-footer aligncenter">
-  <div class="site-footer-inner">
-    <p>Made in Chiang Mai</p>
-  </div>
-</footer>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
