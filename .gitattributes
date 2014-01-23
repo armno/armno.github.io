@@ -1,0 +1,2 @@
+# treat these files as binary so they don't mess diff view (these files are compiled ones)
+css/*.css binary
