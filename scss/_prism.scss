@@ -6,9 +6,9 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	// color: black;
+	// text-shadow: 0 1px white;
+	// font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -52,10 +52,10 @@ pre[class*="language-"] {
 	overflow: auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
-}
+// :not(pre) > code[class*="language-"],
+// pre[class*="language-"] {
+// 	background: #f5f2f0;
+// }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {

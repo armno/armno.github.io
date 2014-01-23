@@ -3,7 +3,7 @@
 
 guard 'sass', :input => 'scss', :output => 'css', :style => :compressed
 
-guard "jekyll-plus", :serve => true do
-  watch /.*/
-	ignore /^_site/
-end
+#guard "jekyll-plus", :serve => true do
+#  watch /.*/
+#	ignore /^_site/
+#end
