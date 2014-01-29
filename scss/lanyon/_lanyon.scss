@@ -63,6 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
+  left: 0;
+  right: auto;
 }
 
 
@@ -421,6 +423,10 @@ a.pagination-item:hover {
           transition-property: right;
 }
 
+.layout-reverse .wrap {
+  left: auto;
+  right: 0;
+}
 
 .layout-reverse .sidebar {
   left: auto;
