@@ -6,7 +6,9 @@ description: สวัสดี My name is Armno. I am a web developer living in
 
 ![My Gravatar Profile](http://www.gravatar.com/avatar/2b94fcf4614d1a468cc00c21612fea46?s=150)
 
-สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova](http://cordova.io). [#javascript](https://twitter.com/search?q=%23javascript&src=typd), [#mobileweb](https://twitter.com/search?src=typd&q=%23mobileweb) and [#perfmatters](https://twitter.com/search?src=typd&q=%23perfmatters) are what I am into now.
+สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova](http://cordova.io).
+
+Mostly hang around Twitter. [#javascript](https://twitter.com/search?q=%23javascript&src=typd), [#mobileweb](https://twitter.com/search?src=typd&q=%23mobileweb) and [#perfmatters](https://twitter.com/search?src=typd&q=%23perfmatters) are what I am into now.
 
 I am learning to be a good web designer as well. I believe good design can make <del>websites</del> <ins>things</ins> better. I pretend to be a typography nerd sometimes.
 
