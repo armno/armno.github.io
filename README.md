@@ -1,25 +1,26 @@
 # ArmNo's Jekyll blog
 
-## Installing required gems
+## Install required gems
 
+```sh
+$ gem install jekyll rdiscount
 ```
-$ gem install jekyll rdiscount guard guard-sass guard-jekyll-plus
+
+## Install required node packages
+
+```sh
+$ npm install
 ```
 
 ## Running
 
-This project uses [guard-jekyll-plus](https://github.com/imathis/guard-jekyll-plus) to start built-in Jekyll server with Guard. Running `guard` will start Jekyll server with `-w` option, as well as Sass watcher for compiling `.scss` files.
-
-```
-$ guard
+```sh
+$ gulp
+$ jekyll serve - # on another tab/window
 ```
 
 ## Todo
 
-- <del>install plugin to create sitemap.xml</del>
-- <del>add meta tags for some SEO shits</del>
 - search box & search results page
-- <del>create `about` page</del>
-  - <del>some info</del>
 
 -ArmNo
