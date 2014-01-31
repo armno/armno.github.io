@@ -7,12 +7,20 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
 
   <!-- open graph meta tags -->
+  {% if page.title == "Home" %}
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.thumbnail }}">
+  {% else %}
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:type" content="website">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ page.thumbnail }}">
+  {% endif %}
+
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="ArmNo.in.th">
-  <meta property="og:description" content="{{ page.description }}">
   <meta property="fb:admins" content="1007588651">
+  <meta property="og:type" content="website">
 
   <!-- twitter card meta tags -->
   <meta name="twitter:card" content="summary">
