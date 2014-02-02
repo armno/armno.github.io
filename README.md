@@ -1,26 +1,26 @@
 # ArmNo's Jekyll blog
 
-## Install required gems
+Install required gems
 
 ```sh
 $ gem install jekyll rdiscount
 ```
 
-## Install required node packages
+Install required node packages
 
 ```sh
 $ npm install
 ```
 
-## Running
+Running
 
 ```sh
 $ gulp
 $ jekyll serve - # on another tab/window
 ```
 
-## Todo
+### Todo
 
-- search box & search results page
+- search box in blog page (filering actually)
 
 -ArmNo
