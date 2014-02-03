@@ -16,7 +16,7 @@ Running
 
 ```sh
 $ gulp
-$ jekyll serve - # on another tab/window
+$ jekyll serve -w # on another tab/window
 ```
 
 ### Todo
