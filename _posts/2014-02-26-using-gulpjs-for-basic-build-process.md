@@ -1,8 +1,9 @@
 ---
 title: "ใช้งาน Gulp.js"
-description: "Gulp.js นั้นเป็น build tool/task runner ช่วยให้เราลดเวลาของขั้นตอนการทำงานซ้ำๆ ใน build process ไปได้เยอะ เป็น tool ลักษณะเดียวกับ Grunt แต่ config คนละแบบครับ"
+description: "Gulp.js นั้นเป็น build tool/task runner ช่วยให้เราลดเวลาของขั้นตอนการทำงานซ้ำๆ ใน build process ไปได้เยอะ (sass/minify/concat js/html) เป็น tool ลักษณะเดียวกับ Grunt แต่ config คนละแบบครับ"
 layout: post
 published: true
+thumbnail: http://farm6.staticflickr.com/5487/12794346545_facca0edf4_c.jpg
 ---
 
 ปกติเมื่อเราทำเว็บ ก็จะมีสิ่งที่ต้องทำเป็นประจำอยู่จำนวนหนึ่ง เช่น
