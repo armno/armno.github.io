@@ -3,7 +3,7 @@
 desc "create new post"
 task :new_post do
 
-    layout = "blog"
+    layout = "default"
     title = ENV["title"] || "New blog post"
     slug = ENV["slug"] || title.gsub(' ', '-').downcase
 
