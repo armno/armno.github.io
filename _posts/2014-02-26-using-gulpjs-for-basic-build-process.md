@@ -1,0 +1,167 @@
+---
+title: "ใช้งาน gulp.js"
+description: "gulp.js นั้นเป็น build tool/task runner ช่วยให้เราลดเวลาของขั้นตอนการทำงานซ้ำๆ ใน build process ไปได้เยอะ เป็น tool ลักษณะเดียวกับ Grunt แต่ config คนละแบบครับ"
+layout: post
+published: false
+---
+
+ปกติเมื่อเราทำเว็บ ก็จะมีสิ่งที่ต้องทำเป็นประจำอยู่จำนวนหนึ่ง เช่น
+
+- minify html/javascript/css หรือ รวมเป็นไฟล์ 1 ไฟล์
+- optimize image ให้มีขนาดเล็กลง
+- compile sass/less
+- run tests
+
+ขั้นตอนเหล่านี้เป็นส่วนหนึ่งของ build process ที่จำเป็นต้องทำซ้ำๆ อยู่ตลอดเวลา gulp เป็นตัวช่วยรัน task เหล่านี้ให้อัตโนมัติในระหว่างที่เรากำลัง develop อยู่ได้ครับ (อารมณ์แบบเปิดบอทเวลาเล่นเกม) ซึ่งเรายังสามารถสร้างเงื่อนไขในการรันแต่ละ task ให้ต่างกันได้ด้วย
+
+ถ้าใครใช้ Grunt อยู่ก็จะพบว่าเป็น tool ลักษณะเดียวกัน เพียงแต่มีแนวคิดในการ config คนละแบบ และ gulp มี built-in watcher มาให้ตั้งแต่แรก
+
+## ติดตั้ง Gulp
+
+ก่อนติดตั้ง gulp ต้องมี node อยู่ในเครื่องก่อน จากนั้นก็ติดตั้งผ่าน command
+
+<pre class="language-bash"><code>$ npm install -g gulp</code></pre>
+
+## 1st Gulp task
+
+ลองทำ task ง่ายๆ ให้ gulp log คำว่า `lorem ipsum` ใน console ทุกครั้งที่เรา save ไฟล์ index.html
+
+<pre class="language-bash"><code>$ mkdir firstgulp
+$ cd firstgulp</code></pre>
+
+อันดับแรกต้องติดตั้ง package `gulp` แบบ local (ใน project) ก่อน
+
+<pre class="language-bash"><code>$ npm install --save-dev gulp</code></pre>
+
+จากนั้นสร้างไฟล์ใหม่ชื่อว่า `gulpfile.js` (เทียบได้กับ `Grunfile.js` ของ Grunt) เพื่อเขียน task แรกกัน
+
+<pre class="language-javascript"><code>var gulp = require('gulp');
+
+gulp.task('lorem', function() {
+  console.log('lorem ipsum');
+});
+
+gulp.task('watch', function() {
+  gulp.watch('index.html', ['lorem']);
+});
+
+gulp.task('default', ['watch']);</code></pre>
+
+เสร็จแล้วก็แค่รัน
+
+<pre class="language-bash"><code>$ gulp</code></pre>
+
+ในความเป็นจริงคงไม่มีใครใช้ gulp เพื่อ console.log  เพียงอย่างเดียว มาดู use case ที่ใช้งานกันจริงๆ ดีกว่า
+
+## ใช้ Gulp compile sass
+
+เราลองมาตั้งค่าให้ gulp compass sass ให้เป็น css กัน หลักการง่ายๆ ก็คือสร้าง watcher task สำหรับไฟล์ `.scss` เมื่อไฟล์เหล่านี้ถูกแก้ไข ก็ให้ gulp compile sass ให้ครับ
+
+gulp plugin ของ sass นั้นมีอยู่ 2 ตัวคือ [gulp-sass](https://github.com/dlmanning/gulp-sass) กับ [gulp-ruby-sass](https://github.com/sindresorhus/gulp-ruby-sass) ซึ่ง gulp-sass นั้นทำงานได้เร็วกว่าก็จริง แต่ไม่ support indented syntax (`.sass`) ดังนั้นผมจึงเลือกใช้ gulp-ruby-sass แทน
+
+อันดับแรกต้องลง gulp plugin ที่ชื่อว่า gulp-ruby-sass ก่อน
+
+<pre class="language-bash"><code>$ npm install --save-dev gulp-ruby-sass</code></pre>
+
+จากนั้นใน gulpfile.js ก็โหลด module gulp-ruby-sass เข้ามาใช้ และก็เพิ่ม watch task เข้าไปครับ
+
+<pre class="language-javascript"><code>// gulpfile.js
+var gulp = require('gulp');
+var sass = require('gulp-ruby-sass');
+
+gulp.task('css', function(){
+  return gulp.src('./sass/**/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('sass/**/*.sass', ['css']);
+});
+
+gulp.task('default', ['watch']);</code></pre>
+
+ทุกครั้งที่เรา save ไฟล์ `.sass` ใน directory 'sass' (รวมถึง sub-directory) gulp ก็จะรัน task css ซึ่ง compile sass เป็น css ตาม directory ปลายทางที่ระบุไว้
+
+> `pipe()` ของ gulp ก็คล้ายๆ กับ [pipe ของ Unix](http://en.wikipedia.org/wiki/Pipeline_(Unix)) เลยครับ รับ output ของ statement แรกไปเป็น input ของ statement ต่อไป (และต่อไปเรื่อยๆ)
+
+## เพิ่ม task อีก
+
+ลองให้ gulp จัดการหลายๆ task พร้อมๆ กัน คือการ concatenate javascript, minify javascript และ minify html รวดเดียว
+
+ก่อนอื่นต้องติดตั้ง plugin ที่จะใช้ก่อน
+
+<pre class="language-bash"><code>$ npm install --save-dev gulp-concat gulp-uglify gulp-htmlmin</code></pre>
+
+จากนั้นเพิ่ม watcher กับ task เข้าไป
+
+<pre class="language-javascript"><code>// gulpfile.js
+var gulp = require('gulp');
+var sass = require('gulp-ruby-sass');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
+
+gulp.task('css', function(){
+  return gulp.src('./sass/**/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('js', function(){
+  return gulp.src([
+        './src/js/model.js',
+        './src/js/controller.js'
+        ])
+        .pipe(concat('app.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./js'));
+});
+
+gulp.task('html', function() {
+  return gulp.src(['./src/index.html'])
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('./sass/**/*.sass', ['css']);
+  gulp.watch('./src/**/*.js', ['js']);
+  gulp.watch('./src/index.html', ['html']);
+});
+
+gulp.task('default', ['css', 'js', 'html', 'watch']);</code></pre>
+
+หรือเขียนอีกสไตล์หนึ่ง ให้รัน build task ทุกครั้งที่เราแก้ไขไฟล์ครับ (แต่จะดูสิ้นเปลืองไปหน่อยถ้าโปรเจ็คมีขนาดใหญ่ เพราะต้องรันทุก task)
+
+<pre class="language-javascript"><code>var gulp = require('gulp');
+var sass = require('gulp-ruby-sass');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
+
+gulp.task('build', function() {
+    gulp.src('./sass/**/*.sass')
+        .pipe(sass())
+        .pipe(gulp.dest('./css'));
+
+    gulp.src([
+        './src/js/model.js',
+        './src/js/controller.js'
+        ])
+        .pipe(concat('app.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./js'));
+
+    gulp.src(['./src/index.html'])
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('default', function() {
+  gulp.watch('./src/**/*', ['build']);
+});</code></pre>
+
+ด้วยความที่ gulpfile.js มีลักษณะคล้าย node app จึงมีวิธีเขียนได้หลายแบบ ได้ผลออกมาเหมือนกันครับ (คนที่เขียน nodejs เป็นอยู่แล้วน่าจะชอบ gulp)นอกจากนี้ gulp ยังมี plugin เพิ่มขึ้นเรื่อยๆ คาดว่าจะเป็น tool อีกตัวที่ได้รับความนิยมเพิ่มขึ้นในปี 2014 ครับ
+
+ลองเล่นกันดูนะ
