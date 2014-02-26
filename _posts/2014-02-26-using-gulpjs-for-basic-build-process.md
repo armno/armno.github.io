@@ -1,30 +1,30 @@
 ---
-title: "ใช้งาน gulp.js"
-description: "gulp.js นั้นเป็น build tool/task runner ช่วยให้เราลดเวลาของขั้นตอนการทำงานซ้ำๆ ใน build process ไปได้เยอะ เป็น tool ลักษณะเดียวกับ Grunt แต่ config คนละแบบครับ"
+title: "ใช้งาน Gulp.js"
+description: "Gulp.js นั้นเป็น build tool/task runner ช่วยให้เราลดเวลาของขั้นตอนการทำงานซ้ำๆ ใน build process ไปได้เยอะ เป็น tool ลักษณะเดียวกับ Grunt แต่ config คนละแบบครับ"
 layout: post
 published: false
 ---
 
 ปกติเมื่อเราทำเว็บ ก็จะมีสิ่งที่ต้องทำเป็นประจำอยู่จำนวนหนึ่ง เช่น
 
-- minify html/javascript/css หรือ รวมเป็นไฟล์ 1 ไฟล์
-- optimize image ให้มีขนาดเล็กลง
-- compile sass/less
+- minify HTML/JavaScript/CSS หรือ รวมเป็นไฟล์ 1 ไฟล์
+- optimize รูปให้มีขนาดเล็กลง
+- compile Sass/Less
 - run tests
 
-ขั้นตอนเหล่านี้เป็นส่วนหนึ่งของ build process ที่จำเป็นต้องทำซ้ำๆ อยู่ตลอดเวลา gulp เป็นตัวช่วยรัน task เหล่านี้ให้อัตโนมัติในระหว่างที่เรากำลัง develop อยู่ได้ครับ (อารมณ์แบบเปิดบอทเวลาเล่นเกม) ซึ่งเรายังสามารถสร้างเงื่อนไขในการรันแต่ละ task ให้ต่างกันได้ด้วย
+ขั้นตอนเหล่านี้เป็นส่วนหนึ่งของ build process ที่จำเป็นต้องทำซ้ำๆ อยู่ตลอดเวลา Gulp เป็นตัวช่วยรัน task เหล่านี้ให้อัตโนมัติในระหว่างที่เรากำลัง develop อยู่ได้ครับ (อารมณ์แบบเปิดบอทเวลาเล่นเกม) ซึ่งเรายังสามารถสร้างเงื่อนไขในการรันแต่ละ task ให้ต่างกันได้ด้วย
 
-ถ้าใครใช้ Grunt อยู่ก็จะพบว่าเป็น tool ลักษณะเดียวกัน เพียงแต่มีแนวคิดในการ config คนละแบบ และ gulp มี built-in watcher มาให้ตั้งแต่แรก
+ถ้าใครใช้ [Grunt](http://gruntjs.com/) อยู่ก็จะพบว่าเป็น tool ลักษณะเดียวกัน เพียงแต่มีแนวคิดในการ config คนละแบบ และ gulp มี built-in watcher มาให้ตั้งแต่แรก
 
 ## ติดตั้ง Gulp
 
-ก่อนติดตั้ง gulp ต้องมี node อยู่ในเครื่องก่อน จากนั้นก็ติดตั้งผ่าน command
+ก่อนติดตั้ง Gulp ต้องมี node อยู่ในเครื่องก่อน จากนั้นก็ติดตั้งผ่าน command
 
 <pre class="language-bash"><code>$ npm install -g gulp</code></pre>
 
 ## 1st Gulp task
 
-ลองทำ task ง่ายๆ ให้ gulp log คำว่า `lorem ipsum` ใน console ทุกครั้งที่เรา save ไฟล์ index.html
+ลองทำ task ง่ายๆ ให้ Gulp log คำว่า `lorem ipsum` ใน console ทุกครั้งที่เรา save ไฟล์ index.html
 
 <pre class="language-bash"><code>$ mkdir firstgulp
 $ cd firstgulp</code></pre>
@@ -53,13 +53,13 @@ gulp.task('default', ['watch']);</code></pre>
 
 ในความเป็นจริงคงไม่มีใครใช้ gulp เพื่อ console.log  เพียงอย่างเดียว มาดู use case ที่ใช้งานกันจริงๆ ดีกว่า
 
-## ใช้ Gulp compile sass
+## ใช้ Gulp compile Sass
 
-เราลองมาตั้งค่าให้ gulp compass sass ให้เป็น css กัน หลักการง่ายๆ ก็คือสร้าง watcher task สำหรับไฟล์ `.scss` เมื่อไฟล์เหล่านี้ถูกแก้ไข ก็ให้ gulp compile sass ให้ครับ
+เราลองมาตั้งค่าให้ Gulp compile Sass ให้เป็น css กัน หลักการง่ายๆ ก็คือสร้าง watcher task สำหรับไฟล์ `.scss` เมื่อไฟล์เหล่านี้ถูกแก้ไข ก็ให้ Gulp compile Sass ให้ครับ
 
-gulp plugin ของ sass นั้นมีอยู่ 2 ตัวคือ [gulp-sass](https://github.com/dlmanning/gulp-sass) กับ [gulp-ruby-sass](https://github.com/sindresorhus/gulp-ruby-sass) ซึ่ง gulp-sass นั้นทำงานได้เร็วกว่าก็จริง แต่ไม่ support indented syntax (`.sass`) ดังนั้นผมจึงเลือกใช้ gulp-ruby-sass แทน
+Gulp plugin ของ Sass นั้นมีอยู่ 2 ตัวคือ [gulp-sass](https://github.com/dlmanning/gulp-sass) กับ [gulp-ruby-sass](https://github.com/sindresorhus/gulp-ruby-sass) ซึ่ง gulp-sass นั้นทำงานได้เร็วกว่าก็จริง แต่ไม่ support indented syntax (`.sass`) ดังนั้นผมจึงเลือกใช้ gulp-ruby-sass แทน
 
-อันดับแรกต้องลง gulp plugin ที่ชื่อว่า gulp-ruby-sass ก่อน
+อันดับแรกต้องลง Gulp plugin ที่ชื่อว่า `gulp-ruby-sass` ก่อน
 
 <pre class="language-bash"><code>$ npm install --save-dev gulp-ruby-sass</code></pre>
 
@@ -81,13 +81,13 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['watch']);</code></pre>
 
-ทุกครั้งที่เรา save ไฟล์ `.sass` ใน directory 'sass' (รวมถึง sub-directory) gulp ก็จะรัน task css ซึ่ง compile sass เป็น css ตาม directory ปลายทางที่ระบุไว้
+ทุกครั้งที่เรา save ไฟล์ `.sass` ใน directory 'sass' (รวมถึง sub-directory) gulp ก็จะรัน task css ซึ่ง compile Sass เป็น CSS ตาม directory ปลายทางที่ระบุไว้
 
-> `pipe()` ของ gulp ก็คล้ายๆ กับ [pipe ของ Unix](http://en.wikipedia.org/wiki/Pipeline_(Unix)) เลยครับ รับ output ของ statement แรกไปเป็น input ของ statement ต่อไป (และต่อไปเรื่อยๆ)
+> `pipe()` ของ Gulp ก็คล้ายๆ กับ [pipe ของ Unix](http://en.wikipedia.org/wiki/Pipeline_(Unix) เลยครับ รับ output ของ command แรกไปเป็น input ของ command ต่อไป (และต่อไปเรื่อยๆ)
 
 ## เพิ่ม task อีก
 
-ลองให้ gulp จัดการหลายๆ task พร้อมๆ กัน คือการ concatenate javascript, minify javascript และ minify html รวดเดียว
+ลองให้ Gulp จัดการหลายๆ task พร้อมๆ กัน คือการ concatenate JavaScript, minify JavaScript และ minify HTML รวดเดียว
 
 ก่อนอื่นต้องติดตั้ง plugin ที่จะใช้ก่อน
 
