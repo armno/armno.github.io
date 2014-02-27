@@ -19,13 +19,13 @@ $ gulp
 $ jekyll serve -w # on another tab/window
 ```
 
-Creating new
+Creating new post
 
 ```sh
-$ rake new_post title="<post title>" slug="<post slug>"
+$ rake new title="<post title>" slug="<post slug>" thumbnail="<thumbnail image url>"
 ```
 
-both `title` and `slug` are optional. default value for `title` is defined in Rakefile. default slug is generated from post title.
+both `title`, `slug` and `thumbnail` are optional. default value for `title` is defined in Rakefile. default slug is generated from post title. thumnail has no default value.
 
 ### Todo
 
