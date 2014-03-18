@@ -1,11 +1,11 @@
 {
   "name": "armno-in-th",
   "devDependencies": {
-    "gulp-util": "~2.2.12",
-    "gulp": "~3.4.0",
-    "gulp-ruby-sass": "~0.2.0",
-    "gulp-autoprefixer": "0.0.4",
-    "gulp-uglify": "~0.2.0",
-    "gulp-concat": "~2.1.7"
+    "gulp-util": "latest",
+    "gulp": "latest",
+    "gulp-ruby-sass": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest"
   }
 }
