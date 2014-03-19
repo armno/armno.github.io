@@ -1,5 +1,9 @@
 {
   "name": "armno-in-th",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/armno/armno.github.io"
+  },
   "devDependencies": {
     "gulp-util": "latest",
     "gulp": "latest",
