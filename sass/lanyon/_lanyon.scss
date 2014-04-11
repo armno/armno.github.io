@@ -408,6 +408,11 @@ a.pagination-item:hover {
  * on the right side.
  */
 
+.layout-reverse .wrap,
+.wrap {
+  left: auto;
+  transform: translateX(0);
+}
 .layout-reverse .sidebar {
   left: auto;
   // right: -14rem;
