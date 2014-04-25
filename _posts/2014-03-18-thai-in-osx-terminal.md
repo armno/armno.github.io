@@ -15,7 +15,7 @@ thumbnail: "http://farm4.staticflickr.com/3726/13239980733_839b6109c2.jpg"
 
 ลองหาใน Google ดู ก็พบว่าเป็นปัญหาที่ locale ในเครื่องเรา ที่มันอ่านภาษาไทยไม่ออก เมื่อรัน command `locale` มันก็ได้แบบนี้ครับ
 
-```sh
+{% highlight bash %}
 $ locale
 LANG=
 LC_COLLATE="C"
@@ -25,15 +25,15 @@ LC_MONETARY="C"
 LC_NUMERIC="C"
 LC_TIME="C"
 LC_ALL=
-```
+{% endhighlight %}
 
 วิธีแก้ก็คือ เซ็ต locale ให้มันเป็น `en_US.UTF-8` ครับ โดยเพิ่ม 2 บรรทัดนี้เข้าไปใน `~/.zshrc` (ถ้าใครใช้ bash ก็เป็น `~/.bashrc`)
 
-```sh
+{% highlight bash %}
 # ~/.zshrc
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-```
+{% endhighlight %}
 
 พบว่าภาษาไทยแสดงผลได้ดีแล้ว
 
@@ -43,7 +43,7 @@ export LANG=en_US.UTF-8
 
 เช็ค locale ดูก็เป็น `en_US.UTF-8`
 
-```sh
+{% highlight bash %}
 $ locale
 LANG="en_US.UTF-8"
 LC_COLLATE="en_US.UTF-8"
@@ -53,7 +53,7 @@ LC_MONETARY="en_US.UTF-8"
 LC_NUMERIC="en_US.UTF-8"
 LC_TIME="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
-```
+{% endhighlight %}
 
 ที่มา: [In OSX Lion, LANG is not set to utf8. how to fix?](http://stackoverflow.com/questions/7165108/in-osx-lion-lang-is-not-set-to-utf8-how-fix)
 

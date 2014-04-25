@@ -13,7 +13,8 @@ EditorConfig ก็เป็นไฟล์​ text ธรรมดาที่�
 
 ### ตัวอย่างไฟล์ `.editorconfig`
 
-<pre class="language-bash"><code># editorconfig.org
+{% highlight text %}
+# editorconfig.org
 root = true
 
 [*]
@@ -22,11 +23,13 @@ indent_size = 2
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
-insert_final_newline = true</code></pre>
+insert_final_newline = true
+{% endhighlight %}
 
 ทุกไฟล์ใน project ก็จะใช้ coding style แบบนี้ครับ ซึ่งเรายังสามารถกำหนด coding style ที่แตกต่างกันไปตามแต่ละชนิดของไฟล์ก็ได้ เช่น
 
-<pre class="language-bash"><code># editorconfig.org
+{% highlight text %}
+# editorconfig.org
 root = true
 
 [*]
@@ -39,7 +42,8 @@ indent_size = 4
 
 [tests/**.html]
 indent_style = tab
-indent_size = 2</code></pre>
+indent_size = 2
+{% endhighlight %}
 
 ส่วนในไฟล์ `.editorconfig` นั้นสามารถตั้งค่าอะไรได้บ้าง ดูได้จาก [EditorConfig Properties](https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties) ได้เลยจ้า
 

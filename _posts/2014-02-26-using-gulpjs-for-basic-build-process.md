@@ -23,22 +23,29 @@ thumbnail: http://farm6.staticflickr.com/5487/12794346545_facca0edf4_c.jpg
 
 ก่อนติดตั้ง Gulp ต้องมี node อยู่ในเครื่องก่อน จากนั้นก็ติดตั้งผ่าน command
 
-<pre class="language-bash"><code>$ npm install -g gulp</code></pre>
+{% highlight bash %}
+$ npm install -g gulp
+{% endhighlight %}
 
 ## 1st Gulp task
 
 ลองทำ task ง่ายๆ ให้ Gulp log คำว่า `lorem ipsum` ใน console ทุกครั้งที่เรา save ไฟล์ index.html
 
-<pre class="language-bash"><code>$ mkdir firstgulp
-$ cd firstgulp</code></pre>
+{% highlight bash %}
+$ mkdir firstgulp
+$ cd firstgulp
+{% endhighlight %}
 
 อันดับแรกต้องติดตั้ง package `gulp` แบบ local (ใน project) ก่อน
 
-<pre class="language-bash"><code>$ npm install --save-dev gulp</code></pre>
+{% highlight bash %}
+$ npm install --save-dev gulp
+{% endhighlight %}
 
 จากนั้นสร้างไฟล์ใหม่ชื่อว่า `gulpfile.js` (เทียบได้กับ `Grunfile.js` ของ Grunt) เพื่อเขียน task แรกกัน
 
-<pre class="language-javascript"><code>var gulp = require('gulp');
+{% highlight js %}
+var gulp = require('gulp');
 
 gulp.task('lorem', function() {
   console.log('lorem ipsum');
@@ -48,11 +55,14 @@ gulp.task('watch', function() {
   gulp.watch('index.html', ['lorem']);
 });
 
-gulp.task('default', ['watch']);</code></pre>
+gulp.task('default', ['watch']);
+{% endhighlight %}
 
 เสร็จแล้วก็แค่รัน
 
-<pre class="language-bash"><code>$ gulp</code></pre>
+{% highlight bash %}
+$ gulp
+{% endhighlight %}
 
 ![gulp-lorem](http://farm6.staticflickr.com/5487/12794346545_facca0edf4_c.jpg)
 
@@ -66,11 +76,14 @@ Gulp plugin ของ Sass นั้นมีอยู่ 2 ตัวคือ [
 
 อันดับแรกต้องลง Gulp plugin ที่ชื่อว่า `gulp-ruby-sass` ก่อน
 
-<pre class="language-bash"><code>$ npm install --save-dev gulp-ruby-sass</code></pre>
+{% highlight bash %}
+$ npm install --save-dev gulp-ruby-sass
+{% endhighlight %}
 
 จากนั้นใน gulpfile.js ก็โหลด module gulp-ruby-sass เข้ามาใช้ และก็เพิ่ม watch task เข้าไปครับ
 
-<pre class="language-javascript"><code>// gulpfile.js
+{% highlight js %}
+// gulpfile.js
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 
@@ -84,7 +97,8 @@ gulp.task('watch', function() {
   gulp.watch('sass/**/*.sass', ['css']);
 });
 
-gulp.task('default', ['watch']);</code></pre>
+gulp.task('default', ['watch']);
+{% endhighlight %}
 
 ทุกครั้งที่เรา save ไฟล์ `.sass` ใน directory 'sass' (รวมถึง sub-directory) gulp ก็จะรัน task css ซึ่ง compile Sass เป็น CSS ตาม directory ปลายทางที่ระบุไว้
 
@@ -96,11 +110,14 @@ gulp.task('default', ['watch']);</code></pre>
 
 ก่อนอื่นต้องติดตั้ง plugin ที่จะใช้ก่อน
 
-<pre class="language-bash"><code>$ npm install --save-dev gulp-concat gulp-uglify gulp-htmlmin</code></pre>
+{% highlight bash %}
+$ npm install --save-dev gulp-concat gulp-uglify gulp-htmlmin
+{% endhighlight %}
 
 จากนั้นเพิ่ม watcher กับ task เข้าไป
 
-<pre class="language-javascript"><code>// gulpfile.js
+{% highlight js %}
+// gulpfile.js
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');
@@ -135,11 +152,13 @@ gulp.task('watch', function() {
   gulp.watch('./src/index.html', ['html']);
 });
 
-gulp.task('default', ['css', 'js', 'html', 'watch']);</code></pre>
+gulp.task('default', ['css', 'js', 'html', 'watch']);
+{% endhighlight %}
 
 หรือเขียนอีกสไตล์หนึ่ง ให้รัน build task ทุกครั้งที่เราแก้ไขไฟล์ครับ (แต่จะดูสิ้นเปลืองไปหน่อยถ้าโปรเจ็คมีขนาดใหญ่ เพราะต้องรันทุก task)
 
-<pre class="language-javascript"><code>var gulp = require('gulp');
+{% highlight js %}
+var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -165,7 +184,8 @@ gulp.task('build', function() {
 
 gulp.task('default', function() {
   gulp.watch('./src/**/*', ['build']);
-});</code></pre>
+});
+{% endhighlight %}
 
 ด้วยความที่ gulpfile.js มีลักษณะคล้าย node app จึงมีวิธีเขียนได้หลายแบบ ได้ผลออกมาเหมือนกันครับ (คนที่เขียน nodejs เป็นอยู่แล้วน่าจะชอบ Gulp)นอกจากนี้ Gulp ยังมี plugin เพิ่มขึ้นเรื่อยๆ คาดว่าจะเป็น tool อีกตัวที่ได้รับความนิยมเพิ่มขึ้นในปี 2014 ครับ
 
