@@ -23,4 +23,4 @@ My hobbies other than web are usually about [photography](http://www.flickr.com/
 
 #### About this website
 
-Built with [Jekyll](http://jekyllrb.com) and [Lanyon](http://lanyon.getpoole.com/). Hosted on [Github Pages](http://pages.github.com). Source code is at [armno/armno.github.io](https://github.com/armno/armno.github.io).
+Built with [Jekyll](http://jekyllrb.com) and [Hyde](http://hyde.getpoole.com/). Hosted on [Github Pages](http://pages.github.com). Source code is at [armno/armno.github.io](https://github.com/armno/armno.github.io).

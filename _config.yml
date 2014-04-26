@@ -1,10 +1,10 @@
 title: 'ArmNo'
 name: 'ArmNo.in.th'
 tagline: 'a web nerd. cnx.'
-description: 'สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using Cordova'
+description: 'A nerdy web developer, Chiang Mai, Thailand.'
 thumbnail: 'http://www.gravatar.com/avatar/2b94fcf4614d1a468cc00c21612fea46?s=300'
 permalink: /:year/:month/:day/:title
 paginate: 7
 url: http://armno.in.th
-exclude: ["scss", "archived"]
+exclude: ["scss", "archived", "node_modules"]
 markdown: rdiscount

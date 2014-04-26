@@ -1,35 +1,42 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
 
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>{{ site.tagline }}</p>
-  </div>
+    <a href="/">
+      <img src="{{ site.thumbnail }}" alt="me" class="sidebar-thumbnail">
+    </a>
 
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+    <div class="sidebar-about text-center">
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p class="lead">{{ site.tagline }}</p>
+    </div>
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+    <div class="sidebar-social-icons text-center">
+      <a class="icon-github" href="https://github.com/armno"></a>
+      <a class="icon-twitter" href="https://twitter.com/armno"></a>
+      <a class="icon-instagram" href="https://instagram.com/armno"></a>
+    </div>
 
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+    <ul class="sidebar-nav text-center">
+      <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
+        <a href="/">Home</a>
+      </li>
+
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+              <a href="{{ node.url }}">{{ node.title }}</a>
+            </li>
+          {% endif %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </ul>
 
-  </nav>
-
-  <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
   </div>
 </div>

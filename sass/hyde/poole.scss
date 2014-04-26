@@ -204,6 +204,7 @@ img {
   display: block;
   margin: 0 0 1rem;
   border-radius: 5px;
+  max-width: 100%;
 }
 
 /* Tables */
@@ -309,7 +310,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #333;
 }
 .page-title,
 .post-title {

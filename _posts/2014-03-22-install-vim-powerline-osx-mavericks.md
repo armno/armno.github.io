@@ -16,26 +16,26 @@ thumbnail: "https://farm3.staticflickr.com/2825/13330998783_0ff3958050_z.jpg"
 
 อันดับแรกเช็คเวอร์ชั่นของ Python ในเครื่องก่อน ซึ่งใน document ของ Powerline แนะนำให้ใช้เวอร์ชั่น 2.7 ครับ
 
-```sh
+{% highlight bash %}
 $ python --version
 # ของผมเป็น python 2.7.5
-```
+{% endhighlight %}
 
 จากนั้นก็พบว่า ในเครื่องยังไม่มี `pip` ซึ่งจำเป็นสำหรับลง Powerline ก็ต้องลง `pip` ซะก่อน
 
-```sh
+{% highlight bash %}
 $ sudo easy_install pip
-```
+{% endhighlight %}
 
 แล้วก็ลง Powerline ผ่าน `pip`
 
-```sh
+{% highlight bash %}
 $ pip install --user git+git://github.com/Lokaltog/powerline
-```
+{% endhighlight %}
 
 เพื่อให้ Powerline ทำงาน ก็ต้องเพิ่ม path ของ Powerline ในไฟล์ `~/.vimrc`
 
-```viml
+{% highlight vim %}
 if has('statusline')
   " Always show status line
   set laststatus=2
@@ -43,7 +43,7 @@ if has('statusline')
   " Vim Powerline
   set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 endif
-```
+{% endhighlight %}
 
 สุดท้ายเลือกใช้ font ที่ support Powerline (ซึ่งมักจะมีตัวอักษรแปลกๆ) ได้จาก [Lokaltog/powerline-fonts](https://github.com/Lokaltog/powerline-fonts)
 
