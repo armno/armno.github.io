@@ -59,5 +59,7 @@ indent_size = 2
 
 ส่วน vim นั้นก็มี plugin [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) ลงผ่าน pathogen ได้เลย ลงปุ๊บก็อ่าน `.editorconfig` ได้ทันทีครับ
 
-<pre class="language-bash"><code>$ cd ~/.vim/bundle
-$ git clone https://github.com/editorconfig/editorconfig-vim.git</code></pre>
+{% highlight bash %}
+$ cd ~/.vim/bundle
+$ git clone https://github.com/editorconfig/editorconfig-vim.git
+{% endhighlight %}
