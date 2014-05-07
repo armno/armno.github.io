@@ -25,7 +25,11 @@ Creating new post
 $ rake new title="<post title>" slug="<post slug>" thumbnail="<thumbnail image url>"
 ```
 
-both `title`, `slug` and `thumbnail` are optional. default value for `title` is defined in Rakefile. default slug is generated from post title. thumnail has no default value.
+where pameters are
+
+- `title` (optional) - the post's title. default value is defined in [Rakefile](https://github.com/armno/armno.github.io/blob/master/Rakefile#L7).
+- `slug` (optional) - the post's slug. by default, it is generated from `title`. tested with English only.
+- `thumbnail` (optional) - the post's thumbnail. currently used for open graph meta tags. no default value.
 
 ### Todo
 
