@@ -18,13 +18,17 @@ layout: post
 
 รัน command ใน terminal
 
-<pre><code class="language-bash">$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</code></pre>
+{% highlight bash %}
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+{% endhighlight %}
 
 ### ใช้งาน Apache
 
 ใน OSX 10.8 นั้นไม่มีตัวเลือก Web Sharing ให้เลือกใน System Preferences > Sharing แล้ว ซึ่งเราสามารถรัน Apache ได้จาก terminal ครับ
 
-<pre><code class="language-bash">$ sudo apachectl start</code></pre>
+{% highlight bash %}
+$ sudo apachectl start
+{% endhighlight %}
 
 ### ติดตั้ง PHP 5.4
 
@@ -34,11 +38,17 @@ layout: post
 
 สำหรับ PHP 5.4 นั้นชื่อ package <code>php54</code> (ณ วันที่เขียนยังไม่มี PHP 5.5 ใน homebrew ครับ)
 
-<pre><code class="language-bash">$ brew install php54</code></pre>
+> เลขเวอร์ชั่นของ PHP อาจจะต่างออกไป ตามเวอร์ชั่นที่เลือกลง โพสต์นี้เขียนตอน PHP 5.4 ครับ
+
+{% highlight bash %}
+$ brew install php54
+{% endhighlight %}
 
 รอสักพักจนเสร็จ PHP 5.4 ก็จะถูกติดตั้งไว้ที่
 
-<pre><code class="language-bash">/usr/local/Cellar/php54/5.4.15</code></pre>
+{% highlight bash %}
+/usr/local/Cellar/php54/5.4.15
+{% endhighlight %}
 
 ![installed php 5.4](http://farm4.staticflickr.com/3708/9158088329_903636e415_z.jpg)
 
@@ -48,11 +58,15 @@ layout: post
 
 ใช้คำสั่ง <code>brew install</code> เหมือนเดิม
 
-<pre><code class="language-bash">$ brew install mysql</code></pre>
+{% highlight bash %}
+$ brew install mysql
+{% endhighlight %}
 
 หลังจาก install เสร็จก็เซ็ต root password ด้วย command
 
-<pre><code class="language-bash">$ mysql_secure_installation</code></pre>
+{% highlight bash %}
+$ mysql_secure_installation
+{% endhighlight %}
 
 ทำตามขั้นตอนไปเรื่อยๆ จนจบได้เลย
 
@@ -62,55 +76,77 @@ layout: post
 
 ซึ่งก็คือ เราต้องไปแก้ path ในไฟล์ <code>httpd.conf</code> ครับ
 
-<pre><code class="language-bash">$ sudo vim /etc/apache2/httpd.conf</code></pre>
+{% highlight bash %}
+$ sudo vim /etc/apache2/httpd.conf
+{% endhighlight %}
 
 หาบรรทัดนี้
 
-<pre><code class="language-bash">LoadModule php5_module libexec/apache2/libphp5.so</code></pre>
+{% highlight text %}
+LoadModule php5_module libexec/apache2/libphp5.so
+{% endhighlight %}
 
 แล้วแก้เป็น
 
-<pre><code class="language-bash">LoadModule php5_module /usr/local/Cellar/php54/5.4.15/libexec/apache2/libphp5.so</code></pre>
+{% highlight text %}
+LoadModule php5_module /usr/local/Cellar/php54/5.4.15/libexec/apache2/libphp5.so
+{% endhighlight %}
 
 จากนั้น restart Apache
 
-<pre><code class="language-bash">$ sudo apachectl restart</code></pre>
+{% highlight text %}
+$ sudo apachectl restart
+{% endhighlight %}
 
 ### เซ็ต DocumentRoot
 
 ปกติผมจะเซ็ตให้ directory <code>~/Sites</code> เป็น root directory ของ localhost ครับ (เปรียบเสมือน <code>/var/www/</code> ใน Ubuntu) ซึ่งก็ต้องไปแก้ path ในไฟล์ <code>httpd.conf</code> เหมือนเดิม
 
-<pre><code class="language-bash">$ sudo vim /etc/apache2/httpd.conf</code></pre>
+{% highlight bash %}
+$ sudo vim /etc/apache2/httpd.conf
+{% endhighlight %}
 
 หา
 
-<pre><code class="language-bash">DocumentRoot "/Library/WebServer/Documents"</code></pre>
+{% highlight bash %}
+DocumentRoot "/Library/WebServer/Documents"
+{% endhighlight %}
 
 เปลี่ยนเป็น
 
-<pre><code class="language-bash">DocumentRoot "/Users/armno/Sites" # อย่าลืมเปลี่ยน username เป็นของคุณ</code></pre>
+{% highlight text %}
+DocumentRoot "/Users/armno/Sites" # อย่าลืมเปลี่ยน username เป็นของคุณ
+{% endhighlight %}
 
 และตรง <code>&lt;Directory&gt;</code> ก็ต้องเปลี่ยนเป็น path เดียวกันด้วยครับ
 
-<pre><code class="language-bash">&lt;Directory "/Users/armno/Sites"&gt;</code></pre>
+{% highlight text %}
+<Directory "/Users/armno/Sites">
+{% endhighlight %}
 
 สุดท้าย ค้นหา
 
-<pre><code class="language-bash">&lt;IfModule dir_module&gt;
+{% highlight text %}
+<IfModule dir_module>
     DirectoryIndex index.html
-&lt;/IfModule&gt;</code></pre>
+</IfModule>
+{% endhighlight %}
 
 เพิ่ม <code>index.php</code> เข้าไปก่อน <code>index.html</code>
 
-<pre><code class="language-bash">&lt;IfModule dir_module&gt;
+{% highlight text %}
+<IfModule dir_module>
     DirectoryIndex index.php index.html
-&lt;/IfModule&gt;</code></pre>
+</IfModule>
+{% endhighlight %}
 
 จากนั้น save file แล้วก็ restart Apache อีกครั้งครับ (command เดียวกับข้างบน)
 
 ### ทดสอบ
 
-<pre><code class="language-bash">$ echo "&lt;?php phpinfo();" > ~/Sites/info.php</code></pre>
+{% highlight bash %}
+$ echo "<?php phpinfo();" > ~/Sites/info.php
+{% endhighlight %}
 
 แล้วเปิด <code>http://localhost/info.php</code> ใน browser ก็จะเจอข้อมูล <code>phpinfo</code> ครับ
 
