@@ -12,7 +12,10 @@ layout: post
 [Homebrew](http://brew.sh) คือพระเอกของเราครับ ช่วยให้เราลง package สารพัดได้ใน OSX ได้อย่างไม่ยากเย็นนัก (สำหรับผมที่มาจากโลก Ubuntu Homebrew คือเปรียบเสมือนคำสั่ง `apt-get` นั่นเอง)
 
 - โพสต์นี้ทดสอบบน OSX 10.8+ นะครับ
-- เหมาะกับคนที่ชอบทำอะไรใน terminal
+
+<blockquote>
+  Update 27/07/2014 &ndash; ทดสอบทั้งบน OSX Mavericks กับ Yosemite Beta แล้ว ได้เหมือนกันครับ
+</blockquote>
 
 ### ติดตั้ง Homebrew
 
@@ -24,13 +27,17 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 ### ใช้งาน Apache
 
-ใน OSX 10.8 นั้นไม่มีตัวเลือก Web Sharing ให้เลือกใน System Preferences > Sharing แล้ว ซึ่งเราสามารถรัน Apache ได้จาก terminal ครับ
+ตั้งแต่ OSX 10.8 เป็นต้นมานั้น ไม่มีตัวเลือก Web Sharing ให้เลือกใน System Preferences > Sharing แล้ว ซึ่งเราสามารถรัน Apache ได้จาก terminal ครับ
 
 {% highlight bash %}
 $ sudo apachectl start
 {% endhighlight %}
 
 ### ติดตั้ง PHP 5.4
+
+<blockquote>
+  Update 27/07/2014 &ndash; ใน homebrew นั้นมี PHP เวอร์ชั่นใหม่ๆ มาตลอด รวมถึง rc ด้วย ลองเช็คผ่าน <code>brew search php</code> ดูก่อน สำหรับผมจะเลือกเวอร์ชั่น stable ล่าสุดเสมอครับ
+</blockquote>
 
 ต่อไปก็ต้องลง PHP ผ่าน Homebrew ครับ สำหรับการลง package ด้วย homebrew นั้นใช้ command <code>brew install &lt;package name&gt;</code> แต่ถ้าไม่แน่ใจว่า <code>package name</code> นั้นมีอะไรบ้าง ใช้ command <code>brew search</code> หาดูก่อนได้ครับ
 
@@ -100,7 +107,7 @@ $ sudo apachectl restart
 
 ### เซ็ต DocumentRoot
 
-ปกติผมจะเซ็ตให้ directory <code>~/Sites</code> เป็น root directory ของ localhost ครับ (เปรียบเสมือน <code>/var/www/</code> ใน Ubuntu) ซึ่งก็ต้องไปแก้ path ในไฟล์ <code>httpd.conf</code> เหมือนเดิม
+ปกติผมจะเซ็ตให้ directory <code>~/code</code> เป็น root directory ของ localhost ครับ (เปรียบเสมือน <code>/var/www/</code> ใน Ubuntu) ซึ่งก็ต้องไปแก้ path ในไฟล์ <code>httpd.conf</code> เหมือนเดิม
 
 {% highlight bash %}
 $ sudo vim /etc/apache2/httpd.conf
@@ -115,13 +122,13 @@ DocumentRoot "/Library/WebServer/Documents"
 เปลี่ยนเป็น
 
 {% highlight text %}
-DocumentRoot "/Users/armno/Sites" # อย่าลืมเปลี่ยน username เป็นของคุณ
+DocumentRoot "/Users/armno/code" # อย่าลืมเปลี่ยน username เป็นของคุณ
 {% endhighlight %}
 
 และตรง <code>&lt;Directory&gt;</code> ก็ต้องเปลี่ยนเป็น path เดียวกันด้วยครับ
 
 {% highlight text %}
-<Directory "/Users/armno/Sites">
+<Directory "/Users/armno/code">
 {% endhighlight %}
 
 สุดท้าย ค้นหา
@@ -140,12 +147,12 @@ DocumentRoot "/Users/armno/Sites" # อย่าลืมเปลี่ยน u
 </IfModule>
 {% endhighlight %}
 
-จากนั้น save file แล้วก็ restart Apache อีกครั้งครับ (command เดียวกับข้างบน)
+จากนั้น save file แล้วก็ restart Apache อีกครั้งครับ (command เดียวกับข้างบน) พอรัน `http://locahost` Apache ก็จะชี้ไปที่ `~/code` เป็น root directory
 
 ### ทดสอบ
 
 {% highlight bash %}
-$ echo "<?php phpinfo();" > ~/Sites/info.php
+$ echo "<?php phpinfo();" > ~/code/info.php
 {% endhighlight %}
 
 แล้วเปิด <code>http://localhost/info.php</code> ใน browser ก็จะเจอข้อมูล <code>phpinfo</code> ครับ
@@ -153,3 +160,12 @@ $ echo "<?php phpinfo();" > ~/Sites/info.php
 ![phpinfo](http://farm6.staticflickr.com/5513/9158338115_1a9c7169eb_o.png)
 
 เสร็จแล้ว :D
+
+### Update - OSX Yosemite
+
+ล่าสุดทดสอบบน OSX Yosemite beta ด้วยการอัพเกรดจาก Mavericks พบว่าต้องเซ็ตค่าในไฟล์ `httpd.conf` ใหม่ ส่วน php นั้นต้องลบแล้วก็ลงใหม่ ถึงจะใช้งานได้ ส่วนวิธีการก็เหมือนเดิมทุกอย่างครับ
+
+{% highlight bash %}
+$ brew uninstall php55
+$ brew install php55
+{% endhighlight %}
