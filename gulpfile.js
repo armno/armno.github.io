@@ -1,8 +1,8 @@
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
-var prefix = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
+var critical = require('critical');
+
+// load plugins
+var $ = require('gulp-load-plugins')();
 
 gulp.task('css', function() {
 	return gulp.src('sass/style.sass')
@@ -16,6 +16,26 @@ gulp.task('js', function() {
 				.pipe(concat('scripts.js'))
 				.pipe(uglify())
 				.pipe(gulp.dest('js'));
+});
+
+gulp.task('copystyles', function() {
+  return gulp.src(['_site/css/style.css'])
+    .pipe($.rename({
+      basename: 'site'
+    }))
+    .pipe(gulp.dest('_site/css'));
+});
+
+gulp.task('critical', ['copystyles'], function() {
+   critical.generateInline({
+    base: '_site/',
+    src: 'index.html',
+    styleTarget: 'css/style.css',
+    htmlTarget: 'index.html',
+    width: 320,
+    height: 480,
+    minify: true
+  });
 });
 
 gulp.task('default', function() {

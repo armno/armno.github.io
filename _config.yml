@@ -6,4 +6,4 @@ thumbnail: 'http://www.gravatar.com/avatar/2b94fcf4614d1a468cc00c21612fea46?s=30
 permalink: /:year/:month/:day/:title
 paginate: 7
 url: http://armno.in.th
-exclude: ["scss", "archived", "node_modules"]
+exclude: ["sass", "archived", "node_modules", "gulpfile.js", "package.json", "Rakefile"]
