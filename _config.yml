@@ -2,7 +2,7 @@ title: 'ArmNo'
 name: 'ArmNo.in.th'
 tagline: 'a web nerd. cnx.'
 description: 'A nerdy web developer, Chiang Mai, Thailand.'
-thumbnail: 'http://www.gravatar.com/avatar/2b94fcf4614d1a468cc00c21612fea46?s=300'
+thumbnail: 'http://armno.in.th/img/me.jpg'
 permalink: /:year/:month/:day/:title
 paginate: 7
 url: http://armno.in.th
