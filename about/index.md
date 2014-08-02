@@ -4,8 +4,6 @@ title: About
 description: สวัสดี My name is Armno. I am a web developer living in beautiful Chiang Mai, Thailand. I started my career as a web developer since 2010. I work on HTML/JS/CSS/PHP and some Ruby for fun.
 ---
 
-![My Gravatar Profile](http://www.gravatar.com/avatar/2b94fcf4614d1a468cc00c21612fea46?s=150)
-
 > TL;DR &ndash; #javascript #css #mobileweb #perfmatters #cordova
 
 สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova](http://cordova.io).
