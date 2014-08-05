@@ -1,12 +1,12 @@
 # ArmNo's Jekyll blog
 
-Install required gems
+Install required gems.
 
 ```sh
-$ gem install jekyll rdiscount
+$ gem install jekyll
 ```
 
-Install required node packages
+Install required node packages.
 
 ```sh
 $ npm install
@@ -18,6 +18,8 @@ Running
 $ gulp
 $ jekyll serve -w # on another tab/window
 ```
+
+> I'm working on combining `gulp watch` and `jekyll serve` into 1 command. Hopefully it is not that hard.
 
 Creating new post
 
