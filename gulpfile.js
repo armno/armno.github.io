@@ -5,15 +5,15 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('css', function() {
 	return gulp.src('sass/style.sass')
-				.pipe(sass({ style: 'compressed' }))
-				.pipe(prefix('last 2 version'))
+				.pipe($.rubySass({ style: 'compressed' }))
+				.pipe($.autoprefixer('last 2 version'))
 				.pipe(gulp.dest('css'));
 });
 
 gulp.task('js', function() {
 	return gulp.src(['js/lib/fastclick/lib/fastclick.js'])
-				.pipe(concat('scripts.js'))
-				.pipe(uglify())
+				.pipe($.concat('scripts.js'))
+				.pipe($.uglify())
 				.pipe(gulp.dest('js'));
 });
 
