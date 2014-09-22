@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var critical = require('critical');
 
 // load plugins
 var $ = require('gulp-load-plugins')();
@@ -24,18 +23,6 @@ gulp.task('copystyles', function() {
       basename: 'site'
     }))
     .pipe(gulp.dest('_site/css'));
-});
-
-gulp.task('critical', ['copystyles'], function() {
-   critical.generateInline({
-    base: '_site/',
-    src: 'index.html',
-    styleTarget: 'css/style.css',
-    htmlTarget: 'index.html',
-    width: 320,
-    height: 480,
-    minify: true
-  });
 });
 
 gulp.task('default', function() {
