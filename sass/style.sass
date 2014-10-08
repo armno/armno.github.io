@@ -58,3 +58,25 @@ img
 .footer-credit
   font-size: 0.8rem
   color: #aaa
+
+.for-print
+  display: none
+
+@media print
+  .for-print
+    display: block
+
+  .sidebar-thumbnail
+    position: absolute
+    display: block
+
+  .sidebar,
+  .comments,
+  .related,
+  .sharing
+    display: none
+
+  .me
+    width: 80px
+    border-radius: 40px
+    margin: 0 auto 10px
