@@ -3,7 +3,7 @@ layout: post
 title: "git stash & git patched commit"
 description: ในระหว่างที่กำลังเขียน code อยู่ มีโอกาสที่งานอย่างอื่นจะเข้ามาแทรกได้เสมอ (ไม่ว่าจะเป็น bug หรือ feature ก็ตาม!) เราสามารถใช้ <code>git stash</code> กับ <code>git commit -p</code> ช่วยให้งานที่ทำอยู่นั้นปลอดภัย ไม่หายไปจากโลกได้
 published: true
-thumbnail:
+thumbnail: https://farm4.staticflickr.com/3946/15356691278_05f7357447_z.jpg
 ---
 
 (สถานการณ์จำลอง)

@@ -5,8 +5,9 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('css', function() {
 	return gulp.src('sass/style.sass')
-				.pipe($.rubySass({ style: 'compressed' }))
-				.pipe($.autoprefixer('last 2 version'))
+				.pipe($.rubySass({
+          style: 'compressed'
+        }))
 				.pipe(gulp.dest('css'));
 });
 
@@ -15,14 +16,6 @@ gulp.task('js', function() {
 				.pipe($.concat('scripts.js'))
 				.pipe($.uglify())
 				.pipe(gulp.dest('js'));
-});
-
-gulp.task('copystyles', function() {
-  return gulp.src(['_site/css/style.css'])
-    .pipe($.rename({
-      basename: 'site'
-    }))
-    .pipe(gulp.dest('_site/css'));
 });
 
 gulp.task('default', function() {
