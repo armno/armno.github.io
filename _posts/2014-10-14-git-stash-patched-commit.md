@@ -19,7 +19,7 @@ thumbnail:
 - C: (เป็น dev ด้วยกัน) "pull branch X ไป review code/run หน่อย เพิ่ง push ไป"
 - A: ...
 
-การมี `git` นั้นทำให้เราสามาถทำ snapshot ของงานส่วนที่เรากำลังทำอยู่ได้ โดยไม่ไปทำของคนอื่นพัง และงานเราไม่หายด้วย ปกติผมจะใช้ 2 command นี้ครับ
+การมี `git` นั้นทำให้เราสามารถทำ snapshot ของงานส่วนที่เรากำลังทำอยู่ได้ โดยไม่ไปทำของคนอื่นพัง และงานเราไม่หายด้วย ปกติผมจะใช้ 2 command นี้ครับ
 
 ## 1. `git stash`
 
@@ -68,3 +68,44 @@ $ git stash list
 พอ pop ออกมา ไฟล์ที่เป็น untracked file ก็ยังอยู่ครบเหมือนเดิม
 
 ![git stash pop with untracked file](https://farm4.staticflickr.com/3942/15353147449_159851951c_z.jpg)
+
+workflow คร่าวๆ ก็คือ stash งานของเราไว้ก่อน > ทำส่วนอื่นให้เสร็จ > push งานใหม่ไป > pop stash ออกมาทำต่อ ประมาณนี้ครับ
+
+## 2. `git add/commit -p`
+
+`--patch` หรือ `-p` เป็น parameter ของ command `git add` และ `git commit` ทำให้เราสามารถเลือก add หรือ commit เฉพาะบางส่วนของ code ที่เราแก้ไขไปแล้ว โดย code ส่วนที่เหลือ ก็ยังคงเป็นสถานะ modified (unstaged) อยู่
+
+ตัวอย่างเช่น ผมมีไฟล์ `index.html` ที่อัพเดท code ไปบางส่วนแล้ว รัน `git diff` แล้วได้ออกมาแบบนี้
+
+![modified code](https://farm4.staticflickr.com/3956/14921984934_f13f0300b9_c.jpg)
+
+รัน `git add -p index.html` git จะแบ่ง code ออกเป็นส่วนย่อยๆ (hunks) แล้วให้เรารีวิวว่า จะเลือกทำอะไรกับ hunk นั้นๆ รูปข้างล่างนี้จะเห็นว่ามี prompt ให้มาให้เราเลือก ซึ่งตัวเลือกก็มี `y` `n` `q` `a` `d` `/` `j` `J` `g` `e` และก็ `?` ซึ่งเราสามารถเลือก `?` แล้วกด enter เพื่อดูความหมายของแต่ละตัวเลือกได้ (ผมเองก็ไม่เคยจะจำได้เหมือนกัน)
+
+![interactive add](https://farm6.staticflickr.com/5608/15356163429_da0aa59b9e_z.jpg)
+
+![available options](https://farm4.staticflickr.com/3946/15356691278_05f7357447_z.jpg)
+
+ที่ผมใช้บ่อยๆ ก็จะมี
+
+- `y` หรือ yes เพื่อ add hunk นี้เข้า staged zone
+- `n` หรือ no ยังไม่ add hunk นี้
+- `q` หรือ quit ออกจาก interactive mode (หยุดการทำงานของ `git add -p`)
+- `s` หรือ split ซอย hunk นี้ให้เล็กลงกว่าเดิม
+
+ตัวเลือก `s` นั้นมีประโยชน์มาก เนื่องจากปกติแล้ว git จะแบ่ง code ออกเป็น hunk ให้เอง โดยที่ code ที่อยู่ใกล้ๆ กันรวมเป็น hunk เดียวกัน ซึ่งจริงๆ แล้ว code ที่อยู่ใกล้กันนั้นอาจจะเป็นคนละส่วนกันก็ได้ _(จริงๆ แล้ววิธีการแบ่ง hunk ของ git นั้นมีหลักเกณฑ์มากกว่านี้ แต่ขอข้ามไปละกันครับ ผมเองไม่ได้เข้าใจทั้งหมดเหมือนกัน)_
+
+อย่างตอนนี้ผม add เฉพาะ hunk แรก พอรัน `git status` ก็จะเห็นสถานะทั้ง staged และ modified (unstaged) จากไฟล์เดียวกัน
+
+![added patch](https://farm4.staticflickr.com/3954/15540282891_0b83fa8a31.jpg)
+
+ซึ่งพอ commit ไปแล้ว code ส่วนยังเหลือ ก็ยังอยู่ในสถานะ modified (unstaged) เหมือนเดิม
+
+![remaining code](https://farm4.staticflickr.com/3930/15357360570_8d37b5040c_z.jpg)
+
+### สรุป
+
+- `git stash` เอาไว้ซ่อน modified code และทำให้ repo ของเรากลับมา clean เทียบจาก commit ล่าสุด
+- `git stash pop` เรียก code ที่ stash ไว้ล่าสุดออกมา
+- `git add(commit) -p` add หรือ commit ทีละส่วนของ code แบบ interactive
+
+ในชีวิตประจำวัน ผมจะใช้ `git add -p` เกือบทุกครั้ง หลักๆ เพื่อเลือก add/commit เฉพาะเท่าที่จำเป็น กรองเอา code ขยะออก และได้โบนัสเป็นการ review code ที่ตัวเองเขียนไปในตัวด้วย ส่วน `git stash` นั้น นานๆ จะได้ใช้ทีนึงครับ
