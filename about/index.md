@@ -6,7 +6,7 @@ description: สวัสดี My name is Armno. I am a web developer living in
 
 > TL;DR &ndash; #javascript #css #mobileweb #perfmatters #cordova
 
-สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova].
+สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova] and [Angular][angular].
 
 I am learning to be a good web designer as well. I believe good design can make <del>websites</del> <ins>things</ins> better. I pretend to be a typography nerd sometimes.
 
@@ -35,3 +35,4 @@ Built with [Jekyll][jekyll] and [Hyde][hyde]. Hosted on [Github Pages][github-pa
 [hyde]: http://hyde.getpoole.com/
 [github-pages]: http://pages.github.com
 [repo]: https://github.com/armno/armno.github.io
+[angular]: https://angularjs.org
