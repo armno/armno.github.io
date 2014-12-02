@@ -23,6 +23,10 @@ My hobbies other than web are usually about [photography][flickr] and [playing g
 
 Built with [Jekyll][jekyll] and [Hyde][hyde]. Hosted on [Github Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
 
+<div class="text-center">
+  <github-card user="armno"></github-card>
+</div>
+
 [cordova]: http://cordova.io "Cordova Website"
 [flickr]: http://www.flickr.com/photos/armno "Armno's Flickr Page"
 [soundclound]: https://soundcloud.com/armno "Armno's Soundcloud page"
