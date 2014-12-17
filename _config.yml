@@ -2,8 +2,8 @@ title: 'Armno'
 name: 'Armno.in.th'
 tagline: 'a web nerd. cnx.'
 description: 'A nerdy web developer, Chiang Mai, Thailand.'
-thumbnail: 'http://armno.in.th/img/me.jpg'
+thumbnail: 'https://armno.github.io/img/me.jpg'
 permalink: /:year/:month/:day/:title
 paginate: 16
-url: http://armno.in.th
+url: https://armno.github.io
 exclude: ["sass", "archived", "node_modules", "gulpfile.js", "package.json", "Rakefile"]
