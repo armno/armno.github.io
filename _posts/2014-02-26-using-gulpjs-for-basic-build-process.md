@@ -51,11 +51,9 @@ gulp.task('lorem', function() {
   console.log('lorem ipsum');
 });
 
-gulp.task('watch', function() {
+gulp.task('default', function() {
   gulp.watch('index.html', ['lorem']);
 });
-
-gulp.task('default', ['watch']);
 {% endhighlight %}
 
 เสร็จแล้วก็แค่รัน
@@ -93,11 +91,9 @@ gulp.task('css', function(){
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('watch', function() {
+gulp.task('default', function() {
   gulp.watch('sass/**/*.sass', ['css']);
 });
-
-gulp.task('default', ['watch']);
 {% endhighlight %}
 
 ทุกครั้งที่เรา save ไฟล์ `.sass` ใน directory 'sass' (รวมถึง sub-directory) gulp ก็จะรัน task css ซึ่ง compile Sass เป็น CSS ตาม directory ปลายทางที่ระบุไว้
@@ -146,13 +142,11 @@ gulp.task('html', function() {
         .pipe(gulp.dest('.'));
 });
 
-gulp.task('watch', function() {
+gulp.task('default', ['css', 'js', 'html'], function() {
   gulp.watch('./sass/**/*.sass', ['css']);
   gulp.watch('./src/**/*.js', ['js']);
   gulp.watch('./src/index.html', ['html']);
 });
-
-gulp.task('default', ['css', 'js', 'html', 'watch']);
 {% endhighlight %}
 
 หรือเขียนอีกสไตล์หนึ่ง ให้รัน build task ทุกครั้งที่เราแก้ไขไฟล์ครับ (แต่จะดูสิ้นเปลืองไปหน่อยถ้าโปรเจ็คมีขนาดใหญ่ เพราะต้องรันทุก task)
