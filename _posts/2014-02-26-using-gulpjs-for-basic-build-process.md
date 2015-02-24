@@ -86,8 +86,7 @@ var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 
 gulp.task('css', function(){
-  return gulp.src('./sass/**/*.sass')
-        .pipe(sass())
+  return sass('sass/')
         .pipe(gulp.dest('./css'));
 });
 
@@ -121,8 +120,7 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task('css', function(){
-  return gulp.src('./sass/**/*.sass')
-        .pipe(sass())
+  return sass('sass/')
         .pipe(gulp.dest('./css'));
 });
 
@@ -159,8 +157,7 @@ var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task('build', function() {
-    gulp.src('./sass/**/*.sass')
-        .pipe(sass())
+    sass('/sass')
         .pipe(gulp.dest('./css'));
 
     gulp.src([
