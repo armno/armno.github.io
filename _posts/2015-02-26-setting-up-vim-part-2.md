@@ -3,7 +3,7 @@ layout: post
 title: "Setting up Vim : Part II"
 description: เคยเขียนวิธีการ setup Vim ของผมตอนแรกเมื่อประมาณปีที่แล้ว พอใช้งานไปเรื่อยๆ ก็พบว่าได้ปรับเปลี่ยนอีกบางส่วนตามการใช้งาน เลยเอา plugin/setup ที่เปลี่ยนไปจากตอนแรกมารวมกันไว้ในโพสต์นี้ครับ
 published: true
-thumbnail: "/img/posts/vim-airline.png"
+thumbnail: "http://armno.github.io/img/posts/vim-airline.png"
 ---
 
 {% highlight text %}
