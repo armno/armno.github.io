@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "critical": "^0.1.6",
-    "gulp": "latest",
+    "gulp": "^3.8.11",
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
     "gulp-load-plugins": "^0.5.3",

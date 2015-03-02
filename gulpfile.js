@@ -18,14 +18,7 @@ gulp.task('js', function() {
 				.pipe(gulp.dest('js'));
 });
 
-gulp.task('default', function() {
-	gulp.run('css');
-	gulp.run('js');
-	gulp.watch('sass/**/*', function() {
-		gulp.run('css');
-	});
-
-	gulp.watch('js/**/*', function() {
-		gulp.run('js');
-	});
+gulp.task('default', ['css', 'js'], function() {
+	gulp.watch('sass/**/*', ['css']);
+	gulp.watch('js/**/*', ['js']);
 });
