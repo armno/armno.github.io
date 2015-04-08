@@ -4,6 +4,7 @@ date: 2008-07-14 16:42:29
 layout: post
 slug: free-astronomy-wallpapers
 title: ดาวน์โหลด wallpaper ภาพอวกาศและดวงดาวฟรี
+description: หลายๆคนชอบมีภาพอวกาศหรือดวงดาวต่างๆไว้ประดับห้องนอน โต๊ะทำงาน ในอัลบั้มภาพ หรือแม้กระทั่งบนจอคอมพิวเตอร์  ผมเองก็เหมือนกันครับ  โดยเฉพาะหน้าจอ Desktop ก็ชอบหาภาพอวกาศ ดวงดาวหรือเนบิวลาต่างๆมาเป็น Wallpaper อยู่เสมอ
 wordpress_id: 69
 categories:
 - Life
@@ -16,25 +17,17 @@ tags:
 
 หลายๆคนชอบมีภาพอวกาศหรือดวงดาวต่างๆไว้ประดับห้องนอน โต๊ะทำงาน ในอัลบั้มภาพ หรือแม้กระทั่งบนจอคอมพิวเตอร์  ผมเองก็เหมือนกันครับ  โดยเฉพาะหน้าจอ Desktop ก็ชอบหาภาพอวกาศ ดวงดาวหรือเนบิวลาต่างๆมาเป็น Wallpaper อยู่เสมอ  มองมันทีไรก็รู้สึกผ่อนคลาย หายเครียดได้เยอะเลยครับ  เพราะว่ามันสวยดี ;)  วันนี้เก็บแหล่งดาวน์โหลด Wallpaper ภาพดวงดาวและอวกาศต่างๆมาฝากจาก ๒ เว็บด้วยกันครับ
 
-
-[![hbl1](http://www.armno.in.th/wp-content/uploads/2008/07/hbl1-thumb.jpg)](http://www.armno.in.th/wp-content/uploads/2008/07/hbl1.jpg)
-
+![hbl1](http://2012.armno.in.th/wp-content/uploads/2008/07/hbl1-thumb.jpg)
 
 [http://hubblesite.org/gallery/wallpaper/](http://hubblesite.org/gallery/wallpaper/) เว็บนี้เป็นเว็บไซต์หลักของ**[กล้องโทรทัศน์อวกาศฮับเบิล](http://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%97%E0%B8%A3%E0%B8%A3%E0%B8%A8%E0%B8%99%E0%B9%8C%E0%B8%AD%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%AE%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%A5)**ครับ  เราก็เข้ามาที่ **[Gallery](http://hubblesite.org/gallery/)** ซึ่งเป็นที่รวบรวมภาพถ่ายจากกล้องฮับเบิลไว้มากมาย สำหรับ Wallpaper มีทั้งหมด **๕๑** รูปครับ คุณภาพไม่ต้องพูดถึง การันตีด้วยชื่อกล้องฮับเบิลอยู่แล้ว  เสียอย่างเดียว ไม่ได้อัพเดทรูปใหม่ๆมาหลายปีละ
 
+![hbl2](http://2012.armno.in.th/wp-content/uploads/2008/07/hbl2-thumb.jpg)
 
-[![hbl2](http://www.armno.in.th/wp-content/uploads/2008/07/hbl2-thumb.jpg)](http://www.armno.in.th/wp-content/uploads/2008/07/hbl2.jpg)
+![hbl3](http://2012.armno.in.th/wp-content/uploads/2008/07/hbl3-thumb.jpg)
 
-
-
-
-
-[![hbl3](http://www.armno.in.th/wp-content/uploads/2008/07/hbl3-thumb.jpg)](http://www.armno.in.th/wp-content/uploads/2008/07/hbl3.jpg)
-เลือกขนาด Resolution ได้สี่ขนาด เสียดายไม่มีของจอ Widescreen
-
+เลือกขนาด Resolution ได้เยอะแยะเลยทีเดียว
 
 สำหรับอีกเว็บนึงที่แนะนำก็คือที่ **[Smashing Magazine](http://www.smashingmagazine.com)** ครับ
-
 
 [http://www.smashingmagazine.com/2008/06/11/space-wallpapers-and-nebula-wallpapers/](http://www.smashingmagazine.com/2008/06/11/space-wallpapers-and-nebula-wallpapers/)
 
@@ -42,8 +35,7 @@ tags:
 
 ขอให้ทุกคนมีความสุขกับการดูดาวครับ
 
+![ava120](http://2012.armno.in.th/wp-content/uploads/2008/07/ava120-thumb.gif)
 
-
-[![ava120](http://www.armno.in.th/wp-content/uploads/2008/07/ava120-thumb.gif)](http://www.armno.in.th/wp-content/uploads/2008/07/ava120.gif)
 อามโน
 ;)
