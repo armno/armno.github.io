@@ -43,8 +43,8 @@ theme:
   youtube:
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  google_analytics: "UA-2721521-7" # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname: "armnointh"
   katex: true # Enable if using math markup
 
   # Localization strings
