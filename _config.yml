@@ -45,7 +45,7 @@ theme:
   # Scripts
   google_analytics: "UA-2721521-7" # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname: "armnointh"
-  katex: true # Enable if using math markup
+  katex: false # Enable if using math markup
 
   # Localization strings
   str_follow_on: "Follow on"
