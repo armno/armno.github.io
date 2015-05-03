@@ -1,7 +1,14 @@
 <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 
 {% if site.theme.footer_text %}
-<footer class="site-footer">
+<footer class="site-footer hide-print">
 	<p class="text">{{ site.theme.footer_text }}</p>
+</footer>
+
+<footer class="for-print">
+  <p class="footer-print-credit text-center">
+    <strong class="for-print">An article on Armno.in.th.</strong>
+    Printed from: {{ site.url }}{{ page.url }}
+  </p>
 </footer>
 {% endif %}

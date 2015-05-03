@@ -33,3 +33,38 @@ a.button:hover {
 .disabled {
   opacity: 0.7;
 }
+
+// prints
+.for-print {
+  @media screen {
+    display: none;
+  }
+  @media print {
+    display: block;
+  }
+}
+
+@media print {
+  article {
+    border-bottom: 0 !important;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hide-print {
+    display: none !important;
+
+    &.comments {
+      border-bottom: 0 !important;
+    }
+  }
+}
+
+.footer-print-credit {
+  font-size: 0.9rem;
+  text-align: center;
+  strong {
+    margin-top: 1.5rem;
+    display: block;
+  }
+}
