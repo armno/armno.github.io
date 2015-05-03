@@ -1,36 +1,14 @@
-# ArmNo's Jekyll blog
+# Type Theme
 
-Install required gems.
+![Default Type Theme blog](https://cloud.githubusercontent.com/assets/816965/5142407/19742e48-71d6-11e4-8d9d-fdfe010784f0.png)
 
-```sh
-$ gem install jekyll
-```
+A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-Install required node packages.
+## Get Started
 
-```sh
-$ npm install
-```
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-Running
+[Using Type](https://rohanchandra.github.io/project/type/)
 
-```sh
-$ gulp
-$ jekyll serve # on another tab/window
-```
-
-> I'm working on combining `gulp watch` and `jekyll serve` into 1 command. (PR welcomed!)
-
-Creating new post
-
-```sh
-$ rake new title="<post title>" slug="<post slug>" thumbnail="<thumbnail image url>"
-```
-
-parameters (all of them are optional)
-
-- `title` - the post's title. default value is defined in [Rakefile](https://github.com/armno/armno.github.io/blob/master/Rakefile#L7).
-- `slug` - the post's slug. by default, it is generated from `title`. tested with English only.
-- `thumbnail` - the post's thumbnail. currently used for open graph meta tags. no default value.
-
--Armno
+## License
+The MIT License (MIT)
