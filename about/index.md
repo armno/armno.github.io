@@ -21,7 +21,7 @@ My hobbies other than web are usually about [photography][flickr] and [playing g
 
 #### About this website
 
-Built with [Jekyll][jekyll] and [Hyde][hyde]. Hosted on [Github Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
+Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [Github Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
 
 <div class="text-center">
   <github-card user="armno"></github-card>
@@ -36,7 +36,7 @@ Built with [Jekyll][jekyll] and [Hyde][hyde]. Hosted on [Github Pages][github-pa
 [github]: https://github.com/armno/armno/issues/new
 [instagram]: http://instagram.com/armno
 [jekyll]: http://jekyllrb.com
-[hyde]: http://hyde.getpoole.com/
+[type-theme]: https://rohanchandra.github.io/project/type/
 [github-pages]: http://pages.github.com
 [repo]: https://github.com/armno/armno.github.io
 [angular]: https://angularjs.org
