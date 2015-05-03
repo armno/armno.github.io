@@ -14,9 +14,9 @@ theme:
 
   # Header and footer text
   header_text: >
-     <p>My name is <strong>Armno</strong>. I work at <a href="http://www.buzzwoo.de">BUZZWOO! Asia</a> based in <a href="https://www.google.co.th/maps/@18.7869291,98.9929338,15z">Chiang Mai, Thailand</a>. I enjoy working with JavaScript, Angular, and Cordova. This is my blog about web and my workflow.</p>
+     <p>My name is Armno. I am a web developer at <strong><a href="http://www.buzzwoo.de">BUZZWOO! Asia</a></strong>. I enjoy working with JavaScript, Angular, and Cordova. This is my blog about web and my development workflow. <small><a href="https://armno.github.io/about/index.html">More about me →</a></small></p>
 
-  header_text_feature_image:
+  header_text_feature_image: "img/home-featured.jpg"
   footer_text: >
    Built with <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type</a>
 

@@ -5,13 +5,24 @@
   width: 100%;
   background-color:$header-desc-background-color;
   background-size: cover;
-  font-size: 1.2em;
+  font-size: 1.6rem;
   text-align: center;
   color: $header-desc-text-color;
+  padding-top: 9%;
+  padding-bottom: 9%;
 
   a {
     color: #fff;
     border-bottom: 1px dotted;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  small {
+    font-size: 60%;
+    opacity: 0.8;
   }
 }
 .call-out p:last-child {
