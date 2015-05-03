@@ -47,3 +47,18 @@ header {
     @extend %padding-regular;
   }
 }
+
+.sharing {
+  font-size: 2.5rem;
+  > a {
+    margin-right: 0.5rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.title-sharing {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
