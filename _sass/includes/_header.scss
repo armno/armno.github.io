@@ -39,11 +39,13 @@
       display: inline;
       float: left;
       margin-right: 0.4em;
+      &.site-nav-pages {
+        border-right: 1px solid #dfdfdf;
+        padding-right: 1rem;
+      }
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 450px) {
       ul {
-        display: inline-block;
-        float: left;
         padding-top: $padding-small;
         text-align: left;
         width: 100%;
