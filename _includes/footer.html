@@ -1,0 +1,27 @@
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+
+{% if site.theme.footer_text %}
+<footer class="site-footer hide-print">
+	<p class="text">{{ site.theme.footer_text }}</p>
+</footer>
+
+<footer class="for-print">
+  <p class="footer-print-credit text-center">
+    <strong class="for-print">An article on Armno.in.th.</strong>
+    Printed from: {{ site.url }}{{ page.url }}
+  </p>
+</footer>
+{% endif %}
+
+<!-- Google Analytics -->
+{% if site.theme.google_analytics %}
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '{{ site.theme.google_analytics }}', 'auto');
+ga('send', 'pageview');
+</script>
+{% endif %}

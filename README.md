@@ -6,20 +6,11 @@ Install required gems.
 $ gem install jekyll
 ```
 
-Install required node packages.
-
-```sh
-$ npm install
-```
-
 Running
 
 ```sh
-$ gulp
 $ jekyll serve # on another tab/window
 ```
-
-> I'm working on combining `gulp watch` and `jekyll serve` into 1 command. (PR welcomed!)
 
 Creating new post
 

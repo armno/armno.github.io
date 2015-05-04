@@ -1,39 +1,32 @@
+<!--
+
+$$\   $$\           $$\ $$\                                                         $$\
+$$ |  $$ |          $$ |$$ |                                                        $$ |
+$$ |  $$ | $$$$$$\  $$ |$$ | $$$$$$\            $$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$ | $$$$$$$\
+$$$$$$$$ |$$  __$$\ $$ |$$ |$$  __$$\           $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$ |$$  _____|
+$$  __$$ |$$$$$$$$ |$$ |$$ |$$ /  $$ |          $$ |  $$ |$$$$$$$$ |$$ |  \__|$$ /  $$ |\$$$$$$\
+$$ |  $$ |$$   ____|$$ |$$ |$$ |  $$ |          $$ |  $$ |$$   ____|$$ |      $$ |  $$ | \____$$\
+$$ |  $$ |\$$$$$$$\ $$ |$$ |\$$$$$$  |$$\       $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$$ |$$$$$$$  |
+\__|  \__| \_______|\__|\__| \______/ $  |      \__|  \__| \_______|\__|       \_______|\_______/
+                                      \_/
+
+hi, this is armno. welcome to my blog, website, or whatever you think it is.
+found a bug? or just hacking around? feel free to say hi at https://github.com/armno/armno.github.io/issues
+
+i'm @armno on twitter and github (and maybe anywhere else).
+-->
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
-  <!-- CSS: critical path css -->
-  <style>
-  *{-moz-box-sizing:border-box;box-sizing:border-box}html,body{margin:0;padding:0}html{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:16px;line-height:1.5}@media (min-width: 38rem){html{font-size:20px}}body{color:#515151;background-color:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a{color:#268bd2;text-decoration:none}h1{margin-bottom:.5rem;font-weight:bold;line-height:1.25;color:#313131;text-rendering:optimizeLegibility}h1{font-size:2rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}img{display:block;margin:0 0 1rem;border-radius:5px;max-width:100%}.lead{font-size:1.25rem;font-weight:300}.container{max-width:38rem;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto}.post{margin-bottom:4em}.post-title,.post-title a{color:#333}.post-title{margin-top:0}.post-date{display:block;margin-top:-.5rem;margin-bottom:1rem;color:#9a9a9a}html{font-family:"PT Sans", Helvetica, Arial, sans-serif}@media (min-width: 48rem){html{font-size:16px}}@media (min-width: 58rem){html{font-size:20px}}.sidebar{text-align:center;padding:2rem 1rem;color:rgba(255,255,255,0.5);background-color:#333}@media (min-width: 48rem){.sidebar{position:fixed;top:0;left:0;bottom:0;width:18rem;text-align:left}}.sidebar a{color:#fff}.sidebar-about h1{color:#fff;margin-top:0;font-size:3.25rem}.sidebar-nav{padding-left:0;list-style:none}.sidebar-nav-item{display:block}.sidebar-nav-item.active{font-weight:bold}@media (min-width: 48rem){.sidebar-sticky{position:absolute;right:1rem;bottom:1rem;left:1rem}}.content{padding-top:4rem;padding-bottom:4rem}@media (min-width: 48rem){.content{max-width:38rem;margin-left:20rem;margin-right:2rem}}@media (min-width: 64rem){.content{margin-left:22rem;margin-right:4rem}}@font-face{font-family:'moon';src:url("/fonts/moon.eot");src:url("/fonts/moon.eot?#iefix") format("embedded-opentype"),url("/fonts/moon.woff") format("woff"),url("/fonts/moon.ttf") format("truetype"),url("/fonts/moon.svg#moon") format("svg");font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'moon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-github:before{content:"\e601"}.icon-twitter:before{content:"\e604"}.icon-instagram:before{content:"\e607"}img{max-width:100%}.text-center{text-align:center}.sidebar-thumbnail{border-radius:100%;width:25%;margin:0 auto 2rem}@media (min-width: 48rem){.sidebar-thumbnail{width:50%}}.sidebar{background:url("/img/doi-pui.jpg") center center no-repeat;background-size:cover}.sidebar-social-icons{font-size:1.5rem;margin:0.5rem 0}.sidebar-social-icons a{margin:0 0.5rem}
-  </style>
-  <script>
-  function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})}
-  loadCSS('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface');
-  loadCSS('/css/style.css');
-  </script>
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme.title }}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
 
   <!-- open graph meta tags -->
-  {% if page.title == "Home" %}
-  <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.thumbnail }}">
+  {% if paginator.next_page == 2 %}
+  <meta property="og:title" content="{{ site.theme.title }}">
+  <meta property="og:description" content="{{ site.theme.description }}">
+  <meta property="og:image" content="{{ site.theme.avatar }}">
   {% else %}
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
@@ -41,7 +34,7 @@
   {% endif %}
 
   <meta property="og:url" content="{{ site.url }}{{ page.url }}/">
-  <meta property="og:site_name" content="ArmNo.in.th">
+  <meta property="og:site_name" content="Armno.in.th">
   <meta property="fb:admins" content="1007588651">
   <meta property="og:type" content="website">
 
@@ -63,5 +56,23 @@
 
   <!-- Authorship Information for Google -->
   <link rel="author" href="https://plus.google.com/108097642192056062290">
-  <link rel="import" href="/webcomponent/github-card.html">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="{{ site.theme.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
 </head>
