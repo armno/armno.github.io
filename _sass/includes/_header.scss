@@ -40,9 +40,11 @@
       float: left;
       margin-right: 0.4em;
       &.site-nav-pages {
-        border-right: 1px solid #dfdfdf;
         padding-right: 1rem;
       }
+    }
+    a {
+      color: $link-color;
     }
     @media (max-width: 450px) {
       ul {
