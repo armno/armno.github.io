@@ -1,30 +1,35 @@
 <header class="site-header">
-	<div class="branding">
-		{% if site.theme.gravatar %}
-		<a href="{{ site.baseurl }}/">
-			<img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
-		</a>
-		{% elsif site.theme.avatar %}
-		<a href="{{ site.baseurl }}/">
-			<img class="avatar" src="{{ site.theme.avatar }}" alt=""/>
-		</a>
-		{% endif %}
-		<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
-		</h1>
-	</div>
-	<nav class="site-nav hide-print">
-		<ul>
-			{% for page in site.pages %}
-			{% if page.title and page.hide != true %}
-			<li class="site-nav-pages">
-				<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-					{{ page.title }}
-				</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-			<!-- Social icons from Font Awesome, if enabled -->
-		</ul>
-	</nav>
+  <div class="branding">
+    {% if site.theme.gravatar %}
+    <a href="{{ site.baseurl }}/">
+      <img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme.gravatar }}?s=100" alt=""/>
+    </a>
+    {% elsif site.theme.avatar %}
+    <a href="{{ site.baseurl }}/">
+      <img class="avatar" src="{{ site.theme.avatar }}" alt=""/>
+    </a>
+    {% endif %}
+    <h1 class="site-title">
+      <a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
+    </h1>
+  </div>
+  <nav class="site-nav hide-print">
+    <ul>
+      {% for node in site.pages reversed %}
+      {% if node.title and node.hide != true %}
+      <li class="site-nav-pages">
+        {% if node.url == page.url %}
+        <a class="page-link active" href="{{ node.url | prepend: site.baseurl }}">
+          {{ node.title }}
+        </a>
+        {% else %}
+        <a class="page-link" href="{{ node.url | prepend: site.baseurl }}">
+          {{ node.title }}
+        </a>
+        {% endif %}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
