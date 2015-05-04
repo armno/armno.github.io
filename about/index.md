@@ -22,7 +22,7 @@ My hobbies other than web are usually about [photography][flickr] and [playing g
 
 #### About this website
 
-Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [Github Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
+Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [GitHub Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
 
 <div class="text-center">
   <github-card user="armno"></github-card>
