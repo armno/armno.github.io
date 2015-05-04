@@ -71,7 +71,7 @@ dt {
   font-weight: bold;
 }
 dd {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 p, ol, ul, dl, .math-display {
   line-height: 1.5;
@@ -111,13 +111,17 @@ img[align=right] {
 }
 
 code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   background-color: #f4f4f4;
-  padding: 0.35rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em; // play well with copy font
 }
 
 pre {
   background-color: #f4f4f4;
   padding: 1rem;
+  border-radius: 4px;
 
   > code {
     background-color: transparent;
