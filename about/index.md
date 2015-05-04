@@ -7,7 +7,7 @@ feature-img: "img/about-featured.jpg"
 
 > TL;DR &ndash; #javascript #css #mobileweb #perfmatters #cordova
 
-สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP/Ruby for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova] and [Angular][angular].
+สวัสดี. My name is Armno. I am a nerdy web developer living in the beautiful Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun, but my favorites are still those front-end shits. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova] and [Angular][angular].
 
 I am learning to be a good web designer as well. I believe good design can make <del>websites</del> <ins>things</ins> better. I pretend to be a typography nerd sometimes.
 
@@ -18,15 +18,11 @@ My hobbies other than web are usually about [photography][flickr] and [playing g
 - [Tweet me][twitter] &ndash; I&rsquo;m _@armno_ on Twitter
 - [Email me][email] &ndash; Normally you don&rsquo;t have to. But just in case.
 - [Open an Issue][github] &ndash; If you are a GitHub nerd
-- [Instagram][instagram] &amp; [Flickr][flickr]
+- [Instagram][instagram] &amp; [Flickr][flickr] &ndash; where I share some random photos.
 
 #### About this website
 
-Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [Github Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
-
-<div class="text-center">
-  <github-card user="armno"></github-card>
-</div>
+Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [GitHub Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
 
 [cordova]: http://cordova.io "Cordova Website"
 [flickr]: http://www.flickr.com/photos/armno "Armno's Flickr Page"
