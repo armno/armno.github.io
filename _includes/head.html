@@ -16,11 +16,11 @@ found a bug? or just hacking around? feel free to say hi at https://github.com/a
 i'm @armno on twitter and github (and maybe anywhere else).
 -->
 <head>
-	<meta charset="utf-8">
-	<title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme.title }}</title>
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-Frame-Options" content="sameorigin">
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} |{% endif %} {{ site.theme.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-Frame-Options" content="sameorigin">
 
   <!-- open graph meta tags -->
   {% if paginator.next_page == 2 %}
@@ -57,22 +57,38 @@ i'm @armno on twitter and github (and maybe anywhere else).
   <!-- Authorship Information for Google -->
   <link rel="author" href="https://plus.google.com/108097642192056062290">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
 
-	<!--Favicon-->
-	<link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-	<!-- Canonical -->
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="{{ site.theme.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-	<!-- RSS -->
-	<link rel="alternate" type="application/atom+xml" title="{{ site.theme.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <!-- critical css -->
+  <style>
+  html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background:#fff;font-family:sans-serif}body{color:#383838;font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;font-size:1.25em;margin:0;word-wrap:break-word}footer,header,nav{display:block}a{background-color:transparent;color:#1ABC9C;text-decoration:none}strong{font-weight:700}h1{font-size:2.5em;line-height:1.3;margin:.67em 0}small{font-size:80%}img{border:0;max-width:100%}*{box-sizing:border-box;margin:0;padding:0}::selection{background:#D4D4D4}::-moz-selection{background:#D4D4D4}h1 a{color:#383838}footer p:last-child{margin-bottom:0}p,ul{line-height:1.5;margin-bottom:1em}ul{list-style-position:inside}.site-header{background:#fff;border-bottom:1px solid rgba(0,0,0,0.1);display:inline-block;float:left;padding:3% 6%;width:100%}.call-out,.posts .post-teaser{padding:5% 20%}.button{border:1px solid;border-radius:.3em;display:inline-block;margin:1em 0;padding:.5em .75em}.footer-print-credit{font-size:.9rem;text-align:center}.footer-print-credit strong{display:block;margin-top:1.5rem}@font-face{font-family:fa;font-style:normal;font-weight:400;src:url(/fonts/fa.eot?#iefixa6pa4h) format("embedded-opentype"),url(/fonts/fa.woff?a6pa4h) format("woff"),url(/fonts/fa.ttf?a6pa4h) format("truetype"),url(/fonts/fa.svg?a6pa4h#fa) format("svg")}[class*=" fa-"]{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:fa;font-style:normal;font-variant:normal;font-weight:400;line-height:1;speak:none;text-transform:none}.fa-twitter-square:before{content:"\f081"}.fa-github-square:before{content:"\f092"}.fa-instagram:before{content:"\f16d"}header h1{margin:0}header .meta{color:rgba(56,56,56,0.5);font-size:.9em;letter-spacing:.1em;margin:0;text-transform:uppercase}.call-out{background-color:#F98752;background-position:center;background-size:cover;color:rgba(255,255,255,0.85);display:inline-block;font-size:1.6rem;padding-bottom:9%;padding-top:9%;text-align:center;width:100%}.call-out a{border-bottom:1px dotted;color:#fff}.call-out p{line-height:1.6}.call-out small{font-size:60%;opacity:.8}.callout-social-links{font-size:2.4rem;list-style:none}.callout-social-links li{display:inline-block;margin:0 .35rem}.callout-social-links a{border-bottom:0;opacity:.8}.posts .post-teaser{background-size:cover;border-bottom:1px solid rgba(0,0,0,0.1);display:inline-block;margin-bottom:0;width:100%}.posts .excerpt{margin-top:1em}.site-header a{color:#383838}.site-header .avatar{border-radius:.2em;float:left;height:2.2em;margin-right:1em;margin-top:-3px;width:2.2em}.site-header .site-title{float:left;font-size:1em;font-weight:700;line-height:1.5}.site-header .site-nav ul{float:right;line-height:1.5;list-style:none;margin:0;padding:0;text-align:right}.site-header .site-nav li{display:inline;float:left;margin-right:.4em}.page-link{border-radius:4px;margin:0;padding:.3rem .5rem}article,footer,header,nav,section{display:block}article{border-bottom:1px solid rgba(0,0,0,0.1);float:left;padding:5% 20%;width:100%}article header{margin-bottom:6%;text-align:center}@media max-width 1000px{.site-header{padding:3%}.call-out,.posts .post-teaser{padding:7.5% 12.5%}article{padding:7.5% 12.5%}}@media screen{.for-print{display:none}}
+  </style>
 
-	<!-- Font Awesome -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- load the rest of css via loadCss -->
+  <script>
+  function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],s=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(n){for(var o,t=0;t<s.length;t++)s[t].href&&s[t].href.indexOf(e)>-1&&(o=!0);o?n():setTimeout(function(){d.onloadcssdefined(n)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+  loadCSS('/css/main.css');
+  </script>
 
-	<!-- Google Fonts -->
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
-
+  <!-- google fonts -->
+  <script>
+    WebFontConfig = {
+      google: { families: [ 'Source+Sans+Pro:400,700,400italic,700italic:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
 </head>

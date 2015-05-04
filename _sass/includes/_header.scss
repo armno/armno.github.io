@@ -11,8 +11,8 @@
   }
 
   .avatar {
-    height: 2em;
-    width: 2em;
+    height: 2.2em;
+    width: 2.2em;
     float: left;
     margin-top: -3px;
     border-radius: 0.2em;
@@ -39,19 +39,30 @@
       display: inline;
       float: left;
       margin-right: 0.4em;
-      &.site-nav-pages {
-        padding-right: 1rem;
-      }
+      // &.site-nav-pages {
+      //   padding-right: 1rem;
+      // }
     }
-    a {
-      color: $link-color;
-    }
-    @media (max-width: 450px) {
-      ul {
-        padding-top: $padding-small;
-        text-align: left;
-        width: 100%;
-      }
-    }
+    // a {
+      // color: $link-color;
+    // }
+    // @media (max-width: 450px) {
+      // ul {
+        // padding-top: $padding-small;
+        // text-align: left;
+        // width: 100%;
+      // }
+    // }
+  }
+}
+
+.page-link {
+  margin: 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+
+  &.active {
+    background-color: $link-color;
+    color: #fff;
   }
 }
