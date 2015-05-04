@@ -25,9 +25,31 @@
     opacity: 0.8;
   }
 }
+
 .call-out p:last-child {
   margin-bottom: 0;
 }
+
+// social media icons
+.callout-social-links {
+  list-style: none;
+  font-size: 2.4rem;
+
+  li {
+    display: inline-block;
+    margin: 0 0.35rem;
+  }
+
+  a {
+    border-bottom: 0;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
 // Post listing
 .posts {
   .post-teaser {
