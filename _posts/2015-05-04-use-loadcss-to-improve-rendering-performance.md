@@ -11,7 +11,7 @@ thumbnail: http://armno.github.io/img/posts/loadcss/pagespeed-after-optimize.png
 
 ![PageSpeed score ก่อน optimize](/img/posts/loadcss/before-optimize.png)
 
-ส่วนผลจาก [webpagetest.org][webpagetest]
+ส่วนผลจาก [webpagetest.org][webpagetest] สังเกตตรง first byte อยู่ที่ 0.8 วินาที และ start render ที่ประมาณ 2 วินาที
 
 ![ทดสอบกับ webpagetest.org ก่อน optimize](/img/posts/loadcss/webpagetest-before.png)
 
@@ -191,7 +191,7 @@ PageSpeed score เพิ่มขึ้นมาจาก 73 เป็น 94
 
 ![PageSpeed score หลัง optimize](/img/posts/loadcss/pagespeed-after-optimize.png)
 
-ทดสอบกับ webpagetest.org: initial render อยู่ที่ประมาณ 1.5 วินาที
+ทดสอบกับ webpagetest.org: ถึงแม้เวลา first byte จะช้ากว่า (1 วินาที) แต่เวลาที่ start render นั้นไวกว่าก่อน optimize อยู่ที่ประมาณ 1.5 วินาที
 
 ![ผลทดสอบกับ webpagetest.org](/img/posts/loadcss/webpagetest-results.png)
 
