@@ -212,7 +212,7 @@ PageSpeed score เพิ่มขึ้นมาจาก 73 เป็น 94
 [pagespeed]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Farmno.github.io%2F
 [webpagetest]: http://www.webpagetest.org/
 [fontawesome]: http://fontawesome.io/
-[iconmoon]: https://icomoon.io/
+[icomoon]: https://icomoon.io/
 [webfontloader]: https://github.com/typekit/webfontloader
 [loadcss]: https://github.com/filamentgroup/loadCSS
 
