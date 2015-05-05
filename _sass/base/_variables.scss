@@ -4,8 +4,8 @@ $font-size: 1.25em;
 
 // Padding
 $padding-large: 20%;
-$padding-small: 5%;
-$padding-x-small: 3%;
+$padding-small: 8%;
+$padding-x-small: 5%;
 
 // Brand colours
 $brand-color: #fff;
@@ -27,3 +27,10 @@ $feature-image-size: cover; // options include "cover", "contain", "auto"
 // Header description box
 $header-desc-background-color: #F98752;
 $header-desc-text-color: rgba(255, 255, 255, 0.85);
+
+$breakpoint-tablet: 400px;
+@mixin tablet() {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}

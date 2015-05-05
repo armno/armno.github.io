@@ -1,9 +1,14 @@
 article,
 .comments {
-  @extend %padding-regular;
+  padding: $padding-small $padding-x-small;
   border-bottom: 1px solid $border-color;
   float: left;
   width: 100%;
+
+  @include tablet() {
+    padding: $padding-small $padding-large;
+  }
+
 }
 article {
   header {
@@ -44,7 +49,10 @@ header {
     }
   }
   .post-content {
-    @extend %padding-regular;
+    padding: $padding-x-small $padding-x-small * 2;
+    @include tablet() {
+      padding: $padding-small $padding-large;
+    }
   }
 }
 
