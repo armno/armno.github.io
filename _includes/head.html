@@ -22,14 +22,6 @@ i'm @armno on twitter and github (and maybe anywhere else).
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-Frame-Options" content="sameorigin">
 
-  <!-- always https -->
-  <script>
-  var host = "armno.github.io"
-  if (window.location.host == host && window.location.protocol != "https:") {
-    window.location.protocol = "https:"
-  }
-  </script>
-
   <!-- open graph meta tags -->
   {% if paginator.next_page == 2 %}
   <meta property="og:title" content="{{ site.theme.title }}">
