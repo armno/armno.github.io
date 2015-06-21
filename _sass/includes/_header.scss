@@ -24,6 +24,11 @@
     font-weight: bold;
     font-size: 1em;
     line-height: 1.5;
+    display: none;
+
+    @media (min-width: 450px) {
+      display: block;
+    }
   }
 
   .site-nav {
