@@ -92,3 +92,19 @@
   padding: $padding-small $padding-large 0 $padding-large;
   text-align: center;
 }
+
+// blog page
+.post-item {
+  margin-bottom: 6rem;
+}
+
+.blog-list {
+  list-style: none;
+}
+
+.post-date {
+  font-family: 'Inconsolata';
+  background-color: #efefef;
+  padding: 0.15rem 0.35rem;
+  font-size: 1.5rem;
+}
