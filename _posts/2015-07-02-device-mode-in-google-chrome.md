@@ -6,7 +6,7 @@ published: true
 thumbnail:
 ---
 
-ใน Chrome Devtools จะมี [Device Mode](https://developer.Chrome.com/Devtools/docs/device-mode) เป็นส่วนหนึ่งที่มีประโยชน์มากกับการทำ responsive website หรือ mobile web app
+ใน Chrome Devtools จะมี [Device Mode](https://developer.chrome.com/devtools/docs/device-mode) เป็นส่วนหนึ่งที่มีประโยชน์มากกับการทำ responsive website หรือ mobile web app
 หรือแม้กระทั่ง hybrid app อย่าง Cordova ก็ด้วยครับ โดยที่ Device Mode ใน Devtools ก็คือการจำลอง Google Chrome
 ให้เป็นเหมือน mobile device เครื่องหนึ่ง สิ่งที่จะได้ก็คือ
 
