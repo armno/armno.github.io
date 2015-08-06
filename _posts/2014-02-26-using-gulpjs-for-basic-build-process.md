@@ -64,7 +64,7 @@ $ gulp
 
 ![gulp-lorem](http://farm6.staticflickr.com/5487/12794346545_facca0edf4_c.jpg)
 
-ในความเป็นจริงคงไม่มีใครใช้ gulp เพื่อ console.log  เพียงอย่างเดียว มาดู use case ที่ใช้งานกันจริงๆ ดีกว่า
+ในความเป็นจริงคงไม่มีใครใช้ gulp เพื่อ `console.log`  เพียงอย่างเดียว มาดู use case ที่ใช้งานกันจริงๆ ดีกว่า
 
 ## ใช้ Gulp compile Sass
 
@@ -97,7 +97,7 @@ gulp.task('default', function() {
 
 ทุกครั้งที่เรา save ไฟล์ `.sass` ใน directory 'sass' (รวมถึง sub-directory) gulp ก็จะรัน task css ซึ่ง compile Sass เป็น CSS ตาม directory ปลายทางที่ระบุไว้
 
-> `pipe()` ของ Gulp ก็คล้ายๆ กับ [pipe ของ Unix](http://en.wikipedia.org/wiki/Pipeline_(Unix) เลยครับ รับ output ของ command แรกไปเป็น input ของ command ต่อไป (และต่อไปเรื่อยๆ)
+> `pipe()` ของ Gulp ก็คล้ายๆ กับ [pipe ของ Unix](http://en.wikipedia.org/wiki/Pipeline_(Unix)) เลยครับ รับ output ของ command แรกไปเป็น input ของ command ต่อไป (และต่อไปเรื่อยๆ)
 
 ## เพิ่ม task อีก
 
@@ -178,6 +178,6 @@ gulp.task('default', function() {
 });
 {% endhighlight %}
 
-ด้วยความที่ gulpfile.js มีลักษณะคล้าย node app จึงมีวิธีเขียนได้หลายแบบ ได้ผลออกมาเหมือนกันครับ (คนที่เขียน nodejs เป็นอยู่แล้วน่าจะชอบ Gulp)นอกจากนี้ Gulp ยังมี plugin เพิ่มขึ้นเรื่อยๆ คาดว่าจะเป็น tool อีกตัวที่ได้รับความนิยมเพิ่มขึ้นในปี 2014 ครับ
+ด้วยความที่ gulpfile.js มีลักษณะคล้าย node app จึงมีวิธีเขียนได้หลายแบบ ได้ผลออกมาเหมือนกันครับ (คนที่เขียน nodejs เป็นอยู่แล้วน่าจะชอบ Gulp) นอกจากนี้ Gulp ยังมี plugin เพิ่มขึ้นเรื่อยๆ คาดว่าจะเป็น tool อีกตัวที่ได้รับความนิยมเพิ่มขึ้นในปี 2014 ครับ
 
 ลองเล่นกันดูนะ
