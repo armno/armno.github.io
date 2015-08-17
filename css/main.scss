@@ -44,10 +44,28 @@ a {
 }
 
 blockquote {
-  margin-left: 1rem;
+  quotes: "“" "" "‘" "’";
+  margin-left: 0;
+  padding-left: 2.5rem;
   margin-right: 1rem;
   font-style: italic;
   color: rgba(72, 86, 101, 0.8);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: open-quote;
+    font-size: 4rem;
+    font-family: sans-serif; // open sans' quotes look crappy
+    left: 0;
+    top: -5px;
+    line-height: 1;
+    color: rgba(72, 86, 101, 0.6);
+  }
+
+  &::after {
+    content: close-quote;
+  }
 }
 
 hr {
