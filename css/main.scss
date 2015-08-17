@@ -24,9 +24,21 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
 h1 {
   font-size: 2rem;
   line-height: 1.15;
+
+  &.post-title {
+    margin-top: 0;
+  }
 }
 
 h2 {
@@ -36,6 +48,10 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 a {
@@ -156,11 +172,24 @@ pre > code {
   margin-bottom: 1em;
 }
 
+.tags-list-inline {
+  display: inline;
+}
+
 .tag-list-item {
   padding: 0.3em 0.5em;
   background-color: $green;
   margin: 0 5px;
   text-transform: uppercase;
-
   color: #fff;
+
+  .tags-list-inline & {
+    margin-right: 0;
+    display: inline-block;
+  }
+}
+
+// index
+.post-teaser {
+  margin-bottom: 4rem;
 }
