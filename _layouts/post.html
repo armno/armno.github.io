@@ -23,7 +23,7 @@ layout: default
       </span>
     </div>
 
-    {% if page.tags %}
+    {% if page.tags > 0 %}
     <ul class="tags-list">
       {% for tag in page.tags %}
       <li class="tag-list-item">
@@ -32,15 +32,16 @@ layout: default
       {% endfor %}
     </ul>
     {% endif %}
+
   </header>
+
   {{ content }}
 
-  {% include share.html %}
 </article>
 
+<hr>
+
 <!-- Disqus -->
-{% if site.theme.disqus_shortname %}
 <div class="comments hide-print">
   {% include disqus.html %}
 </div>
-{% endif %}
