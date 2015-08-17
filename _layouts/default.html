@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html class="no-js">
-  {% include head.html %}
+  <!--
+
+  $$\   $$\           $$\ $$\                                                         $$\
+  $$ |  $$ |          $$ |$$ |                                                        $$ |
+  $$ |  $$ | $$$$$$\  $$ |$$ | $$$$$$\            $$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$$ | $$$$$$$\
+  $$$$$$$$ |$$  __$$\ $$ |$$ |$$  __$$\           $$  __$$\ $$  __$$\ $$  __$$\ $$  __$$ |$$  _____|
+  $$  __$$ |$$$$$$$$ |$$ |$$ |$$ /  $$ |          $$ |  $$ |$$$$$$$$ |$$ |  \__|$$ /  $$ |\$$$$$$\
+  $$ |  $$ |$$   ____|$$ |$$ |$$ |  $$ |          $$ |  $$ |$$   ____|$$ |      $$ |  $$ | \____$$\
+  $$ |  $$ |\$$$$$$$\ $$ |$$ |\$$$$$$  |$$\       $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$$ |$$$$$$$  |
+  \__|  \__| \_______|\__|\__| \______/ $  |      \__|  \__| \_______|\__|       \_______|\_______/
+                                        \_/
+
+  hi, this is armno. welcome to my blog, website, or whatever you think it is.
+  found a bug? or just hacking around? feel free to say hi at https://github.com/armno/armno.github.io/issues
+
+  i'm @armno on twitter and github (and maybe anywhere else).
+  -->
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-Frame-Options" content="sameorigin">
+
+    <!-- open graph meta tags -->
+    {% if paginator.next_page == 2 %}
+    <meta property="og:title" content="{{ site.theme.title }}">
+    <meta property="og:description" content="{{ site.theme.description }}">
+    <meta property="og:image" content="{{ site.theme.avatar }}">
+    {% else %}
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ page.thumbnail }}">
+    {% endif %}
+
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}/">
+    <meta property="og:site_name" content="Armno.in.th">
+    <meta property="fb:admins" content="1007588651">
+    <meta property="og:type" content="website">
+
+    <!-- twitter card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@armno">
+    <meta name="twitter:domain" content="{{ site.url }}">
+    <meta name="twitter:creator" content="@armno">
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}/">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+
+    <!-- theme color for lollipop -->
+    <meta name="theme-color" content="#000000">
+
+    {% if paginator.previous_page %}
+    <link rel="prev" href="{{ site.url }}/page{{paginator.previous_page}}">
+    {% endif %}
+    {% if paginator.next_page %}
+    <link rel="next" href="{{ site.url }}/page{{paginator.next_page}}">
+    {% endif %}
+
+    <!-- Authorship Information for Google -->
+    <link rel="author" href="https://plus.google.com/108097642192056062290">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.theme.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- load the rest of css via loadCss -->
+    <script>
+    function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],s=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(n){for(var o,t=0;t<s.length;t++)s[t].href&&s[t].href.indexOf(e)>-1&&(o=!0);o?n():setTimeout(function(){d.onloadcssdefined(n)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+    loadCSS('/css/main.css');
+    </script>
+    <noscript>
+      <link rel="stylesheet" href="/css/main.css" media="all">
+    </noscript>
+
+    <!-- google fonts -->
+    <script>
+      WebFontConfig = {
+        google: {
+          families: [
+            'Roboto:300,700,300italic,700italic:latin',
+            'Inconsolata::latin'
+          ]
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+  </head>
   <body>
-    {% include header.html %}
-    <div class="content">
+    <div class="wrapper">
       {{ content }}
     </div>
-    {% include footer.html %}
+    {% include analytics.html %}
   </body>
 </html>
