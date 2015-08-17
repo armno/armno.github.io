@@ -3,7 +3,7 @@ layout: default
 ---
 
 <nav class="container nav-post">
-  <a href="{{ site.url }}">« Home</a>
+  <a href="{{ '/' | prepend: site.baseurl }}">« Home</a>
 </nav>
 <article class="container">
   <header class="post-header">
@@ -25,12 +25,10 @@ layout: default
     </div>
     {% endif %}
 
-    {% if page.tags > 0 %}
+    {% if page.tags %}
     <ul class="tags-list">
       {% for tag in page.tags %}
-      <li class="tag-list-item">
-        <a href="{{ site.url }}/tags/{{ tag }}">{{ tag }}</a>
-      </li>
+      <li class="tag-list-item">{{ tag | prepend: '#' }}</li>
       {% endfor %}
     </ul>
     {% endif %}
