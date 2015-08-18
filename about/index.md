@@ -2,6 +2,7 @@
 layout: post
 title: About me
 description: สวัสดี My name is Armno. I am a web developer living in beautiful Chiang Mai, Thailand. I started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun.
+cover-image: "/img/about-featured.jpg"
 ---
 
 สวัสดี. My name is Armno. I am a nerdy web developer living in Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova] and [Angular][angular].
@@ -19,7 +20,7 @@ My hobbies other than web are usually about [photography][flickr] and [playing g
 
 #### About this website
 
-Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [GitHub Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
+Built with [Jekyll][jekyll]. Hosted on [GitHub Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
 
 [cordova]: http://cordova.io "Cordova Website"
 [flickr]: http://www.flickr.com/photos/armno "Armno's Flickr Page"
@@ -30,7 +31,6 @@ Built with [Jekyll][jekyll] and [Type][type-theme]. Hosted on [GitHub Pages][git
 [github]: https://github.com/armno/armno/issues/new
 [instagram]: http://instagram.com/armno
 [jekyll]: http://jekyllrb.com
-[type-theme]: https://rohanchandra.github.io/project/type/
 [github-pages]: http://pages.github.com
 [repo]: https://github.com/armno/armno.github.io
 [angular]: https://angularjs.org
