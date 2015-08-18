@@ -2,24 +2,6 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="call-out"
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-     <p>My name is Armno. I am a web developer at <strong><a href="http://www.buzzwoo.de">BUZZWOO! Asia</a></strong>. I enjoy working with JavaScript, Angular, and Cordova. This is my blog about web and my development workflow. <small><a href="https://armno.github.io/about/index.html">More about me →</a></small></p>
-
-    <ul class="callout-social-links">
-      <li>
-        <a href="https://github.com/armno"><i class="fa fa-github-square"></i></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/armno"><i class="fa fa-twitter-square"></i></a>
-      </li>
-      <li>
-        <a href="https://instagram.com/armno"><i class="fa fa-instagram"></i></a>
-      </li>
-    </ul>
-  </div>
-
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
@@ -29,9 +11,24 @@ layout: default
             {{ post.title }}
           </a>
         </h1>
-        <p class="meta">
-          {{ post.date | date: "%B %-d, %Y" }}
-        </p>
+        <div class="publish-date">
+          <span class="publish-time">
+          {% assign d = post.date | date: "%-d" s %}
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+            {% when '2' or '22' %}{{ d }}<sup>nd</sup>
+            {% when '3' or '23' %}{{ d }}<sup>rd</sup>
+            {% else %}{{ d }}<sup>th</sup>
+            {% endcase %}
+          {{ post.date | date: "%B, %Y" }}
+          </span>
+          •
+          <ul class="tags-list tags-list-inline">
+            {% for tag in post.tags %}
+            <li class="tag-list-item">{{ tag | prepend: '#' }}</li>
+            {% endfor %}
+          </ul>
+        </div>
       </header>
       <div class="excerpt">
         {{ post.description }}
@@ -49,14 +46,12 @@ layout: default
   <div class="pagination">
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      <i class="fa fa-chevron-left"></i>
-      {{ site.theme.str_prev }}
+      Previous page
     </a>
     {% endif %}
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      {{ site.theme.str_next }}
-      <i class="fa fa-chevron-right"></i>
+      Next page
     </a>
     {% endif %}
   </div>
