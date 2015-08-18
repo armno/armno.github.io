@@ -326,3 +326,44 @@ pre > code {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.post-teaser {
+  // box-shadow: 0 2px 5px #AFAFAF;
+  // border-radius: 3px;
+  // width: 48%;
+  // border: 1px solid #efefef;
+  display: flex;
+  flex-direction: row;
+  .post-title {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  // @FIXME
+  .publish-time {
+    text-transform: initial;
+    font-weight: normal;
+    font-size: 0.7rem;
+    color: #aaa;
+  }
+
+  // @FIXME
+  img {
+    width: 40%;
+  }
+}
+
+.post-teaser-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-teaser-text {
+  padding: 0 1rem;
+}
