@@ -16,7 +16,13 @@ layout: default
   </nav>
 
   <header class="post-header container">
-    <h1 class="text-center post-title">{{ page.title }}</h1>
+    <h1
+      {% if page.is_post %}
+        class="text-center post-title"
+      {% else %}
+        class="text-center post-title page-title"
+      {% endif %}
+      >{{ page.title }}</h1>
 
     {% if page.is_post %}
     <div class="text-center publish-date">
