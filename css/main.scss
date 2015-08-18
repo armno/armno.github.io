@@ -199,13 +199,21 @@ pre > code {
 
 .home-header {
   background-color: $green;
-  // background-image: url('/img/buzz-bg.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
+  background-image: url('/img/bg-coffee-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 4rem;
+
+  @media only screen and (min-width: 600px) and (max-width: 1100px) {
+    background-image: url('/img/bg-coffee-large.jpg');
+  }
+
+  @media only screen and (min-width: 1101px) {
+    background-image: url('/img/bg-coffee-xlarge.jpg');
+  }
 }
 
 .home-logo {
@@ -224,6 +232,10 @@ pre > code {
   display: flex;
   flex-direction: rows;
   justify-content: space-between;
+
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-menu {
@@ -248,4 +260,7 @@ pre > code {
 
 .home-intro {
   margin-left: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
