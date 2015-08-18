@@ -37,7 +37,14 @@ h1 {
   line-height: 1.15;
 
   &.post-title {
+    max-width: 80%;
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.page-title {
+    text-transform: uppercase;
   }
 }
 
@@ -312,4 +319,10 @@ pre > code {
     display: inline-block;
     margin-right: .5em;
   }
+}
+
+.post-cover-photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

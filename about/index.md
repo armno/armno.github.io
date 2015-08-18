@@ -2,7 +2,7 @@
 layout: post
 title: About me
 description: สวัสดี My name is Armno. I am a web developer living in beautiful Chiang Mai, Thailand. I started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun.
-cover-image: "/img/about-featured.jpg"
+cover-image: "/img/cover-me.jpg"
 ---
 
 สวัสดี. My name is Armno. I am a nerdy web developer living in Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova] and [Angular][angular].
