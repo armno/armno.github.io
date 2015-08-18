@@ -88,8 +88,8 @@ hr {
   border: 0;
   border-bottom: 1px solid rgba(72, 86, 101, 0.2);
   width: 60%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -156,11 +156,26 @@ pre > code {
   padding-bottom: 1rem;
   // background-color: rgba(255, 99, 71, 0.1); // green + 0.1
   font-size: 0.9rem;
+
+  .has-cover-photo & {
+    a {
+      color: #fff;
+    }
+  }
 }
 
 .post-header {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // margin-top: 2rem;
+  // margin-bottom: 3rem;
+  min-height: 260px;
+
+  .has-cover-photo & {
+    color: #fff;
+    margin-bottom: 4rem;
+  }
 }
 
 // tags

@@ -2,11 +2,20 @@
 layout: default
 ---
 
-<nav class="container nav-post">
-  <a href="{{ '/' | prepend: site.baseurl }}">« Home</a>
-</nav>
-<article class="container">
-  <header class="post-header">
+<div
+  {% if page.cover-image %}
+    style="background-image: url({{ page.cover-image }})"
+    class="post-cover-photo has-cover-photo"
+  {% else %}
+    class="post-cover-photo"
+  {% endif %}
+  >
+
+  <nav class="container nav-post">
+    <a href="{{ '/' | prepend: site.baseurl }}">« Home</a>
+  </nav>
+
+  <header class="post-header container">
     <h1 class="text-center post-title">{{ page.title }}</h1>
 
     {% if page.is_post %}
@@ -32,14 +41,16 @@ layout: default
       {% endfor %}
     </ul>
     {% endif %}
-
   </header>
+
+</div>
+
+<article class="container">
 
   {{ content }}
 
+  <hr>
 </article>
-
-<hr>
 
 <!-- Disqus -->
 {% if page.is_post %}
