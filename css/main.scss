@@ -15,7 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $gray;
   line-height: 1.5;
-  max-width: 800px;
+  // max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,8 +128,11 @@ pre > code {
 }
 
 .container {
+  max-width: 800px;
   padding-right: 1rem;
   padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .publish-date {
@@ -192,4 +195,57 @@ pre > code {
 // index
 .post-teaser {
   margin-bottom: 4rem;
+}
+
+.home-header {
+  background-color: $green;
+  // background-image: url('/img/buzz-bg.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+}
+
+.home-logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-left: 12px; // FIX ME
+}
+
+.home-nav {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+}
+
+.home-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  // FIXME
+  li {
+    display: inline-block;
+
+    a {
+      margin-left: 1em;
+      font-size: 0.8rem;
+      padding: 0.75em;
+      color: #fff;
+    }
+  }
+}
+
+.home-intro {
+  margin-left: 1rem;
 }
