@@ -2,7 +2,40 @@
 layout: default
 ---
 
-  <div class="posts">
+<!-- me -->
+<header class="home-header">
+
+  <nav class="home-nav">
+    <a href="{{ '/' | prepend: site.baseurl }}" class="home-logo">
+      <img src="img/me.jpg" alt="armno">
+    </a>
+
+    <ul class="home-menu">
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="home-intro">
+    <h1>
+      JavaScript
+      <br>
+      Angular
+      <br>
+      Performance
+      <br>
+      Nerd.
+    </h1>
+  </div>
+</header>
+<!-- /me -->
+
+  <div class="container">
+    <h2>Blog</h2>
     {% for post in paginator.posts %}
     <div class="post-teaser">
       <header>
