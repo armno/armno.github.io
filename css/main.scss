@@ -8,6 +8,8 @@
 $green: #1ABC9C;
 $gray: #485665;
 
+$max-width: 760px;
+
 html {
   font-size: 19px; // for rem
 }
@@ -135,7 +137,7 @@ pre > code {
 }
 
 .container {
-  max-width: 800px;
+  max-width: $max-width;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-left: auto;
@@ -198,18 +200,18 @@ pre > code {
 }
 
 .tags-list-inline {
-  display: inline;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .tag-list-item {
-  padding: 0.3em 0.5em;
+  padding: 0.15em 0.4em;
   background-color: $green;
-  margin: 0 5px;
+  margin-right: 5px;
   text-transform: uppercase;
   color: #fff;
 
   .tags-list-inline & {
-    margin-right: 0;
     display: inline-block;
   }
 }
@@ -258,7 +260,7 @@ pre > code {
   justify-content: space-between;
   text-transform: uppercase;
 
-  max-width: 800px;
+  max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
 }
@@ -285,7 +287,7 @@ pre > code {
 
 .home-intro {
   margin-left: 1rem;
-  max-width: 800px;
+  max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
 
@@ -328,17 +330,13 @@ pre > code {
 }
 
 .post-teaser {
-  // box-shadow: 0 2px 5px #AFAFAF;
-  // border-radius: 3px;
-  // width: 48%;
-  // border: 1px solid #efefef;
   display: flex;
   flex-direction: row;
   .post-title {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
+    max-width: 100%;
     font-size: 1.25rem;
     font-weight: normal;
   }
@@ -349,6 +347,7 @@ pre > code {
     font-weight: normal;
     font-size: 0.7rem;
     color: #aaa;
+    margin-bottom: .5em;
   }
 
   // @FIXME
@@ -365,5 +364,13 @@ pre > code {
 }
 
 .post-teaser-text {
-  padding: 0 1rem;
+  // padding: 0 1rem;
+  margin-left: 2rem;
+}
+
+.post-teaser-thumbnail {
+  min-width: $max-width / 3;
+  min-height: $max-width / 3;
+  background-position: center;
+  background-size: cover;
 }
