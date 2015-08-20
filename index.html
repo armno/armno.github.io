@@ -45,9 +45,6 @@ layout: default
 <div class="container post-teaser-container">
   {% for post in site.posts limit:5 %}
   <div class="post-teaser">
-    <div style="background-image: url({{ post.thumbnail }});"
-      class="post-teaser-thumbnail">
-    </div>
     <div class="post-teaser-text">
       <div class="publish-time">
       {% assign d = post.date | date: "%-d" s %}
@@ -74,7 +71,7 @@ layout: default
         {{ post.description }}
       </p>
       -->
-      <a href="{{ post.url }}">Read more</a>
+      <!-- <a href="{{ post.url }}">Read more</a> -->
     </div>
   </div>
   {% endfor %}
