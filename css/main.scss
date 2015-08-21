@@ -185,6 +185,10 @@ pre > code {
     color: #fff;
     margin-bottom: 4rem;
   }
+
+  .page-jumbo & {
+    padding-bottom: 4rem;
+  }
 }
 
 // tags
@@ -206,7 +210,7 @@ pre > code {
 
 .tag-list-item {
   padding: 0.15em 0.4em;
-  background-color: $green;
+  background-color: $gray;
   margin-right: 5px;
   text-transform: uppercase;
   color: #fff;
@@ -297,7 +301,8 @@ pre > code {
   }
 }
 
-.home-intro-text {
+.home-intro-text,
+.page-jumbo .page-title {
   text-transform: uppercase;
   margin-bottom: 1em;
 
@@ -346,7 +351,12 @@ pre > code {
     font-weight: normal;
     font-size: 0.7rem;
     color: #aaa;
-    margin-bottom: .5em;
+    margin-bottom: 0;
+  }
+
+  // @FIXME
+  .tags-list-inline {
+    margin-top: 0.5em;
   }
 
 }
