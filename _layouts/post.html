@@ -55,6 +55,10 @@ layout: default
 
   {{ content }}
 
+  {% if page.is_post %}
+  {% include share.html %}
+  {% endif %}
+
   <hr>
 </article>
 
