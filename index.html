@@ -66,15 +66,12 @@ layout: default
         <li class="tag-list-item">{{ tag | prepend: '#' }}</li>
         {% endfor %}
       </ul>
-      <!--
-      <p>
-        {{ post.description }}
-      </p>
-      -->
-      <!-- <a href="{{ post.url }}">Read more</a> -->
     </div>
   </div>
   {% endfor %}
 </div>
 
-<a href="{{ '/blog' | prepend: site.baseurl }}">Full Blog</a>
+<footer class="text-center home-footer">
+  <a href="{{ '/blog' | prepend: site.baseurl }}"
+    class="home-link-blog">Full Blog</a>
+</footer>

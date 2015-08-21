@@ -4,6 +4,7 @@ title: "Setting up Vim : Part II"
 description: เคยเขียนวิธีการ setup Vim ของผมตอนแรกเมื่อประมาณปีที่แล้ว พอใช้งานไปเรื่อยๆ ก็พบว่าได้ปรับเปลี่ยนอีกบางส่วนตามการใช้งาน เลยเอา plugin/setup ที่เปลี่ยนไปจากตอนแรกมารวมกันไว้ในโพสต์นี้ครับ
 published: true
 thumbnail: "http://armno.github.io/img/posts/vim-airline.png"
+tags: vim terminal vundle
 ---
 
 เคยเขียน [Setting up Vim][setting-up-vim-part-1] ตอนแรกไปแล้ว พอใช้งานไปเรื่อยๆ ผมว่ามีอะไรหลายๆ อย่างที่ปรับเปลี่ยนไปตามการใช้งาน

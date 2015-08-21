@@ -4,6 +4,7 @@ title: "ใช้ Device Mode ใน Google Chrome ทำงานกับ Mobi
 description: Device mode เป็นส่วนหนึ่งของ Chrome Devtools ทำให้เราทำงานกับ responsive website หรือ mobile web app ได้สะดวกมากขึ้น โดยที่เราสามารถให้ Chrome จำลองตัวเองเป็น mobile device ที่ไม่เพียงแค่เซ็ตขนาดหน้าจอ แต่ยังมีฟีเจอร์อื่นๆ ให้อีกมากมายครับ
 published: true
 thumbnail:
+tags: chrome devtools mobileweb
 ---
 
 ใน Chrome Devtools จะมี [Device Mode](https://developer.chrome.com/devtools/docs/device-mode) เป็นส่วนหนึ่งที่มีประโยชน์มากกับการทำ responsive website หรือ mobile web app
