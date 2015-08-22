@@ -13,7 +13,7 @@ cover-image: "/img/home-featured.jpg"
 
     {% if year != next_year %}
       <h2 class="blog-year-title text-center">{{ year }}</h2>
-    {% else %}
+    {% endif %}
       <div class="post-teaser">
         <div class="post-teaser-text">
           <div class="publish-time">
@@ -39,7 +39,6 @@ cover-image: "/img/home-featured.jpg"
         </div>
       </div>
 
-    {% endif %}
   </li>
   {% endfor %}
 </ol>
