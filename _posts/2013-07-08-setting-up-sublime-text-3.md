@@ -3,6 +3,7 @@ published: true
 layout: post
 title: Setting up Sublime Text 3
 description: เคยแชร์ blog post เกี่ยวกับการ set up Sublime Text ของ developer หลายคนไปแล้ว ขอแชร์ของผมเองบ้างนะครับ ว่าตั้งแต่เริ่มติดตั้งจนถึงลงมือทำงาน ทำอะไรไปบ้าง
+tags: sublimetext packages
 ---
 
 Sublime Text นั้นเป็น editor ที่ได้รับความนิยมเพิ่มขึ้นเรื่อยๆ ล่าสุดนั้นเวอร์ชั่น 3 เป็น public beta ให้คนทั่วไป (ที่ไม่มี license) สามารถใช้งานได้แล้ว ใน v3 นี้ที่รู้สึกได้ก็คือ เร็วขึ้นครับ
@@ -25,17 +26,23 @@ Sublime Text นั้นเป็น editor ที่ได้รับคว�
 
 สำหรับ Mac จะอยู่ที่
 
-<pre><code class="language-bash">~/Library/Application Support/Sublime Text 3/Packages</code></pre>
+{% highlight sh %}
+~/Library/Application Support/Sublime Text 3/Packages
+{% endhighlight %}
 
 ส่วน Ubuntu นันจะอยู่ที่
 
-<pre><code class="language-bash">~/.config/sublime-text-3/Packages</code></pre>
+{% highlight sh %}
+~/.config/sublime-text-3/Packages
+{% endhighlight %}
 
 จากนั้น <code>clone</code> Git repo ของ Package Control ลงมาครับ แล้วก็ <code>checkout</code> ไปที่ branch <code>python3</code>
 
-<pre><code class="language-bash">$ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
+{% highlight sh %}
+$ git clone https://github.com/wbond/sublime_package_control.git "Package Control"
 $ cd "Package Control"
-$ git checkout python3</code></pre>
+$ git checkout python3
+{% endhighlight %}
 
 หลังจากนั้นก็ restart Sublime Text ครับ
 
@@ -96,8 +103,10 @@ Sidebar Enhancement เป็น plugin ตัวหนึ่งที่ผม�
 
 จากนั้นไปที่ terminal ครับ <code>cd</code> ไปยังโฟลเดอร์ Packages (ที่เดียวกับที่ลง Package Control)
 
-<pre><code class="language-bash">$ cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
-$ git clone -b st3 git://github.com/titoBouzout/SideBarEnhancements.git "SideBarEnhancements"</code></pre>
+{% highlight sh %}
+$ cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
+$ git clone -b st3 git://github.com/titoBouzout/SideBarEnhancements.git "SideBarEnhancements"
+{% endhighlight %}
 
 จากนั้น restart Sublime Text แล้ว Sidebar Enhancement ก็จะใช้ได้ครับ
 
@@ -105,7 +114,9 @@ $ git clone -b st3 git://github.com/titoBouzout/SideBarEnhancements.git "SideBar
 
 ขั้นตอนเหมือนกัน Sidebar Enhancement เพียงแต่ชื่อ branch ที่ checkout หลังจาก clone นั้น ชื่อ branch `sublime-text-3` ครับ
 
-<pre><code class="language-bash">$ cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
-$ git clone -b sublime-text-3 https://github.com/SublimeLinter/SublimeLinter.git</code></pre>
+{% highlight sh %}
+$ cd ~/Library/Application Support/Sublime\ Text\ 3/Packages
+$ git clone -b sublime-text-3 https://github.com/SublimeLinter/SublimeLinter.git
+{% endhighlight %}
 
 แต่ละคนมีวิธี set up Sublime Text กันยังไงบ้าง เอามาแชร์กันได้นะครับ

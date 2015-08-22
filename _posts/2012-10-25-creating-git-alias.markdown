@@ -8,8 +8,7 @@ categories:
 - Web Development
 tags:
 - Git
-- Git Alias
-- Shell
+- terminal
 - Web Development
 description: Workflow ของ Git ในชีวิตประจำวันของผมค่อนข้างจะตรงไปตรงมาครับ จะมีคำสั่งที่ใช้งานอยู่บ่อยๆ ซึ่งผมมักจะสร้างเป็น alias ไว้เพื่อที่จะไม่ต้องพิมพ์ยาวๆ
 ---

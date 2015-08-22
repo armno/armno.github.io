@@ -8,9 +8,8 @@ categories:
 - Web Development
 tags:
 - Editor
-- Nettuts+ Fetch
 - Plugin
-- Sublime Text 2
+- SublimeText
 - Web Development
 description: หากต้องทำ HTML Mockup อยู่บ่อยๆ ปลั๊กอิน Nettuts+ Fetch นั้นช่วยประหยัดเวลาในช่วงแรกๆ ไปได้เยอะเลยครับ
 ---

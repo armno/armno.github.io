@@ -4,6 +4,7 @@ title: "No w3schools.com"
 description: "เรามักจะเจอ w3schools.com อยู่อันดันต้นๆ ของ Google อยู่บ่อยๆ เมื่อค้นหาอะไรก็ตามเกี่ยวกับ web development และหลายคนเชื่อว่ามันเป็น resource ที่ดี แต่ความเป็นจริงไม่ได้เป็นแบบนั้น"
 published: true
 thumbnail: https://farm4.staticflickr.com/3737/13761663535_6fa283f2ba_c.jpg
+tags: documentation resources w3schools
 ---
 
 เรามักจะเจอ [w3schools.com](http://www.w3schools.com/) อยู่อันดันต้นๆ ของ Google อยู่บ่อยๆ เมื่อค้นหาอะไรก็ตามเกี่ยวกับ development และหลายคนเชื่อว่ามันเป็น resource ที่ดี

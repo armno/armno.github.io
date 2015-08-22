@@ -9,7 +9,7 @@ categories:
 tags:
 - Distraction Free
 - Editor
-- Sublime Text 2
+- SublimeText
 - Web Development
 description: ปกติใช้ Sublime Text 2 ผมจะใช้งานใน Distraction Free mode แทบตลอดเวลา อยากให้มันแสดงเลขบรรทัดใน Distraction Free mode ด้วย
 ---

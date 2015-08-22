@@ -4,6 +4,7 @@ title: ใช้งาน Source Maps กับ Sass project
 description: การเปิดใช้งาน Source maps กับ Google Chrome ทำให้ debug Sass file ได้ง่ายขึ้น เราสามารถดู source ของไฟล์ .scss ได้จาก browser เลย
 categories:
 - Web Development
+tags: css sourcemaps devtools
 ---
 
 เวลาทำงานโปรเจ็คที่ต้องใช้ [Sass](http://armno.in.th/2012/05/20/setting-up-sass/) เรามักวางโครงสร้างไฟล์ประมาณนี้
