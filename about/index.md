@@ -1,37 +1,34 @@
 ---
 layout: post
-title: About me
-description: สวัสดี My name is Armno. I am a web developer living in beautiful Chiang Mai, Thailand. I started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun.
+title: About Armno
+description: Hi I'm a developer and BUZZWOO! Asia. I work on JavaScript and frontend stuffs.
 cover-image: "/img/cover-about-me.jpg"
 expand-header: true
 ---
 
-สวัสดี. My name is Armno. I am a nerdy web developer living in Chiang Mai, Thailand. I have started my career as a web developer since 2010. I work on HTML/JS/CSS and some PHP for fun. Starting mid-2013, I primarily work on mobile app development using [Cordova][cordova] and [Angular][angular].
+สวัสดีครับ. My name is Armno. I am a frontend(-ish) developer at [BUZZWOO! Asia](http://www.buzzwoo.de/),
+living in [Chiang Mai, Thailand](https://www.google.co.th/?gws_rd=cr,ssl&ei=mVnZVYKYKcKxuQSPtKG4Bg#q=chiang+mai).
+I work primarily on JavaScript and CSS stuffs. My focus is currently on JavaScript in general and browser's rendering performance.
 
-I am learning to be a good web designer as well. I believe good design can make <del>websites</del> <ins>things</ins> better. I pretend to be a typography nerd sometimes.
+When I'm not coding, I enjoy taking [photos](instagram) of [things](flickr), reading books
+and trying to put my fingers on [guitar](soundcloud) strings.
 
-My hobbies other than web are usually about [photography][flickr] and [playing guitar](soundcloud). I also have [another blog at wp.com][wp], which is about my personal life (written in Thai).
+<small><i>Sorry if my photo scares your kids. I'm actually pretty kind (finger crossed).</i></small>
 
 ### Get in touch
 
-- [Tweet me][twitter] &ndash; I&rsquo;m _@armno_ on Twitter
-- [Email me][email] &ndash; Normally you don&rsquo;t have to. But just in case.
-- [Open an Issue][github] &ndash; If you are a GitHub nerd
-- [Instagram][instagram] &amp; [Flickr][flickr] &ndash; where I share some random photos.
+It's `armno` basically everywhere on the internet. [Twitter][twitter] and [GitHub][github]
+are probably the easiest ways to reach me.
 
 #### About this website
 
 Built with [Jekyll][jekyll]. Hosted on [GitHub Pages][github-pages]. Source code is at [armno/armno.github.io][repo].
 
-[cordova]: http://cordova.io "Cordova Website"
 [flickr]: http://www.flickr.com/photos/armno "Armno's Flickr Page"
-[soundclound]: https://soundcloud.com/armno "Armno's Soundcloud page"
-[wp]: http://ahmalive.wordpress.com "Armno's diary"
 [twitter]: https://twitter.com/armno "Armno's twitter page"
-[email]: mailto:monkeyarmno@gmail.com "Armno's email address"
 [github]: https://github.com/armno/armno/issues/new
 [instagram]: http://instagram.com/armno
 [jekyll]: http://jekyllrb.com
 [github-pages]: http://pages.github.com
 [repo]: https://github.com/armno/armno.github.io
-[angular]: https://angularjs.org
+[soundcloud]: https://soundcloud.com/armno
