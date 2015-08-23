@@ -231,7 +231,7 @@ pre > code {
 
 .home-header {
   background-color: $green;
-  background-image: url('/img/bg-coffee-mobile.jpg');
+  background-image: url('/img/bg-desk-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -239,11 +239,11 @@ pre > code {
   padding-bottom: 4rem;
 
   @media only screen and (min-width: 600px) and (max-width: 1100px) {
-    background-image: url('/img/bg-coffee-large.jpg');
+    background-image: url('/img/bg-desk-large.jpg');
   }
 
   @media only screen and (min-width: 1101px) {
-    background-image: url('/img/bg-coffee-xlarge.jpg');
+    background-image: url('/img/bg-desk-xlarge.jpg');
     padding-bottom: 5rem;
   }
 }
