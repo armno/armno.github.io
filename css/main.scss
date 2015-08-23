@@ -201,7 +201,7 @@ pre > code {
   margin: 0;
   padding: 0;
   display: flex;
-  font-size: 0.7rem;
+  font-size: 0.63rem;
   justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -210,10 +210,12 @@ pre > code {
 .tags-list-inline {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .tag-list-item {
   padding: 0.15em 0.4em;
+  margin-bottom: 0.15em;
   background-color: $gray;
   margin-right: 5px;
   text-transform: uppercase;
