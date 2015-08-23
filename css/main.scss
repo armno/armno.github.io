@@ -151,6 +151,10 @@ pre > code {
 .publish-date {
   font-size: 0.8rem;
   color: rgba(72, 86, 101, 0.8);
+
+  .has-cover-photo & {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 .publish-time {
@@ -160,6 +164,10 @@ pre > code {
 
   sup {
     text-transform: none;
+  }
+
+  .has-cover-photo & {
+    color: rgba(255, 255, 255, 0.9);
   }
 }
 
