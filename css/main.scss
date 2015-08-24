@@ -7,8 +7,54 @@
 
 $green: #1ABC9C;
 $gray: #485665;
-
 $max-width: 760px;
+
+// mixins for flexbox support.
+// don't know why i'm doing this. i mean it's 2015, everyone should have flexbox already at home!
+// and i don't even use autoprefixer. poor me.
+@mixin display-flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction-column() {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex-direction-row() {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@mixin justify-content($value) {
+  -webkit-box-pack: $value;
+  -webkit-justify-content: $value;
+  -ms-flex-pack: $value;
+  justify-content: $value;
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin align-items($value) {
+  -webkit-box-align: $value;
+  -webkit-align-items: $value;
+  -ms-flex-align: $value;
+  align-items: $value;
+}
+// end flexbox mixins ... i wish i don't have to do this again.
 
 html {
   font-size: 19px; // for rem
@@ -165,9 +211,9 @@ pre > code {
 }
 
 .post-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include display-flex();
+  @include flex-direction-column();
+  @include justify-content(center);
   min-height: 260px;
 
   .has-cover-photo & {
@@ -206,20 +252,20 @@ pre > code {
 
 // tags
 .tags-list {
+  @include display-flex();
+  @include justify-content(center);
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
   font-size: 0.63rem;
-  justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .tags-list-inline {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  @include display-flex();
+  @include justify-content(flex-start);
+  @include flex-wrap(wrap);
 }
 
 .tag-list-item {
@@ -272,12 +318,12 @@ pre > code {
 }
 
 .home-nav {
+  @include display-flex();
+  @include flex-direction-row();
+  @include justify-content(space-between);
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: rows;
-  justify-content: space-between;
   text-transform: uppercase;
 
   max-width: $max-width;
@@ -289,8 +335,8 @@ pre > code {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
+  @include display-flex();
+  @include align-items(center);
 }
 
 .home-menu-item {
