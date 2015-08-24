@@ -3,6 +3,7 @@ layout: post
 title: About Armno
 description: Hi I'm a developer and BUZZWOO! Asia. I work on JavaScript and frontend stuffs.
 cover-image: "/img/cover-about-me.jpg"
+thumbnail: "http://armno.github.io/img/cover-about-me.jpg"
 expand-header: true
 ---
 
