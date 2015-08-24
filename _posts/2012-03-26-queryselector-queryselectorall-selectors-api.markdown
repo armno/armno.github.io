@@ -16,32 +16,44 @@ description: เราสามารถใช้ querySelector() และ quer
 
 ปกติ [DOM](http://www.w3.org/DOM/) _(Document Object Model)_ มี API method สำหรับการหา element จาก ID และจากชื่อ class อยู่แล้ว ตัวอย่างเช่น มี HTML แบบนี้
 
-<pre><code class="language-markup">&lt;p id="welcome" class="message"&gt;
+{% highlight html %}
+<p id="welcome" class="message">
   Aloha! Welcome to Panda Empire!
-&lt;/p&gt;</code></pre>
+</p>
+{% endhighlight %}
 
 เราจากสามารถหา element p ได้จาก ID โดย
 
-<pre><code class="language-javascript">var p = document.getElementById('welcome');</code></pre>
+{% highlight javascript %}
+var p = document.getElementById('welcome');
+{% endhighlight %}
 
 หรือหาจากชื่อ class
 
-<pre><code class="language-javascript">var p = document.getElementsByClassName('message')[0];</code></pre>
+{% highlight html %}
+var p = document.getElementsByClassName('message')[0];
+{% endhighlight %}
 
 
 แต่ใน HTML5 มี **Selectors API** เกิดขึ้นมาทำให้เราสามารถใช้ CSS selector ในการหา element ได้ง่ายๆ เลย (อารมณ์เดียวกับ selector ใน jQuery) โดยใช้ method `querySelector()` หรือ `querySelectorAll()`
 
 จากตัวอย่างข้างบน เราสามารถเขียนใหม่โดยใช้ Selectors API ได้เป็น
 
-<pre><code class="language-javascript">var p = document.querySelector('#welcome');</code></pre>
+{% highlight javascript %}
+var p = document.querySelector('#welcome');
+{% endhighlight %}
 
 หรือ
 
-<pre><code class="language-javascript">var p = document.querySelector('.message');</code></pre>
+{% highlight javascript %}
+var p = document.querySelector('.message');
+{% endhighlight %}
 
 หรือ
 
-<pre><code class="language-javascript">var p = document.querySelectorAll('.message')[0];</code></pre>
+{% highlight javascript %}
+var p = document.querySelectorAll('.message')[0];
+{% endhighlight %}
 
 
 ข้อสังเกตคือ parameter ที่เราส่งให้ `querySelector()` และ `querySelectorAll()` นั้นเป็น string ที่เป็น CSS Selector ต่างจากเดิมที่ใช้ชื่อ ID และ class
@@ -50,18 +62,22 @@ description: เราสามารถใช้ querySelector() และ quer
 
 สามารถใช้ CSS selector ที่ซับซ้อนๆ (รวมไปถึง CSS3 selector) เป็น parameter ในการ query DOM ได้ในครั้งเดียว เช่น
 
-
-<pre><code class="language-javascript">var el = document.querySelector('.navigation li > a#current');</code></pre>
+{% highlight javascript %}
+var el = document.querySelector('.navigation li > a#current');
+{% endhighlight %}
 
 เปลี่ยน scope ของการ query DOM นอกเหนือจาก document element ก็ได้
 
-<pre><code class="language-javascript">var ul = document.querySelector('#adminmenu');
-var li = ul.querySelectorAll('li');</code></pre>
+{% highlight javascript %}
+var ul = document.querySelector('#adminmenu');
+var li = ul.querySelectorAll('li');
+{% endhighlight %}
 
 chain ก็ยังได้
 
-<pre><code class="language-javascript">var li = document.querySelector('#adminmenu').querySelectorAll('li');</code></pre>
-
+{% highlight javascript %}
+var li = document.querySelector('#adminmenu').querySelectorAll('li');
+{% endhighlight %}
 
 ### Performance
 

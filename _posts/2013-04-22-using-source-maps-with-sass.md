@@ -9,15 +9,18 @@ tags: css sourcemaps devtools
 
 เวลาทำงานโปรเจ็คที่ต้องใช้ [Sass](http://armno.in.th/2012/05/20/setting-up-sass/) เรามักวางโครงสร้างไฟล์ประมาณนี้
 
-<pre><code class="language-bash">css
+{% highlight sh %}
+css
 |-- _normalize.scss
 |-- _base.scss
 |-- _common.scss
-`-- _style.scss</code></pre>
+`-- _style.scss
+{% endhighlight %}
 
 แล้วใช้ `@import` (ของ Sass) ในการรวมไฟล์เป็นไฟล์เดียวตอน compile
 
-<pre><code class="language-css">// style.scss
+{% highlight scss %}
+// style.scss
 
 @import "normalize";
 @import "base";
@@ -25,11 +28,14 @@ tags: css sourcemaps devtools
 
 // style อื่นๆ ...
 .class1 { ... }
-.class2 { ... }</code></pre>
+.class2 { ... }
+{% endhighlight %}
 
 สั่ง watch แบบ compress css ไฟล์ output ให้เลย
 
-<pre><code class="language-bash">$ sass --watch style.scss:style.css --style=compressed</code></pre>
+{% highlight sh %}
+$ sass --watch style.scss:style.css --style=compressed
+{% endhighlight %}
 
 ปัญหาที่พบก็คือตอน inspect element โดยใช้ devtools นั้น inspector บอกเลขบรรทัดไม่ตรงกับความจริง (ถ้า compress มาก็เป็นบรรทัดที่ 1 หมดเลย) ทำให้ตามไปแก้ยากหน่อยครับ (โดยเฉพาะเมื่อเราไม่ได้เป็นคนวางโครงสร้างไฟล์ `.scss` เอง)
 
@@ -57,7 +63,9 @@ tags: css sourcemaps devtools
 
 เราต้องเพิ่ม option `--debug-info` ต่อท้ายคำสั่ง `sass` เข้าไป ส่วน output style เป็นอะไรก็ได้ **ยกเว้น** `compressed`
 
-<pre><code class="language-bash">$ sass --watch style.scss:style.css --debug-info</code></pre>
+{% highlight sh %}
+$ sass --watch style.scss:style.css --debug-info
+{% endhighlight %}
 
 ทีนี้เมื่อเราใช้ inspector จิ้ม element ดู path ของไฟล์ css ก็จะเป็นของ scss แทน
 
@@ -78,4 +86,6 @@ tags: css sourcemaps devtools
 
 ถ้าใช้ [guard](https://github.com/guard/guard) เป็นตัว watch ใน `Guardfile` ก็จะประมาณนี้ครับ
 
-<pre><code class="language-bash">guard 'sass', :input => 'scss', :output => 'css', :debug_info => true</code></pre>
+{% highlight ruby %}
+guard 'sass', :input => 'scss', :output => 'css', :debug_info => true
+{% endhighlight %}
