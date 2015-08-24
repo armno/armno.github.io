@@ -3,6 +3,7 @@ layout: post
 title: "ซื้อของจาก Apple Store #3: MacBook Air 2013"
 description: ครั้งนี้เป็นครั้งที่ 3 ของผมกับการซื้อของจาก Apple Store ของที่สั่งคราวนี้เป็น MacBook Air 2013 จาก Education Store ทำให้ได้ราคานักศึกษาซึ่งถูกลงมาหน่อย คราวนี้ DHL มาส่งถึงบ้านครับ
 category: Life
+tags: macbookair applestore
 ---
 
 ครั้งนี้เป็นครั้งที่ 3 ของผมกับการซื้อของจาก Apple Store (ก่อนหน้านี้มี [iPhone 4s](http://armno.in.th/2012/02/08/iphone-4s-from-apple-online-store/) กับ [Apple Wireless Keyboard](http://armno.in.th/2012/11/21/apple-wireless-keyboard/)) ของที่สั่งคราวนี้เป็น <strong><a href="http://www.apple.com/th/macbook-air/">MacBook Air 2013</a></strong> จาก Education Store พร้อมกับเปลี่ยงแปลง spec เล็กน้อยครับ

@@ -3,6 +3,7 @@ layout: post
 title: "ใช้งาน EditorConfig"
 description: EditorConfig นั้นเป็นไฟล์ config ที่ทำให้ editor/IDE ต่างๆ นั้นใช้ coding style แบบเดียวกันได้ (เช่นการใช้ tab หรือ space) ถ้าทั้งทีมใช้ coding style แบบเดียวกันก็ช่วยให้ code เป็นระเบียบดีและลด conflict ได้ครับ
 thumbnail: http://farm4.staticflickr.com/3833/9797239403_d6949b2514_o.png
+tags: editorconfig sublimetext vim
 ---
 
 อีกปัญหาหนึ่งที่พบบ่อยๆ กับการ coding เป็นทีมนั่นก็คือ developer แต่ละคนนั้นตั้งค่า editor ของตัวเองไม่เหมือนกัน บางคนก็ใช้ tab บางคนก็ใช้ space ระยะห่างแต่ละ tab ก็ไม่เท่ากันอีก ทำงานบน version control บางทีก็ conflict กระจาย หลายๆ ทีมจึงเซ็ต coding style เป็นบรรทัดฐานขึ้นมา ที่ทุกคนต้องทำตาม

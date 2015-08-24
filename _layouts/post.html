@@ -1,21 +1,69 @@
 ---
 layout: default
 ---
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <h1 class="title">{{ page.title }}</h1>
-    <p class="meta">
-    {{ page.date | date: "%B %-d, %Y" }}
-    {% if page.author %} - {{ page.author }}{% endif %}
-    </p>
-  </header>
-  <section class="post-content">{{ content }}</section>
 
+<div
+  {% if page.cover-image %}
+    style="background-image: url({{ page.cover-image }})"
+    class="post-cover-photo has-cover-photo"
+  {% else %}
+    class="post-cover-photo"
+  {% endif %}
+  >
+
+  <nav class="container nav-post">
+    <a href="{{ '/' | prepend: site.baseurl }}">« Home</a>
+  </nav>
+
+  <header class="post-header container">
+    <h1
+      {% if page.is_post %}
+        class="text-center post-title"
+      {% else %}
+        class="text-center post-title page-title"
+      {% endif %}
+      >{{ page.title }}</h1>
+
+    {% if page.is_post %}
+    <div class="text-center publish-date">
+      Published on
+      <span class="publish-time">
+      {% assign d = page.date | date: "%-d" s %}
+      {% case d %}
+        {% when '1' or '21' or '31' %}{{ d }}<sup>st</sup>
+        {% when '2' or '22' %}{{ d }}<sup>nd</sup>
+        {% when '3' or '23' %}{{ d }}<sup>rd</sup>
+        {% else %}{{ d }}<sup>th</sup>
+        {% endcase %}
+      {{ page.date | date: "%B, %Y" }}
+      </span>
+    </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <ul class="tags-list">
+      {% for tag in page.tags %}
+      <li class="tag-list-item">{{ tag | prepend: '#' }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </header>
+
+</div>
+
+<article class="container">
+
+  {{ content }}
+
+  {% if page.is_post %}
   {% include share.html %}
+  {% endif %}
+
+  <hr>
 </article>
 
 <!-- Disqus -->
-{% if site.theme.disqus_shortname %}
+{% if page.is_post %}
 <div class="comments hide-print">
   {% include disqus.html %}
 </div>

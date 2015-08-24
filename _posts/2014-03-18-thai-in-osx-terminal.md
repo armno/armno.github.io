@@ -3,6 +3,7 @@ layout: post
 title: "ภาษาไทยใน Terminal (OSX)"
 description: "เพิ่งลง OSX Mavericks ใหม่แล้วภาษาไทยใน terminal มันเพี้ยนๆ ซ่อมได้ด้วยการ set locale ให้ถูกครับ"
 thumbnail: "http://farm4.staticflickr.com/3726/13239980733_839b6109c2.jpg"
+tags: thai terminal locale
 ---
 
 เพิ่งลง OSX Mavericks (10.9) ใหม่ แล้วภาษาไทยใน terminal (ใช้ iTerm2) มันมีปัญหา เป็นแบบนี้ครับ (รัน `git diff`)

@@ -25,9 +25,10 @@ Emmet กับ [Sublime Text](http://armno.in.th/2011/09/20/sublime-text-2-edit
 
 เราสามารถติดตั้ง Emmet ได้จาก [Package Control](https://github.com/wbond/sublime_package_control) ครับ แต่ ณ ตอนที่เขียนอยู่นี้ เห็นหลายคน[มีปัญหากับ Package Control](https://github.com/wbond/sublime_package_control/issues/231) ที่ดาวน์โหลด zip ball จาก Github ไม่ได้ ทำให้ลงปลั๊กอินไม่ผ่าน ดังนั้นแนะนำให้ลงแบบ manual ดีกว่า คือโหลดไฟล์ทั้งหมดของ Emmet มาไว้ที่โฟลเดอร์ Packages ของ Sublime Text
 
-<pre><code class="language-bash">cd ~/.config/sublime-text-2/Packages/
-git clone https://github.com/sergeche/emmet-sublime.git
-</code></pre>
+{% highlight sh %}
+$ cd ~/.config/sublime-text-2/Packages/
+$ git clone https://github.com/sergeche/emmet-sublime.git
+{% endhighlight %}
 
 จากนั้น restart Sublime Text ก็น่าจะใช้งานได้ละครับ
 

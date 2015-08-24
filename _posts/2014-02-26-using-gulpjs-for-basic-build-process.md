@@ -4,6 +4,7 @@ description: "Gulp.js นั้นเป็น build tool/task runner ช่ว�
 layout: post
 published: true
 thumbnail: http://farm6.staticflickr.com/5487/12794346545_facca0edf4_c.jpg
+tags: gulp tooling buildtools
 ---
 
 ปกติเมื่อเราทำเว็บ ก็จะมีสิ่งที่ต้องทำเป็นประจำอยู่จำนวนหนึ่ง เช่น

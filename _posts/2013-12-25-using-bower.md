@@ -4,6 +4,7 @@ title: "ใช้งาน Bower"
 description: Bower เป็น client-side package manager จากทาง Twitter ใช้สำหรับติดตั้ง / ค้นหา / อัพเดท 3rd-party package ได้สะดวกมาก ทำได้ผ่าน Terminal ครับ
 published: true
 thumbnail: http://farm4.staticflickr.com/3796/11576530464_6dd5174254_o.png
+tags: bower terminal
 ---
 
 ปกติแล้วเวลาเราจะติดตั้ง package หรือ plugin สักตัว สิ่งที่ต้องทำก็คือ (สมมุติ jQuery)

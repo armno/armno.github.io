@@ -3,6 +3,7 @@ layout: post
 title: "Setting up Vim"
 description: ปกติผมใช้ Sublime Text 3 เป็น code editor ตัวหลัก แต่บางครั้งต้องการแก้ไขไฟล์ง่ายๆ เร็วๆ จาก terminal หรือทำโปรเจ็คเล็กๆ (เขียนโค้ดตาม tutorial ในเว็บต่างๆ) ผมก็จะเลือกใช้ Vim แทน เพราะเร็วกว่าเปิดใน Sublime Text ครับ
 published: true
+tags: vim terminal editor
 ---
 
 ปกติผมใช้ [Sublime Text 3](http://armno.in.th/2013/07/08/setting-up-sublime-text-3/) เป็น code editor ตัวหลัก แต่บางครั้งต้องการแก้ไขไฟล์ง่ายๆ เร็วๆ จาก terminal หรือทำโปรเจ็คเล็กๆ (เขียนโค้ดตาม tutorial ในเว็บต่างๆ) ผมก็จะเลือกใช้ Vim แทน เพราะเร็วกว่าเปิดใน Sublime Text ครับ
@@ -21,11 +22,15 @@ published: true
 
 OSX
 
-<pre class="language-bash"><code>$ brew install vim</code></pre>
+{% highlight sh %}
+$ brew install vim
+{% endhighlight %}
 
 Ubuntu
 
-<pre class="language-bash"><code>$ sudo apt-get install vim</code></pre>
+{% highlight sh %}
+$ sudo apt-get install vim
+{% endhighlight %}
 
 แค่นี้เราสามารถใช้ command `vim` ได้จาก terminal แล้วครับ
 
@@ -43,9 +48,11 @@ Ubuntu
 
 อันดับแรกต้องลง **Vim-pathogen** ก่อน เป็น plugin ที่ทำให้ลง plugin ตัวอื่นๆ ได้ง่ายขึ้นครับ วิธีลงก็แค่ copy 3 บรรทัดนี้ไปรันใน terminal ได้เลย
 
-<pre class="language-bash"><code>mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+{% highlight sh %}
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
-https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim</code></pre>
+https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+{% endhighlight %}
 
 #### [NERDTree](https://github.com/scrooloose/nerdtree)
 
@@ -53,26 +60,34 @@ https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim</code></p
 
 NERDTree เป็น file explorer ของ Vim ครับ ใช้เป็น sidebar คล้ายๆ ของ Sublime Text ได้ ติดตั้ง plugin ตัวนี้ได้ผ่าน Pathogen ครับ
 
-<pre class="language-bash"><code>$ cd ~/.vim/bundle
-$ git clone https://github.com/scrooloose/nerdtree.git</code></pre>
+{% highlight sh %}
+$ cd ~/.vim/bundle
+$ git clone https://github.com/scrooloose/nerdtree.git
+{% endhighlight %}
 
 #### [Emmet](http://mattn.github.io/emmet-vim/)
 
 Emmet (ชื่อเดิมคือ [Zen Coding](http://armno.in.th/2012/11/06/emmet-zen-coding-replacement/)) นั้นเป็น plugin ที่ช่วยให้เขียน HTML ได้เร็วขึ้นครับ จริงๆ แล้วผมไม่ค่อยได้ใช้ Emmet ใน Vim แต่ลงไว้ก็ไม่เสียหายครับ สามารถติดตั้งผ่าน Pathogen อีกเหมือนกัน
 
-<pre class="language-bash"><code>$ cd ~/.vim/bundle
-$ git clone http://github.com/mattn/emmet-vim.git</code></pre>
+{% highlight sh %}
+$ cd ~/.vim/bundle
+$ git clone http://github.com/mattn/emmet-vim.git
+{% endhighlight %}
 
 ปกติคีย์สำหรับใช้งาน Emmet คือ `Ctrl+Y+,` ผมว่าสูตรนี้มันกดติดยากไปหน่อย เซ็ต key mapping ใน `.vimrc` ให้เป็น `,t` แทน (ผม map ตัว `,` แทน `<leader>`)
 
-<pre class="language-bash"><code>map &lt;leader&gt;t &lt;C-y&gt;,</code></pre>
+{% highlight sh %}
+map <leader>t <C-y>,
+{% endhighlight %}
 
 #### [Autoclose](https://github.com/Townk/vim-autoclose)
 
 ช่วยปิดพวกวงเล็บ วงเล็บปีกกาให้อัตโนมัติครับ ตัวนี้ติดตั้งผ่าน Pathogen ไม่ได้ ต้องดาวน์โหลดไฟล์มาเองครับ
 
-<pre class="language-bash"><code>$ wget --no-check-certificate https://raw.github.com/Townk/vim-autoclose/master/plugin/AutoClose.vim -O ~/.vim/plugin/AutoClose.vim
-$ wget --no-check-certificate https://raw.github.com/Townk/vim-autoclose/master/doc/AutoClose.txt -O ~/.vim/doc/AutoClose.txt</code></pre>
+{% highlight sh %}
+$ wget --no-check-certificate https://raw.github.com/Townk/vim-autoclose/master/plugin/AutoClose.vim -O ~/.vim/plugin/AutoClose.vim
+$ wget --no-check-certificate https://raw.github.com/Townk/vim-autoclose/master/doc/AutoClose.txt -O ~/.vim/doc/AutoClose.txt
+{% endhighlight %}
 
 #### [neocomplcache](https://github.com/Shougo/neocomplcache.vim)
 
@@ -80,7 +95,9 @@ $ wget --no-check-certificate https://raw.github.com/Townk/vim-autoclose/master/
 
 เป็น auto complete ของ Vim ที่ผมใช้อยู่ครับ ทำงานได้ค่อนข้างดีเลยทีเดียว การติดตั้งนั้นทำได้โดยดาวน์โหลดไฟล์เป็น .zip จาก Github repo แล้ว extract ไฟล์ทั้งหมดไปที่โฟลเดอร์ `~/.vim` ครับ
 
-<pre class="language-bash"><code>$ wget --no-check-certificate https://github.com/Shougo/neocomplcache.vim/archive/master.zip -O - | unzip ~/.vim/</code></pre>
+{% highlight sh %}
+$ wget --no-check-certificate https://github.com/Shougo/neocomplcache.vim/archive/master.zip -O - | unzip ~/.vim/
+{% endhighlight %}
 
 แต่บน OSX 10.8 นั้นเจอปัญหาบ้างคือ บางครั้ง neocomplcache ทำให้มี delay ตอนสลับไปมาระหว่าง command mode กับ insert mode ครับ (ประมาณ 1 วินาที)
 
@@ -104,8 +121,10 @@ plugin ตัวเทพนี้ทำให้ Vim มี mulitple cursors �
 
 วิธีลงก็ทำผ่าน Pathogen ได้อีกเหมือนกัน
 
-<pre class="language-bash"><code>$ cd ~/.vim/bundle
-$ git clone https://github.com/terryma/vim-multiple-cursors.git</code></pre>
+{% highlight sh %}
+$ cd ~/.vim/bundle
+$ git clone https://github.com/terryma/vim-multiple-cursors.git
+{% endhighlight %}
 
 #### [CtrlP](https://github.com/kien/ctrlp.vim)
 
@@ -115,13 +134,17 @@ $ git clone https://github.com/terryma/vim-multiple-cursors.git</code></pre>
 
 ใช้งานผ่าน Pathogen ได้อีกแล้วจ้า
 
-<pre class="language-bash"><code>$ cd ~/.vim/bundle
-$git clone https://github.com/kien/ctrlp.vim.git</code></pre>
+{% highlight sh %}
+$ cd ~/.vim/bundle
+$git clone https://github.com/kien/ctrlp.vim.git
+{% endhighlight %}
 
 หลังจากลงแล้วก็ทำให้ใช้งานสะดวกขึ้น โดยเซ็ต key binding ให้เป็น `Ctrl+p` (ตามชื่อ) ได้ โดยเพิ่มในไฟล์ `.zshrc` ครับ
 
-<pre class="language-vim"><code>let g:ctrlp_map = '&lt;c-p&gt;'
-let g:ctrlp_cmd = 'CtrlP'</code></pre>
+{% highlight vim %}
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+{% endhighlight %}
 
 ตอนนี้ Vim ก็คล้าย Sublime Text ขึ้นมาอีกหน่อย :)
 

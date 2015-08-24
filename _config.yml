@@ -1,63 +1,11 @@
 # SITE CONFIGURATION
+title: "Armno"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://armno.github.io" # the base hostname & protocol for your site
 exclude: ["sass", "archived", "node_modules", "gulpfile.js", "package.json", "Rakefile"]
 permalink: /:year/:month/:day/:title
 
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: "Armno Prommarak"
-  avatar: https://armno.github.io/img/me.jpg
-  gravatar: # Email MD5 hash
-  description: "A nerdy web developer, Chiang Mai, Thailand." # used by search engines, hopefully
-
-  # Header and footer text
-  header_text_feature_image: "img/home-featured.jpg"
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type</a>.
-
-  # Icons
-  rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook: armno.in.th
-  flickr: armno
-  github: "armno"
-  google_plus:
-  instagram: armno
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: "armno"
-  wordpress:
-  youtube:
-
-  # Scripts
-  google_analytics: "UA-2721521-7" # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname: "armnointh"
-  katex: false # Enable if using math markup
-
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-
-# PAGINATION
-paginate: 7
-# paginate_path: "blog/page:num"
+paginate: 10
 
 # BUILD SETTINGS
 markdown: kramdown

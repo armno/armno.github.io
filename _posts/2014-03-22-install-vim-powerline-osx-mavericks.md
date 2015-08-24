@@ -4,6 +4,7 @@ title: "ติดตั้ง Vim Powerline ใน OSX 10.9"
 description: "Vim Powerline เป็น plugin ที่ทำให้ status bar ของ Vim จากที่จืดๆ ดูดีขึ้น ปรับแต่งได้มากมายตามต้องการ ส่วนผมลงไว้เพราะเน้นความบันเทิงตา"
 published: true
 thumbnail: "https://farm3.staticflickr.com/2825/13330998783_0ff3958050_z.jpg"
+tags: vim terminal powerline
 ---
 
 [**Vim Powerline**](https://github.com/Lokaltog/powerline) นั้นทำให้ status bar ของ Vim จากจืดๆ ดูดีขึ้น .. จริงๆ แล้วปรับแต่งได้อีกมากมาย ดูได้จาก [document](https://powerline.readthedocs.org/en/latest/configuration.html) ได้เลยจ้า (ส่วนผมลงไว้เพื่อความบันเทิง)

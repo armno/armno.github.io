@@ -4,6 +4,7 @@ title: "ลองใช้ Prezto กับ zsh"
 description: ปกติผมใช้ zsh คู่กับ oh-my-zsh เพื่อสร้างความบันเทิงในการใช้งาน terminal ก็ใช้งานได้ดีปกติ ไม่มีปัญหาอะไร แต่แล้ววันหนึ่งอากาศแจ่มใส ไม่รู้มีอะไรดลให้ Prezto ผ่านมาให้พบเจอ เลยต้องลองเสียหน่อย
 published: true
 thumbnail: "https://armno.github.io/img/posts/prezto/substring-search.png"
+tags: zsh prezto terminal nerd
 ---
 
 สวัสดีชาวเนิร์ด

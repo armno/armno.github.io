@@ -5,14 +5,6 @@
     "url": "https://github.com/armno/armno.github.io"
   },
   "devDependencies": {
-    "critical": "^0.1.6",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "latest",
-    "gulp-concat": "latest",
-    "gulp-load-plugins": "^0.5.3",
-    "gulp-rename": "^1.2.0",
-    "gulp-ruby-sass": "latest",
-    "gulp-uglify": "latest",
-    "gulp-util": "latest"
+    "gulp": "^3.9"
   }
 }

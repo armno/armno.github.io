@@ -4,6 +4,8 @@ title: "หูฟัง Audio-Technica ATH-M50x"
 description: เปลี่ยนหูฟังใหม่เป็น Audio-Technica ATH-M50x ตอนนี้ก็ใช้งานมาประมาณ 2 เดือนกว่าๆ แล้ว ถือว่าเป็นหูฟังที่ผมชอบมากอีกตัวหนึ่ง จึงอยากสรุปประสบการณ์ + กึ่งๆ รีวิว พร้อมกับถ่ายรูปมาให้ชมกันครับ
 published: true
 thumbnail: https://farm8.staticflickr.com/7710/17243021339_2b9e8e4df7.jpg
+cover-image: '/img/posts/m50x/cover-ath-m50x.jpg'
+tags: headphones music m50x
 ---
 
 หลังจากใช้งาน [Grado SR-80i](http://armno.github.io/grado-sr-80-i-headphone/) มาได้ประมาณ 2 ปี ถึงเวลาที่ต้องเปลี่ยนหูฟังอันใหม่ ที่เปลี่ยนก็เพราะว่าย้ายที่นั่งกันที่ออฟฟิศ
