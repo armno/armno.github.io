@@ -21,3 +21,6 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
+
+gems:
+  - jekyll-feed
