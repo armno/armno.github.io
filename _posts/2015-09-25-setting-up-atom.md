@@ -86,6 +86,19 @@ Atom มันแปลกตรงที่ UI Theme กับ Syntax Theme ส
   <img src="/img/posts/atom/syntax-afterglow-plus.png" alt="afterglow plus syntax theme" width="664" height="773">
 </div>
 
+### ซ่อน Tab bar
+
+ใน command palette (<kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd>) ไม่มีคำสั่งสำหรับ toggle tab bar สำหรับซ่อน tab ทั้งหมดที่เปิดอยู่เหมือนใน Sublime Text ปกติผมไม่ได้ใช้งาน tab เลยก็จะปิดไว้
+ส่วนใน Atom ต้องไปแก้ใน custom style ด้วย CSS เพื่อซ่อน tab bar เอาครับ
+
+เปิด command palette แล้วเลือก `open your stylesheet` แล้วก็ใส่ CSS ให้ `.tab-bar` เป็น `display: none`
+
+{% highlight css %}
+.tab-bar {
+  display: none;
+}
+{% endhighlight %}
+
 ## 4. Packages
 
 ผมไม่ได้ลงอะไรเยอะเท่าไหร่ แต่ package ที่จำเป็นสำหรับ Atom ที่สุดสำหรับผมน่าจะเป็น [Project Manager](https://atom.io/packages/project-manager) ครับ
