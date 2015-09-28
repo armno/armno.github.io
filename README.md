@@ -1,18 +1,19 @@
 # Armno's Jekyll blog
 
-Install required gems.
+### Install required gems.
 
 ```sh
-$ gem install jekyll
+$ gem install bundle
+$ bundle install
 ```
 
-Running
+### Running
 
 ```sh
-$ jekyll serve
+$ bundle exec jekyll serve
 ```
 
-Creating new post
+### Creating new post
 
 ```sh
 # I have no idea why I'm using Rake here ...
@@ -25,3 +26,8 @@ parameters (all of them are optional)
 - `slug` - the post's slug. by default, it is generated from `title`. tested with English only.
 - `thumbnail` - the post's thumbnail. currently used for open graph meta tags. no default value.
 
+### Cover image
+
+- 1600x700 pixels
+- masked with 44% black
+- try to limit the size too < 100KB
