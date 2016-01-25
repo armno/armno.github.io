@@ -105,6 +105,8 @@ $ npm install -g json
 (HTML, JavaScript, CSS, JSON, XML, MySQL) แต่ผมยังไม่ได้ใช้เยอะขนาดนั้น เลยยังไม่ได้ลอง
 แต่ก็เป็นอีกทางเลือกนึงที่น่าจะใช้ได้ครับ
 
+ใครมีวิธี format JSON ใน Vim วิธีอื่นๆ แนะนำกันได้นะ
+
 ### Sources
 
 - [Pretty printing JSON in Vim](https://pascalprecht.github.io/2014/07/10/pretty-print-json-in-vim/)
