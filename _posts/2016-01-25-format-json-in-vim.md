@@ -4,6 +4,7 @@ title: "จัดโค้ด JSON ใน Vim"
 description: "การ format file JSON (จัดให้เป็นระเบียบ, uncompressed, prettify) ปกติเป็นงานที่ผมไม่ได้ทำใน Vim ต้องพึ่ง editor ตัวอื่น แต่ด้วยความสงสัยก็เลยลองค้นหาวิธีในเน็ตดู ก็พบว่ามีหลายทางให้เลือก และก็ไม่อยากเลย"
 published: true
 cover-image: https://armno.github.io/img/posts/vim-format-json/format-json-in-vim.png
+thumbnail: https://armno.github.io/img/posts/vim-format-json/format-json-in-vim.png
 tags: JSON Vim Editor Code Formatting
 ---
 
