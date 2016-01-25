@@ -20,7 +20,8 @@ layout: LAYOUT
 title: "TITLE"
 description:
 published: false
-thumbnail: THUMBNAIL
+cover-image: THUMBNAIL
+tags:
 ---
 
 HTML
