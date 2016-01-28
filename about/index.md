@@ -8,13 +8,11 @@ expand-header: true
 ---
 
 สวัสดีครับ. My name is Armno. I am a frontend(-ish) developer at [BUZZWOO! Asia](http://www.buzzwoo.de/),
-living in [Chiang Mai, Thailand](https://www.google.co.th/?gws_rd=cr,ssl&ei=mVnZVYKYKcKxuQSPtKG4Bg#q=chiang+mai).
-I work primarily on JavaScript and CSS stuffs. My focus is currently on JavaScript in general and browser's rendering performance.
+based in [Chiang Mai, Thailand](https://www.google.co.th/?gws_rd=cr,ssl&ei=mVnZVYKYKcKxuQSPtKG4Bg#q=chiang+mai).
+I work primarily on JavaScript and CSS stuffs. My focus is currently on Angular, React, and JavaScript in general.
 
-When I'm not coding, I enjoy taking [photos][instagram] of [things][flickr], reading books
-and trying to put my fingers on [guitar][soundcloud] strings.
-
-<small><i>Sorry if my photo scares your kids. I'm actually pretty kind (finger crossed).</i></small>
+I also enjoy taking [photos][instagram] of [things][flickr], reading books
+and doing [home recordings][soundcloud] in my bedroom.
 
 ### Get in touch
 
