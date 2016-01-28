@@ -1,16 +1,15 @@
 # Armno's Jekyll blog
 
-### Install required gems.
+Install dependencies
 
 ```sh
-$ gem install bundle
-$ bundle install
+$ npm run prepare
 ```
 
 ### Running
 
 ```sh
-$ bundle exec jekyll serve
+$ npm start
 ```
 
 ### Creating new post
@@ -25,6 +24,7 @@ parameters (all of them are optional)
 - `title` - the post's title. default value is defined in [Rakefile](https://github.com/armno/armno.github.io/blob/master/Rakefile#L7).
 - `slug` - the post's slug. by default, it is generated from `title`. tested with English only.
 - `thumbnail` - the post's thumbnail. currently used for open graph meta tags. no default value.
+- `cover` - like `thumbnail`
 
 ### Cover image
 

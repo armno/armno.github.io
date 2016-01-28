@@ -4,6 +4,10 @@
     "type": "git",
     "url": "https://github.com/armno/armno.github.io"
   },
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "prepare": "gem install bundle && bundle install"
+  },
   "devDependencies": {
     "gulp": "^3.9"
   }
