@@ -54,8 +54,8 @@ property (attribute) กับ method ของ object นั้นๆ
 node ไหน เป็น parent/child ของ node ไหน ซึ่งพอเราเชื่อมทุก node เข้าด้วยกัน
 ก็จะได้โครงสร้างที่เป็น tree ของ node ขึ้นมา เรียกว่า DOM Tree กับ CSSOM Tree ครับ
 
-สำหรับ DOM นั้นจะค่อนข้างชัดเจน แต่ละ node นั้นสืบทอดมาจาก node อีกอันนึ่ง
-แต่ CSSOM นั้น ไม่มีโครงสร้างชัดเจนเหมือน DOM แต่ทำไมโครงสร้างก็ออกมาเป็น tree เหมือนกัน
+สำหรับ DOM นั้นจะค่อนข้างชัดเจน อย่างที่เห็นใน code หรือ element inspector ใน DevTools
+แต่ CSSOM นั้น ไม่มีโครงสร้างชัดเจนเหมือน DOM แต่ทำไมโครงสร้างก็ออกมาเป็น tree เหมือนกัน?
 
 นั่นก็เพราะว่า CSS มีคุณสมบัติ cascading ที่ node ใดๆ จะได้รับ propery ที่ inherit มาจาก parent node อยู่แล้ว
 แต่ละ node ใน CSSOM จะได้รับ CSS property จาก parent node มาเช่นกัน
