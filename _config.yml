@@ -24,3 +24,4 @@ defaults:
 
 gems:
   - jekyll-feed
+  - jekyll-paginate
