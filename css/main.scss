@@ -391,6 +391,10 @@ pre > code {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  &.has-cover-photo {
+    background-color: #1ABC9C;
+}
 }
 
 .post-teaser {
