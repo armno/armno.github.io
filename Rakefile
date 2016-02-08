@@ -1,5 +1,5 @@
 # from this gist https://gist.github.com/stammy/792958
-# rake new_post title="" slug=""
+# rake new_post title="" slug="" thumbnail=""
 desc "create new post"
 task :new do
 
@@ -21,6 +21,7 @@ title: "TITLE"
 description:
 published: false
 cover-image: THUMBNAIL
+thumbnail: THUMBNAIL
 tags:
 ---
 
