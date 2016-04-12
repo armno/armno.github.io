@@ -160,6 +160,12 @@ pre > code {
   font-size: 1em;
 }
 
+// remove margins on code blocks totally
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 // helpers
 .text-center {
   text-align: center;
