@@ -149,8 +149,9 @@ code {
 
 code {
   background-color: #f4f4f4;
-  padding: 0.2rem 0.5rem;
+  padding: 0.15em 0.4em;
   border-radius: 4px;
+  font-size: 0.85em; // micro-tweak for roboto mono font
 }
 
 pre > code {
@@ -393,6 +394,11 @@ figure {
   }
 }
 
+.self-intro {
+  padding-top: 4em;
+  font-size: 1.3em;
+}
+
 .post-cover-photo {
   background-size: cover;
   background-position: center;
@@ -464,4 +470,21 @@ figure {
   display: inline-block;
   margin-left: 0.25em;
   margin-right: 0.25em;
+}
+
+// video embed
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
