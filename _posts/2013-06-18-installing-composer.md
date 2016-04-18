@@ -16,11 +16,15 @@ Composer นั้นใช้งานผ่าน command line ดังนั
 
 <em>[updated 2014.01.16]</em> ติดตั้งผ่าน [homebrew](http://brew.sh) นั้นดูเหมือนจะง่ายที่สุดครับ โดยก่อนอื่นเราต้อง tap  composer ให้ homebrew รู้จักก่อน
 
-<pre class="language-bash"><code>brew tap josegonzalez/homebrew-php</code></pre>
+{% highlight sh %}
+$ brew tap josegonzalez/homebrew-php
+{% endhighlight %}
 
 จากนั้นก็ติดตั้ง composer
 
-<pre class="language-bash"><code>$ brew install josegonzalez/php/composer</code></pre>
+{% highlight sh %}
+$ brew install josegonzalez/php/composer
+{% endhighlight %}
 
 #### ติดตั้งแบบ manual
 
@@ -28,26 +32,36 @@ Composer นั้นใช้งานผ่าน command line ดังนั
 
 เปิด terminal ขึ้นมาแล้วก็พิมพ์ command สองบรรทัดนี้เลย
 
-<pre class="language-bash"><code>$ curl -sS https://getcomposer.org/installer | php</code></pre>
+{% highlight sh %}
+$ curl -sS https://getcomposer.org/installer | php
+{% endhighlight %}
 
 ตามด้วย
 
-<pre class="language-bash">$ mv composer.phar /usr/local/bin/composer</code></pre>
+{% highlight sh %}
+$ mv composer.phar /usr/local/bin/composer
+{% endhighlight %}
 
 เสร็จแล้วเราก็จะสามารถเรียกใช้ <code>composer</code> command ได้จาก terminal แล้วครับ ทดสอบโดย
 
-<pre class="language-bash">$ which composer</code></pre>
+{% highlight sh %}
+$ which composer
+{% endhighlight %}
 
 ก็จะได้ path ที่เราติดตั้ง Composer ไว้ครับ
 
-<pre class="language-bash">/usr/local/bin/composer</code></pre>
+{% highlight sh %}
+/usr/local/bin/composer
+{% endhighlight %}
 
-### ใช้งาน ​Composer
+### ใช้งาน Composer
 
 ผมจะลองติดตั้ง SwiftMailer เป็น library สำหรับส่ง email ใน PHP ด้วย Composer ขั้นตอนแรกก็สร้าง directory เปล่าๆ ขึ้นมาก่อน
 
-<pre class="language-bash">$ mkdir swift
-$ cd swift</code></pre>
+{% highlight sh %}
+$ mkdir swift
+$ cd swift
+{% endhighlight %}
 
 จากนั้นสร้างไฟล์ชื่อ <code>composer.json</code> ขึ้นมา ไฟล์นี้จะเป็นตัวบอกว่าโปรเจ็คของเราต้องใช้ dependency ตัวไหนบ้าง สำหรับ library ต่างๆ หาได้จาก [packagist.org](https://packagist.org/) ครับ
 
@@ -55,15 +69,19 @@ $ cd swift</code></pre>
 
 ไฟล์ <code>composer.json</code> ก็จะประมาณนี้ครับ
 
-<pre class="language-javascript">{
+{% highlight json %}
+{
   "require" : {
     "swiftmailer/swiftmailer": "5.1.*@dev"
   }
-}</code></pre>
+}
+{% endhighlight %}
 
 แล้วก็รัน
 
-<pre class="language-bash">$ composer install</code></pre>
+{% highlight sh %}
+$ composer install
+{% endhighlight %}
 
 ![image](http://farm8.staticflickr.com/7453/9075336190_a56f25d621_o.png)
 
@@ -73,6 +91,8 @@ $ cd swift</code></pre>
 
 ใน directory <code>vendor</code> จะมีไฟล์ <code>autoload.php</code> ให้พร้อมให้เราใช้งาน ในโปรเจ็คของเราก็แค่เพิ่ม
 
-<pre class="language-php">require 'vendor/autoload.php';</code></pre>
+{% highlight sh %}
+require 'vendor/autoload.php';
+{% endhighlight %}
 
 ก็จะทำให้สามารถใช้ SwiftMailer ในโปรเจ็คได้ครับ
