@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 title: "Armno"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://armno.github.io" # the base hostname & protocol for your site
+url: "https://armno.in.th"
 exclude: ["sass", "archived", "node_modules", "gulpfile.js", "package.json", "Rakefile"]
 permalink: /:year/:month/:day/:title
 
