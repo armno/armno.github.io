@@ -3,7 +3,7 @@ layout: post
 title: "Setting up Vim : Part II"
 description: เคยเขียนวิธีการ setup Vim ของผมตอนแรกเมื่อประมาณปีที่แล้ว พอใช้งานไปเรื่อยๆ ก็พบว่าได้ปรับเปลี่ยนอีกบางส่วนตามการใช้งาน เลยเอา plugin/setup ที่เปลี่ยนไปจากตอนแรกมารวมกันไว้ในโพสต์นี้ครับ
 published: true
-thumbnail: "http://armno.github.io/img/posts/vim-airline.png"
+thumbnail: "https://armno.in.th/img/posts/vim-airline.png"
 tags: vim terminal vundle
 ---
 
@@ -65,7 +65,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 ปล. ทุกวันนี้ก็ยังใช้ vim กับ sublime text สลับกันไปมา แล้วแต่ลักษณะงานครับ
 
-[setting-up-vim-part-1]: https://armno.github.io/2013/09/05/setting-up-vim/ "Setting up Vim part I"
+[setting-up-vim-part-1]: https://armno.in.th/2013/09/05/setting-up-vim/ "Setting up Vim part I"
 [pathogen-website]: https://github.com/tpope/vim-pathogen "Pathogen.vim"
 [vundle-website]: https://github.com/gmarik/Vundle.vim "Vundle.vim"
 [vundle-quickstart]: https://github.com/gmarik/Vundle.vim#quick-start
