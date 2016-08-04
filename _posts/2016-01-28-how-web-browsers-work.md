@@ -4,7 +4,7 @@ title: "วิธีการทำงานของ web browser"
 description: Web browser นั้นก็มีหน้าที่แปลง code ของทั้ง 3 ส่วนประกอบนั้น แสดงผลออกมาเป็นเว็บไซต์ให้เราได้ใช้งาน ในฐานะคนทำเว็บ การเข้าใจหลักการทำงานของ web browser นั้นช่วยให้เข้าใจถึงที่มาที่ไปของสิ่งที่ปรากฏบนหน้าจอ รวมถึงจะเป็นประโยชน์ในเรื่องการ optimize performance ของเว็บไซต์ด้วยครับ
 published: true
 cover-image: '/img/posts/how-browsers-work/cover-devtools-timeline.png'
-thumbnail: https://armno.github.io/img/posts/how-browsers-work/cover-devtools-timeline.png
+thumbnail: https://armno.in.th/img/posts/how-browsers-work/cover-devtools-timeline.png
 tags: web browser rendering performance
 ---
 
