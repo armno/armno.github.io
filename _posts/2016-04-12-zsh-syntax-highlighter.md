@@ -4,7 +4,7 @@ title: "zsh syntax highlighter"
 description: zsh-syntax-highlighting เป็น plugin ของ zsh ที่จะทำให้ command ที่เราพิมพ์ใน terminal มีสีสันขึ้นมาได้ และช่วยป้องกันไม่ให้เราพิมพ์ command ผิดได้อีกด้วย
 published: true
 cover-image:
-thumbnail: https://armno.github.io/img/posts/zsh-syntax-highlighter/after.png
+thumbnail: https://armno.in.th/img/posts/zsh-syntax-highlighter/after.png
 tags: terminal zsh oh-my-zsh
 ---
 
@@ -32,7 +32,7 @@ tags: terminal zsh oh-my-zsh
 
 ### ใช้งานกับ `oh-my-zsh`
 
-`zsh-syntax-highlighter` นั้น ผมใช้งานร่วมกับ [`oh-my-zsh`](https://armno.github.io/2013/09/11/setting-up-the-terminal) โดยวิธีการติดตั้งนั้นก็ตาม [install.md ใน repo](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#with-oh-my-zsh)
+`zsh-syntax-highlighter` นั้น ผมใช้งานร่วมกับ [`oh-my-zsh`](https://armno.in.th/2013/09/11/setting-up-the-terminal) โดยวิธีการติดตั้งนั้นก็ตาม [install.md ใน repo](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#with-oh-my-zsh)
 ส่วนใครที่ไม่ได้ใช้ `oh-my-zsh` ก็ใช้งานได้เหมือนกันจ้า
 
 ขั้นแรกก็ต้อง clone repo ของ `zsh-syntax-highlighting` มาไว้ใน `oh-my-zsh` ในเครื่องเราก่อน

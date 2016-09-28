@@ -148,4 +148,4 @@ let g:ctrlp_cmd = 'CtrlP'
 
 ตอนนี้ Vim ก็คล้าย Sublime Text ขึ้นมาอีกหน่อย :)
 
-Update: เขียนตอน 2 แล้วครับ ตามไปอ่านได้ที่ [Setting Vim: Part II](http://armno.github.io/2015/02/26/setting-up-vim-part-2/)
+Update: เขียนตอน 2 แล้วครับ ตามไปอ่านได้ที่ [Setting Vim: Part II](https://armno.in.th/2015/02/26/setting-up-vim-part-2/)

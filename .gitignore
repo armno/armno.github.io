@@ -13,3 +13,4 @@ Thumbs.db
 scss/.sass-cache/*
 
 node_modules/*
+Gemfile.lock

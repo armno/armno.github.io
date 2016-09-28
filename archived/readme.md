@@ -1,0 +1,1 @@
+This directory contains legacy posts. They are no longer published on the blog.
