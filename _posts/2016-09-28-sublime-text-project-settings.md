@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "ใช้ประโยชน์จาก Project Settings ใน Sublime Text"
-description:
-published: false
-cover-image:
-thumbnail:
-tags:
+description: Sublime Text ดูเผินๆ แล้วเป็น text editor ธรรมดา แต่จริงๆ แล้ว ก็มาพร้อมกับฟีเจอร์ในการจัดการโปรเจ็คอยู่อย่างพอเหมาะ อาจไม่ครบครันเท่ากับ IDE ทั่วๆ ไป แต่ก็ถือว่าใช้ทำงานได้ดีเลย
+published: true
+cover-image: "/img/posts/sublime-text-project-settings/cover.png"
+thumbnail: "/img/posts/sublime-text-project-settings/thumbnail.png"
+tags: editor sublimetext tools
 ---
 
 Sublime Text ดูเผินๆ แล้วเป็น text editor ธรรมดา แต่จริงๆ แล้ว ก็มาพร้อมกับฟีเจอร์ในการจัดการโปรเจ็คอยู่อย่างพอเหมาะ
