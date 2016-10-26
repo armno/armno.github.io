@@ -3,19 +3,19 @@ layout: post
 title: "Debug Firefox บน Android ผ่าน Wi-Fi"
 description: Developer Tools ใน Firefox มี feature WebIDE ที่เราสามารถใช้ debug web app จาก Firefox บน Android ได้ผ่าน WiFi ถือว่าสะดวกดี มีขั้นตอนการ setup เพียงเล็กน้อยครับ
 published: true
-cover-image: 
-thumbnail: 
+cover-image: "/img/posts/firefox-wifi-debug/cover.png"
+thumbnail: "https://armno.in.th/img/posts/firefox-wifi-debug/desktop-devtools-enabled.png"
 tags: firefox devtools mobileweb
 ---
 
 Developer Tools ของ Firefox นั้นได้รับการพัฒนามาอย่างต่อเนื่อง ไม่ได้น้อยหน้า DevTools ของ Google Chrome เลย
-(ถ้าดูจาก [home page ของ Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) จะมี feature เยอะมาก) 
+(ถ้าดูจาก [home page ของ Developer Tools](https://developer.mozilla.org/en-US/docs/Tools) จะมี feature เยอะมาก)
 วันนี้เราจะมาดูวิธีการใช้ feature WebIDE ของ Firefox เพื่อ debug web app ที่อยู่บน Firefox บน Android ผ่าน WiFi กัน
 
 ## สิ่งที่ต้องมี
 
 - Firefox Desktop จะเป็นตัวธรรมดา หรือ [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) ก็ได้ครับ
-- Android device ที่มี 
+- Android device ที่มี
   - [Firefox for Android](https://play.google.com/store/apps/details?id=org.mozilla.firefox) (v. 42 ขึ้นไป)
   - แอพ [Barcode Scanner (ZXing Team)](https://play.google.com/store/apps/details?id=com.google.zxing.client.android)
 
@@ -55,7 +55,7 @@ Developer Tools ของ Firefox นั้นได้รับการพั�
   <img src="/img/posts/firefox-wifi-debug/desktop-devices-list.png" alt="ชื่อ device ที่เปิดตัวเลือก **Remote debugging via Wi-Fi** ไว้ ก็จะขึ้นมาอยู่ด้านขวามือของหน้าต่าง WebIDE">
 </div>
 
-พอคลิกเลือกที่ชื่อ device ในครั้งแรก WebIDE จะแสดงรูป QR Code ขึ้นมา 
+พอคลิกเลือกที่ชื่อ device ในครั้งแรก WebIDE จะแสดงรูป QR Code ขึ้นมา
 
 <div class="text-center">
   <img src="/img/posts/firefox-wifi-debug/desktop-scan-qr-code.png" alt="คลิกเลือกที่ชื่อ device ในครั้งแรก WebIDE จะแสดงรูป QR Code ขึ้นมา">
