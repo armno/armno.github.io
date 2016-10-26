@@ -488,3 +488,9 @@ figure {
   width: 100%;
   height: 100%;
 }
+
+.hide-print {
+  @media print {
+    display: none;
+  }
+}
