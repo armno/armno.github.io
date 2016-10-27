@@ -9,53 +9,6 @@ $green: #1ABC9C;
 $gray: #485665;
 $max-width: 760px;
 
-// mixins for flexbox support.
-// don't know why i'm doing this. i mean it's 2015, everyone should have flexbox already at home!
-// and i don't even use autoprefixer. poor me.
-@mixin display-flex() {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@mixin flex-direction-column() {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@mixin flex-direction-row() {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@mixin justify-content($value) {
-  -webkit-box-pack: $value;
-  -webkit-justify-content: $value;
-  -ms-flex-pack: $value;
-  justify-content: $value;
-}
-
-@mixin flex-wrap($value) {
-  -webkit-flex-wrap: $value;
-  -ms-flex-wrap: $value;
-  flex-wrap: $value;
-}
-
-@mixin align-items($value) {
-  -webkit-box-align: $value;
-  -webkit-align-items: $value;
-  -ms-flex-align: $value;
-  align-items: $value;
-}
-// end flexbox mixins ... i wish i don't have to do this again.
-
 html {
   font-size: 19px; // for rem
 }
@@ -76,10 +29,6 @@ h4 {
   margin-bottom: 1rem;
 }
 
-h3 ~ h4 {
-  margin-top: 2rem;
-}
-
 h1 {
   font-size: 2rem;
   line-height: 1.15;
@@ -96,6 +45,10 @@ h3 {
 
 h4 {
   font-size: 1rem;
+}
+
+h3 ~ h4 {
+  margin-top: 2rem;
 }
 
 img {
@@ -120,7 +73,7 @@ blockquote {
     position: absolute;
     content: open-quote;
     font-size: 4rem;
-    font-family: sans-serif; // open sans' quotes look crappy
+    font-family: sans-serif;
     left: 0;
     top: -5px;
     line-height: 1;
@@ -218,9 +171,9 @@ figure {
 }
 
 .post-header {
-  @include display-flex();
-  @include flex-direction-column();
-  @include justify-content(center);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 260px;
 
   .has-cover-photo & {
@@ -259,8 +212,8 @@ figure {
 
 // tags
 .tags-list {
-  @include display-flex();
-  @include justify-content(center);
+  display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -270,9 +223,9 @@ figure {
 }
 
 .tags-list-inline {
-  @include display-flex();
-  @include justify-content(flex-start);
-  @include flex-wrap(wrap);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .tag-list-item {
@@ -326,9 +279,9 @@ figure {
 }
 
 .home-nav {
-  @include display-flex();
-  @include flex-direction-row();
-  @include justify-content(space-between);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -343,8 +296,8 @@ figure {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  @include display-flex();
-  @include align-items(center);
+  display: flex;
+  align-items: center;
 }
 
 .home-menu-item {
