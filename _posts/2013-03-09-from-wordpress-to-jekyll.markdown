@@ -1,8 +1,6 @@
 ---
 layout: post
 title: จาก WordPress สู่ Jekyll
-categories:
-- Web Development
 tags:
 - WordPress
 - Jekyll
