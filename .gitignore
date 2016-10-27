@@ -16,3 +16,4 @@ scss/.sass-cache/*
 
 node_modules/*
 Gemfile.lock
+npm-debug.log

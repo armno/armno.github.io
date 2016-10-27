@@ -1,8 +1,10 @@
 # SITE CONFIGURATION
-title: "Armno"
+title: "Armno.in.th"
+description: "Frontend Developer at BUZZWOO! Asia, Chiang Mai, Thailand. <3 Web Platform. Blogs about web and frontend toolings."
+thumbnail: "https://armno.in.th/img/cover-blog-stuttgart.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://armno.in.th"
-exclude: ["sass", "archived", "node_modules", "gulpfile.js", "package.json", "Rakefile"]
+exclude: ["sass", "archived", "node_modules", "package.json", "Rakefile"]
 permalink: pretty
 
 paginate: 10
