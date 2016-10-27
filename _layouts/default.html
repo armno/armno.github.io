@@ -23,6 +23,9 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+
     <!-- open graph meta tags -->
     {% if paginator.next_page == 2 %}
     <meta property="og:title" content="{{ site.title }}">
@@ -69,8 +72,6 @@
 
     <!-- RSS -->
     <link rel="alternate" type="application/atom+xml" title="{{ site.theme.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
-    <link rel="stylesheet" href="/css/main.css" media="all">
 
     <!-- google fonts -->
     <script>
