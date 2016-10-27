@@ -295,7 +295,7 @@ figure {
 
 .home-header {
   background-color: $green;
-  background-image: url('/img/bg-desk-mobile.jpg');
+  background-image: url('/img/cover-js-laptop-mobile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -303,12 +303,13 @@ figure {
   padding-bottom: 4rem;
 
   @media only screen and (min-width: 600px) and (max-width: 1100px) {
-    background-image: url('/img/bg-desk-large.jpg');
+    background-image: url('/img/cover-js-laptop-tablet.jpg');
   }
 
   @media only screen and (min-width: 1101px) {
-    background-image: url('/img/bg-desk-xlarge.jpg');
+    background-image: url('/img/cover-js-laptop-desktop.jpg');
     padding-bottom: 5rem;
+    background-position: center 66%;
   }
 }
 
