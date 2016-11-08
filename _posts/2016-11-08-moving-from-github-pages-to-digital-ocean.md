@@ -19,7 +19,9 @@ tags:
 
 เลยมีอยู่ช่วงนึงที่ผมปิด custom domain และเปลี่ยน URL จาก armno.in.th กลับไปเป็น armno.github.io เพียงเพื่อจุดประสงค์เดียว คือให้ใช้งานผ่าน HTTPS ได้ (แก้ปัญหาข้อ 2.) แต่ปัญหา ณ ตอนนั้นก็คือ GitHub Pages ยังไม่มี option `Enforce HTTPS` ทำให้เวลาเปิดเว็บจะสลับไปมาระหว่าง `http` กับ `https` ซึ่งดูแล้วก็แปลกๆ
 
-[screenshot enforce https repo settings]
+<div class="center">
+  <img src="/img/posts/move-from-github-to-digital-ocean/enforce-https-option.png" srcset="/img/posts/move-from-github-to-digital-ocean/enforce-https-option-2x.png 2x" alt="option enforce https ใน repo settings">
+</div>
 
 อีกอย่างก็ยังแก้ปัญหาข้อ 1. ไม่ได้ ก็เลยคิดว่าอยากจะลองย้าย blog จาก GitHub Pages ไปอยู่บน server ที่เช่าเองที่ DigitalOcean ดู โดยหวังผลคือ
 
@@ -61,7 +63,9 @@ Cert ของ Let’s Encrypt นั้นมีอายุแค่ 90 วั
 
 พอมาถึงตรงนี้ก็จะมีโดเมน armno.in.th ที่ใช้งานผ่าน HTTPS ได้ไปยาวๆ เลย ไม่ต้องกังวลว่าจะลืมต่ออายุ SSL ของ Let’s Encrypt ครับ
 
-[screenshot domain's cert info]
+<div class="center">
+  <img src="/img/posts/move-from-github-to-digital-ocean/cert-info.png" srcset="/img/posts/move-from-github-to-digital-ocean/cert-info.png 2x" alt="valid SSL ของ domain armno.in.th">
+</div>
 
 เมื่อโดเมนพร้อมแล้ว ขั้นตอนต่อไปก็คือต้องทำ auto-deploy ของ Jekyll แบบของ GitHub Pages
 
@@ -81,13 +85,19 @@ tool ที่ผมใช้คือ [jekyll-hook](https://github.com/developm
 
 หลังจาก[ติดตั้ง](https://github.com/developmentseed/jekyll-hook#installation)และเริ่มใช้งาน jekyll-hook บน server แล้ว จึงไปตั้งค่า webhook ใน settings ของ repo
 
-[screenshot webhook settings]
+<div class="center">
+  <img src="/img/posts/move-from-github-to-digital-ocean/webghook-settings.png" srcset="/img/posts/move-from-github-to-digital-ocean/webghook-settings.png 2x" alt="Webhooks settings ของ repo">
+</div>
 
 ทุกครั้งที่ผม push code ไปที่ master branch บน github repo รอเพียงไม่กี่วินาที blog ก็ update เหมือนตอนใช้ GitHub Pages ทุกประการ
 
 ## Custom Domain กลับคืนมา
 
 สร้างไฟล์ชื่อ CNAME ไว้ที่ root level ของ repo เพื่อให้ armno.github.io redirect ไปที่ armno.in.th ทำให้หน้าเพจเดิมๆ ที่ถูก google index ไว้ สามารถ redirect ไปที่ armno.in.th ได้อย่างถูกต้องครับ
+
+<div class="center">
+  <img src="/img/posts/move-from-github-to-digital-ocean/custom-domain.png" srcset="/img/posts/move-from-github-to-digital-ocean/custom-domain.png 2x" alt="Custom domain settings ของ repo">
+</div>
 
 ถึงตอนนี้ ก็ได้ระบบ blog เดิม ที่เพิ่มเติมคืออยู่บน server DigitalOcean แบบที่ต้องการแล้ว
 
