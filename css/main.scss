@@ -448,3 +448,25 @@ figure {
     display: none;
   }
 }
+
+.comments {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+
+  @media only screen and (min-width: 600px) {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+  }
+
+  button {
+    border: 1px solid rgba(72,86,101,0.2);
+    padding: 1em 3em;
+    background: transparent;
+    color: $gray;
+    font-weight: bold;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}
