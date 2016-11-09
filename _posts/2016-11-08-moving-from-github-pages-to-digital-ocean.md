@@ -15,7 +15,7 @@ tags: blog jekyll github letsencrypt
 1. Static resources อย่างไฟล์ CSS/JS รวมไปถึงรูปภาพต่างๆ มี expiration time (ใน HTTP headers) อยู่ที่ 10 นาที ซึ่งถือว่าสั้นมาก และเปลี่ยนค่าไม่ได้เพราะอยู่บน server ของ GitHub
 2. ไม่สามารถใช้ HTTPS กับ custom domain บน GitHub Pages ได้ ถ้าอยากใช้ต้องใช้ร่วมกับ [Universal SSL ของ CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)
 
-เลยมีอยู่ช่วงนึงที่ผมปิด custom domain และเปลี่ยน URL จาก armno.in.th กลับไปเป็น armno.github.io เพียงเพื่อจุดประสงค์เดียว คือให้ใช้งานผ่าน HTTPS ได้ (แก้ปัญหาข้อ 2.) แต่ปัญหา ณ ตอนนั้นก็คือ GitHub Pages ยังไม่มี option `Enforce HTTPS` ทำให้เวลาเปิดเว็บจะสลับไปมาระหว่าง `http` กับ `https` ซึ่งดูแล้วก็แปลกๆ
+เลยมีอยู่ช่วงนึงที่ผมปิด custom domain และเปลี่ยน URL จาก armno.in.th กลับไปเป็น armno.github.io เพียงเพื่อจุดประสงค์เดียว คือให้ใช้งานผ่าน HTTPS ได้ (แก้ปัญหาข้อ 2.) แต่ ณ ตอนนั้น GitHub Pages ยังไม่มี option `Enforce HTTPS` ทำให้เวลาเปิดเว็บจะสลับไปมาระหว่าง `http` กับ `https` ซึ่งดูแล้วก็แปลกๆ
 
 <div class="text-center">
   <img src="/img/posts/move-from-github-to-digital-ocean/enforce-https-option.png" srcset="/img/posts/move-from-github-to-digital-ocean/enforce-https-option-2x.png 2x" alt="option enforce https ใน repo settings">
@@ -23,10 +23,9 @@ tags: blog jekyll github letsencrypt
 
 อีกอย่างก็ยังแก้ปัญหาข้อ 1. ไม่ได้ ก็เลยคิดว่าอยากจะลองย้าย blog จาก GitHub Pages ไปอยู่บน server ที่เช่าเองที่ DigitalOcean ดู โดยหวังผลคือ
 
-1. ใช้งานผ่าน HTTPS ได้ 100% บน domain armno.in.th (ด้วย Let’s Encrypt)
+1. ใช้งานผ่าน HTTPS ได้ 100% บน domain armno.in.th (ด้วย [Let’s Encrypt](https://letsencrypt.org/))
 2. สามารถควบคุมปัจจัยต่างๆ ที่เกี่ยวกับ performance ได้มากที่สุด ซึ่งบางอย่างนั้นจำเป็นต้องตั้งค่าที่ server (อย่างน้อยก็เซ็ต expire headers ของ static resource ได้เพื่อแก้ปัญหาข้อ 1. ข้างบน)
-3. Blog จะโหลดไวขึ้นหากย้ายมาไว้ที่ droplet ของ DigitalOcean ที่ตั้งไว้ที่ประเทศสิงคโปร์
-4. Workflow ของการเขียน blog ต้องเหมือนเดิม คือต้องมีการ deploy อัตโนมัติทุกครั้งที่ push code ไปที่ master branch เหมือนตอนใช้ GitHub Pages
+3. Workflow ของการเขียน blog ต้องเหมือนเดิม คือต้องมีการ deploy อัตโนมัติทุกครั้งที่ push code ไปที่ master branch เหมือนตอนใช้ GitHub Pages
 
 เอาล่ะ เริ่มเลย
 
