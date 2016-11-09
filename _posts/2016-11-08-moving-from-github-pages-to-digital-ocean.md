@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "ย้าย Blog จาก GitHub Pages มาที่ DigitalOcean ตอน 1"
-description:
-published: false
+description: บันทึกเรื่องราวของการย้ายบล็อก armno.in.th จาก GitHub Pages มาโฮสต์เองบน server ที่ DigitalOcean ในตอนที่ 1 นี้จะเกี่ยวกับการ set up server ทั่วไป พร้อมกับ jekyll-hook เพื่อทำการ automated deploy จาก GitHub ครับ
+published: true
 cover-image: 
 thumbnail: 
-tags:
+tags: blog jekyll github letsencrypt
 ---
 
 # ย้าย Blog จาก GitHub Pages มาที่ DigitalOcean ตอน 1
