@@ -8,7 +8,7 @@ thumbnail: "https://armno.in.th/img/posts/move-from-github-to-digital-ocean-part
 tags: jekyll nginx browsers perfmatters
 ---
 
-ต่อจาก[ตอนที่ 1](https://armno.in.th/2016/11/08/moving-from-github-pages-to-digital-ocean/) หลังจาก setup server พร้อมกับ deploy process เสร็จแล้ว ก็ถึงเวลาที่ต้อง optimize blog นี้ให้ไวขึ้นดังใจหวังเสียที
+ต่อจาก[ตอนที่ 1](https://armno.in.th/2016/11/08/moving-from-github-pages-to-digital-ocean/) หลังจาก setup server พร้อมกับ deploy process เสร็จแล้ว ก็ถึงเวลาที่ต้อง optimize blog นี้ให้ไวขึ้น
 
 ## Test, don't guess
 
