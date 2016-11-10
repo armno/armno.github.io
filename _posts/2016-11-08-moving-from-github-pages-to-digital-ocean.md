@@ -109,4 +109,4 @@ tool ที่ผมใช้คือ [jekyll-hook](https://github.com/developm
 
 ถึงตอนนี้ ก็ได้ระบบ blog เดิม ที่เพิ่มเติมคืออยู่บน server DigitalOcean แบบที่ต้องการแล้ว
 
-ต่อไปตอนที่ 2 จะเป็นการ optimize performance ครับ
+ต่อไปตอนที่ 2 จะเป็นการ optimize performance หลังจากย้ายบ้านครับ
