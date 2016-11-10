@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "ย้าย Blog จาก GitHub Pages มาที่ DigitalOcean ตอน 2: #PERFMATTERS"
-description:
+description: "หลังจาก setup server พร้อมกับ deploy process เสร็จแล้ว ก็ถึงเวลาที่ต้อง optimize blog นี้ให้ไวขึ้น โพสต์นี้จะเกี่ยวกับการ config server nginx กับ jekyll เพื่อ performance ครับ"
 published: true
-cover-image:
-thumbnail:
-tags:
+cover-image: "/img/posts/move-from-github-to-digital-ocean-part-2/cover.png"
+thumbnail: "https://armno.in.th/img/posts/move-from-github-to-digital-ocean-part-2/thumbnail.png"
+tags: jekyll nginx browsers perfmatters
 ---
 
 ต่อจาก[ตอนที่ 1](https://armno.in.th/2016/11/08/moving-from-github-pages-to-digital-ocean/) หลังจาก setup server พร้อมกับ deploy process เสร็จแล้ว ก็ถึงเวลาที่ต้อง optimize blog นี้ให้ไวขึ้นดังใจหวังเสียที
@@ -18,14 +18,25 @@ tags:
 
 ก่อนอื่นก็ต้องรู้ก่อนว่า สิ่งที่ควรปรับปรุงมีจุดไหนบ้าง ซึ่ง tool ที่ผมใช้ประจำก็คือ [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) นี่แหละ เพราะว่าเร็วและง่ายดี
 
+<div class="text-center">
+  <img src="/img/posts/move-from-github-to-digital-ocean-part-2/pagespeed-summary.png"
+  srcset="/img/posts/move-from-github-to-digital-ocean-part-2/pagespeed-summary-2x.png 2x" alt="ผลจาก PageSpeed Insights ก่อน optimize">
+</div>
+
 PageSpeed Insights บอกว่ามีส่ิงที่ควรปรับปรุงคือ
 
 - ใช้งาน HTTP Caching (ตั้งค่า expiration time ของ static assets)
 - ใช้งาน gzip compression
 
-[รูป]
+<div class="text-center">
+  <img src="/img/posts/move-from-github-to-digital-ocean-part-2/pagespeed-browser-caching.png"
+  srcset="/img/posts/move-from-github-to-digital-ocean-part-2/pagespeed-browser-caching-2x.png 2x" alt="PageSpeed แนะนำว่า ควรใช้งาน HTTP Caching">
+</div>
 
-[รูป]
+<div class="text-center">
+  <img src="/img/posts/move-from-github-to-digital-ocean-part-2/pagespeed-gzip.png"
+  srcset="/img/posts/move-from-github-to-digital-ocean-part-2/pagespeed-gzip-2x.png 2x" alt="PageSpeed แนะนำว่า ควรใช้งาน GZIP compression">
+</div>
 
 ทั้งสองอย่างต้องตั้งค่าที่ nginx โชคดีที่ทีม [H5BP](https://github.com/h5bp/) ทำตัวอย่าง config ของ nginx เอาไว้ที่ repo [server-configs-nginx](https://github.com/h5bp/server-configs-nginx) ซึ่งรวบรวมเอา best practices ต่างๆ ไว้ ผมก็เลยไปดูเป็นตัวอย่างและนำมาปรับใช้แบบบูรณาการ .. ก็คือลอกมานั่นเอง
 
@@ -137,13 +148,24 @@ layout: compress
 
 PageSpeed Insights บอกว่ายังคงเหลือไฟล์ JavaScript อีกบางส่วนที่ควรจะปรับปรุงเรื่อง expiration time แต่ทั้งเนื่องด้วยไฟล์นั้นถูกดึงมาจาก remote server (Google Analytics, YouTube) ที่ไม่สามารถคุม expiration time ได้ ก็คงต้องปล่อยไว้แบบนั้นครับ ส่วนไฟล์อื่นๆ ที่โหลดมาจาก server ตัวเองก็ถูก optimize ได้หมด
 
+<div class="text-center">
+  <img src="/img/posts/move-from-github-to-digital-ocean-part-2/result-pagespeed.png"
+  srcset="/img/posts/move-from-github-to-digital-ocean-part-2/result-pagespeed-2x.png 2x" alt="ผลจาก PageSpeed Insights หลัง optimize">
+</div>
+
 สามารถเช็คได้โดยใช้ webpagetest.org ซึ่งจะแสดงข้อมูลได้ละเอียดกว่า
 
-[รูป]
+<div class="text-center">
+  <img src="/img/posts/move-from-github-to-digital-ocean-part-2/webpagetest-overview.png"
+  srcset="/img/posts/move-from-github-to-digital-ocean-part-2/webpagetest-overview-2x.png 2x" alt="ผลจาก PageSpeed Insights หลัง optimize">
+</div>
 
 ดูได้ว่า static assets แต่ละไฟล์ มีการใช้งาน HTTP caching และ GZIP ไว้ทั้งหมด
 
-[รูป content details]
+<div class="text-center">
+  <img src="/img/posts/move-from-github-to-digital-ocean-part-2/webpagetest-static-assets.png"
+  srcset="/img/posts/move-from-github-to-digital-ocean-part-2/webpagetest-static-assets-2x.png 2x" alt="ข้อมูลต่างๆ ของ static resources จาก webpagetest.org">
+</div>
 
 ## สรุป
 
