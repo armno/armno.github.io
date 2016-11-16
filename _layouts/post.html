@@ -11,8 +11,19 @@ layout: default
   {% endif %}
   >
 
-  <nav class="container nav-post">
-    <a href="{{ '/' | prepend: site.baseurl }}">« Home</a>
+  <nav class="nav-post home-nav">
+    <a href="{{ '/' | prepend: site.baseurl }}" class="home-logo">
+      <img src="/img/avatar-me.jpg" alt="armno">
+    </a>
+
+    <ul class="home-menu">
+      <li class="home-menu-item">
+        <a href="{{ '/#about' | prepend: site.baseurl }}">About</a>
+      </li>
+      <li class="home-menu-item">
+        <a href="/blog">Blog</a>
+      </li>
+    </ul>
   </nav>
 
   <header class="post-header container">
