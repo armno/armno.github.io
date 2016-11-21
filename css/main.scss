@@ -3,7 +3,6 @@
 
 @import "normalize-scss/normalize";
 @import "syntax";
-@import "icons";
 
 $green: #1ABC9C;
 $gray: #485665;
@@ -479,4 +478,22 @@ figure {
   font-size: 0.9em;
   display: inline-block;
   margin-top: 30px;
+}
+
+
+// icons
+.share-icons,
+.home-icons {
+  fill: $green;
+}
+
+.share-icons {
+  width: 38px;
+  height: 38px;
+}
+
+.home-icons {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
 }
