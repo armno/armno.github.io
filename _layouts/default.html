@@ -89,6 +89,33 @@ layout: compress
     <div class="wrapper">
       {{ content }}
     </div>
+
+    <footer class="main-footer">
+      <p class="text-center">
+        &copy; {{ site.time | date: '%Y' }} • Armno P.
+      </p>
+      <nav class="footer-nav text-center">
+        <ul>
+          <li>
+            <a href="https://github.com/armno" aria-label="@armno on GitHub">
+              <svg class="main-footer-icon github-icon">
+                <use xlink:href="#icon-github"></use>
+              <svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/armno" aria-label="@armno on Twtitter">
+              <svg class="main-footer-icon twitter-icon">
+                <use xlink:href="#icon-twitter"></use>
+              <svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://c.armno.xyz" class="c-link">c</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
     {% include analytics.html %}
 
     {% include icons-svg.html %}

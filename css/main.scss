@@ -407,6 +407,12 @@ figure {
   margin-bottom: 60px;
 }
 
+.main-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(72, 86, 101, 0.05);
+}
+
 // blog page
 .blog-list {
   list-style: none;
@@ -496,4 +502,36 @@ figure {
   width: 30px;
   height: 30px;
   fill: #fff;
+}
+
+.footer-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+
+.main-footer-icon {
+  width: 32px;
+  height: 32px;
+  fill: $gray;
+}
+
+.c-link {
+  font-size: 0;
+  line-height: 0;
+  width: 32px;
+  height: 32px;
+  background: url('/img/bike-gray.svg') center no-repeat;
+  background-size: cover;
+  display: block;
 }
